@@ -82,9 +82,16 @@ import Profile from "../views/User/Profile";
 /*Creacion de rutas*/
 /*------------------------------------------------------------------------------------------------------*/
 import Pediatria from "../views/Pediatria/Pediatria.vue";
-import Seguimiento from "../views/Pediatria/Seguimiento";
-import Registro from "../views/Pediatria/Registro";
+import Seguimiento from "../views/Pediatria/Seguimiento.vue";
+import Registro from "../views/Pediatria/Registro.vue";
 import Pacientes from "../views/Pediatria/Pacientes.vue"
+
+
+
+//import Pediatria from "../views/Pediatria/Pediatria";
+// import SeguimientoVista from "../views/Pediatria/Seguimiento";
+// import RegistroCrud from "../views/Pediatria/Registro";
+// import PacientesI from "../views/Pediatria/Pacientes.vue"
 
 /*------------------------------------------------------------------------------------------------------*/
 import ProfileEdit from "../views/User/ProfileEdit";
@@ -536,7 +543,7 @@ const userChildRoute = (prop, mode = false) => [
   {
     path: "pediatria",
     name: prop + ".pediatria",
-    meta: { dark: mode, auth: true, name: "Pediatria" },
+    meta: { dark: mode, auth: true, name: "Pediatria Dashboard" },
     component: Pediatria,
   },
   {
@@ -546,15 +553,15 @@ const userChildRoute = (prop, mode = false) => [
     component: Pacientes,
   },
   {
-    path: "Seguimiento",
+    path: "seguimiento",
     name: prop + ".seguimiento",
-    meta: { dark: mode, auth: true, name: "seguimiento" },
+    meta: { dark: mode, auth: true, name: "Seguimiento" },
     component: Seguimiento,
   },
   {
-    path: "Registro",
+    path: "registro",
     name: prop + ".registro",
-    meta: { dark: mode, auth: true, name: "registro" },
+    meta: { dark: mode, auth: true, name: "Registro" },
     component: Registro,
   },
   /*-------------------------------------------------------------------------------------------------------------------------*/
