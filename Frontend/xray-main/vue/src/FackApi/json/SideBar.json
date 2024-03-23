@@ -42,7 +42,7 @@
     "is_heading": false,
     "is_active": false,
     "link": {
-      "name": "dashboard.home-2"
+      "name": ""
     },
     "class_name": "",
     "is_icon_class": true,
@@ -131,6 +131,21 @@
     "icon": "ri-user-3-fill",
     "children": [
       {
+ frontend
+        "title": "Pediatria",
+        "name": "Pediatria",
+        "is_active": false,
+        "link": {
+          "name" : "user.pediatria"
+        },
+        "class_name": "",
+        "is_icon_class": true,
+        "icon": "ri-hospital-fill"
+      },
+      {
+        "title": "registro",
+        "name": "registro",
+
         "title": "All Doctors",
         "name": "sidebar.doctorList",
         "is_active": false,
@@ -144,6 +159,7 @@
       {
         "title": "Add Doctor",
         "name": "sidebar.doctorAdd",
+ master
         "is_active": false,
         "link": {
           "name" : "user.add"
