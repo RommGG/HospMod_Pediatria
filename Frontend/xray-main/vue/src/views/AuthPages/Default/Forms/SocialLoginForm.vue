@@ -10,28 +10,28 @@
 
 <script>
 export default {
-  name: "SocialLoginForm",
+  name: 'SocialLoginForm',
   data: () => ({
     socialProviders: [
       {
-        type: "facebook",
-        icon: "ri-facebook-box-line",
+        type: 'facebook',
+        icon: 'ri-facebook-box-line'
       },
       {
-        type: "twitter",
-        icon: "ri-twitter-line",
+        type: 'twitter',
+        icon: 'ri-twitter-line'
       },
       {
-        type: "instagram",
-        icon: "ri-instagram-line",
-      },
-    ],
+        type: 'instagram',
+        icon: 'ri-instagram-line'
+      }
+    ]
   }),
   methods: {
     socialLogin(type) {
-      console.log(type);
-      this.$router.push({ name: "mini.dashboard.home-1" });
-    },
-  },
-};
+      console.log(type)
+      this.$router.push({ name: 'mini.dashboard.home-1' })
+    }
+  }
+}
 </script>

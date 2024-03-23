@@ -1649,10 +1649,10 @@ if (jQuery('#chartdiv').length) {
                     "maps": ["bangladeshLow", "bangladeshHigh"]
                 },
                 "BE": {
-                    "country": "",
+                    "country": "Belgium",
                     "continent_code": "EU",
                     "continent": "Europe",
-                    "maps": ["Low", "High"]
+                    "maps": ["belgiumLow", "belgiumHigh"]
                 },
                 "BF": {
                     "country": "Burkina Faso",
@@ -5621,7 +5621,7 @@ if (jQuery('#am-radar-chart').length) {
             "country": "UK",
             "litres": 290
         }, {
-            "country": "",
+            "country": "Belgium",
             "litres": 325
         }, {
             "country": "The Netherlands",

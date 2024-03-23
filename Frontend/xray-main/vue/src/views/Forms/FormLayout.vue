@@ -12,10 +12,7 @@
             </b-link>
           </template>
           <template v-slot:body>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-              vulputate, ex ac venenatis mollis, diam nibh finibus leo
-            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vulputate, ex ac venenatis mollis, diam nibh finibus leo</p>
             <b-collapse id="collapse-1" class="mb-2">
               <div class="card">
                 <kbd class="bg-dark">
@@ -46,15 +43,8 @@
                 <b-form-input id="pwd" type="password"></b-form-input>
               </b-form-group>
               <b-form-checkbox class="mb-3"> Remember me </b-form-checkbox>
-              <b-button type="submit" variant="primary" class="mt-3"
-                >Submit</b-button
-              >
-              <b-button
-                type="submit"
-                variant="none"
-                class="iq-bg-danger ms-2 mt-3"
-                >Cancle</b-button
-              >
+              <b-button type="submit" variant="primary" class="mt-3">Submit</b-button>
+              <b-button type="submit" variant="none" class="iq-bg-danger ms-2 mt-3">Cancle</b-button>
             </b-form>
           </template>
         </iq-card>
@@ -68,10 +58,7 @@
             </b-link>
           </template>
           <template v-slot:body>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-              vulputate, ex ac venenatis mollis, diam nibh finibus leo
-            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vulputate, ex ac venenatis mollis, diam nibh finibus leo</p>
             <b-collapse id="collapse-2" class="mb-2">
               <div class="card">
                 <kbd class="bg-dark">
@@ -94,16 +81,10 @@
             <b-form>
               <b-row>
                 <b-col>
-                  <b-form-input
-                    type="text"
-                    placeholder="First Name"
-                  ></b-form-input>
+                  <b-form-input type="text" placeholder="First Name"></b-form-input>
                 </b-col>
                 <b-col>
-                  <b-form-input
-                    type="text"
-                    placeholder="Last Name"
-                  ></b-form-input>
+                  <b-form-input type="text" placeholder="Last Name"></b-form-input>
                 </b-col>
               </b-row>
             </b-form>
@@ -119,10 +100,7 @@
             </b-link>
           </template>
           <template v-slot:body>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-              vulputate, ex ac venenatis mollis, diam nibh finibus leo
-            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vulputate, ex ac venenatis mollis, diam nibh finibus leo</p>
             <b-collapse id="collapse-3" class="mb-2">
               <div class="card">
                 <kbd class="bg-dark">
@@ -177,112 +155,44 @@
             </b-collapse>
             <b-form>
               <b-form-group label="Input Text " label-for="exampleInputText1">
-                <b-form-input
-                  id="exampleInputText1"
-                  type="text"
-                  placeholder="Enter Name"
-                  value="Mark Jets"
-                ></b-form-input>
+                <b-form-input id="exampleInputText1" type="text" placeholder="Enter Name" value="Mark Jets"></b-form-input>
               </b-form-group>
               <b-form-group label="Email Input " label-for="exampleInputText3">
-                <b-form-input
-                  id="exampleInputText3"
-                  type="email"
-                  value="markjhon@gmail.com"
-                  placeholder="Enter Email"
-                ></b-form-input>
+                <b-form-input id="exampleInputText3" type="email" value="markjhon@gmail.com" placeholder="Enter Email"></b-form-input>
               </b-form-group>
               <b-form-group label="Url Input" label-for="exampleInputurl">
-                <b-form-input
-                  id="exampleInputurl"
-                  type="url"
-                  value="https://getbootstrap.com"
-                  placeholder="Enter Url"
-                ></b-form-input>
+                <b-form-input id="exampleInputurl" type="url" value="https://getbootstrap.com" placeholder="Enter Url"></b-form-input>
               </b-form-group>
-              <b-form-group
-                label="Telephone Input"
-                label-for="exampleInputphone"
-              >
-                <b-form-input
-                  id="exampleInputphone"
-                  type="tel"
-                  value="1-(555)-555-5555"
-                ></b-form-input>
+              <b-form-group label="Telephone Input" label-for="exampleInputphone">
+                <b-form-input id="exampleInputphone" type="tel" value="1-(555)-555-5555"></b-form-input>
               </b-form-group>
-              <b-form-group
-                label="Number Input"
-                label-for="exampleInputNumber1"
-              >
-                <b-form-input
-                  id="exampleInputNumber1"
-                  type="number"
-                  value="2356"
-                ></b-form-input>
+              <b-form-group label="Number Input" label-for="exampleInputNumber1">
+                <b-form-input id="exampleInputNumber1" type="number" value="2356"></b-form-input>
               </b-form-group>
-              <b-form-group
-                label="Password Input"
-                label-for="exampleInputPassword3"
-              >
-                <b-form-input
-                  id="exampleInputPassword3"
-                  type="password"
-                  value="markjhon123"
-                  placeholder="Enter Password"
-                ></b-form-input>
+              <b-form-group label="Password Input" label-for="exampleInputPassword3">
+                <b-form-input id="exampleInputPassword3" type="password" value="markjhon123" placeholder="Enter Password"></b-form-input>
               </b-form-group>
               <b-form-group label="Date Input" label-for="exampleInputdate">
-                <b-form-input
-                  id="exampleInputdate"
-                  type="date"
-                  value="2019-12-18"
-                ></b-form-input>
+                <b-form-input id="exampleInputdate" type="date" value="2019-12-18"></b-form-input>
               </b-form-group>
               <b-form-group label="Month Input" label-for="exampleInputmonth">
-                <b-form-input
-                  id="exampleInputmonth"
-                  type="month"
-                  value="2019-12"
-                ></b-form-input>
+                <b-form-input id="exampleInputmonth" type="month" value="2019-12"></b-form-input>
               </b-form-group>
               <b-form-group label="Week Input" label-for="exampleInputweek">
-                <b-form-input
-                  id="exampleInputweek"
-                  type="week"
-                  value="2019-W46"
-                ></b-form-input>
+                <b-form-input id="exampleInputweek" type="week" value="2019-W46"></b-form-input>
               </b-form-group>
               <b-form-group label="Time Input" label-for="exampleInputtime">
-                <b-form-input
-                  id="exampleInputtime"
-                  type="time"
-                  value="13:45"
-                ></b-form-input>
+                <b-form-input id="exampleInputtime" type="time" value="13:45"></b-form-input>
               </b-form-group>
-              <b-form-group
-                label="Date and Time Input"
-                label-for="exampleInputdatetime"
-              >
-                <b-form-input
-                  id="exampleInputdatetime"
-                  type="datetime-local"
-                  value="2019-12-19T13:45:00"
-                ></b-form-input>
+              <b-form-group label="Date and Time Input" label-for="exampleInputdatetime">
+                <b-form-input id="exampleInputdatetime" type="datetime-local" value="2019-12-19T13:45:00"></b-form-input>
               </b-form-group>
-              <b-form-group
-                label="Example textarea"
-                label-for="exampleFormControlTextarea1"
-              >
-                <b-form-textarea
-                  id="exampleFormControlTextarea1"
-                  rows="5"
-                ></b-form-textarea>
+              <b-form-group label="Example textarea" label-for="exampleFormControlTextarea1">
+                <b-form-textarea id="exampleFormControlTextarea1" rows="5"></b-form-textarea>
               </b-form-group>
               <!-- <b-form-checkbox class="mb-3"> Remember me </b-form-checkbox> -->
               <b-button type="submit" variant="primary">Submit</b-button>
-              <b-button type="submit" variant="none" class="iq-bg-danger ms-3"
-                >Cancle</b-button
-              >
+              <b-button type="submit" variant="none" class="iq-bg-danger ms-3">Cancle</b-button>
             </b-form>
           </template>
         </iq-card>
@@ -296,10 +206,7 @@
             </b-link>
           </template>
           <template v-slot:body>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-              vulputate, ex ac venenatis mollis, diam nibh finibus leo
-            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vulputate, ex ac venenatis mollis, diam nibh finibus leo</p>
             <b-collapse id="collapse-4" class="mb-2">
               <div class="card">
                 <kbd class="bg-dark">
@@ -322,31 +229,13 @@
             </b-collapse>
             <b-form>
               <b-form-group label="Small" label-for="colFormLabelSm">
-                <b-form-input
-                  type="email"
-                  size="sm"
-                  id="colFormLabelSm"
-                  placeholder="form-control-sm"
-                ></b-form-input>
+                <b-form-input type="email" size="sm" id="colFormLabelSm" placeholder="form-control-sm"></b-form-input>
               </b-form-group>
-              <b-form-group
-                label="Default"
-                label-for="colFormLabel"
-                class="mb-0"
-              >
-                <b-form-input
-                  type="email"
-                  id="colFormLabel"
-                  placeholder="form-control"
-                ></b-form-input>
+              <b-form-group label="Default" label-for="colFormLabel" class="mb-0">
+                <b-form-input type="email" id="colFormLabel" placeholder="form-control"></b-form-input>
               </b-form-group>
               <b-form-group label="Large" label-for="colFormLabelLg">
-                <b-form-input
-                  type="email"
-                  size="lg"
-                  id="colFormLabelLg"
-                  placeholder="form-control-lg"
-                ></b-form-input>
+                <b-form-input type="email" size="lg" id="colFormLabelLg" placeholder="form-control-lg"></b-form-input>
               </b-form-group>
             </b-form>
           </template>
@@ -363,10 +252,7 @@
             </b-link>
           </template>
           <template v-slot:body>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-              vulputate, ex ac venenatis mollis, diam nibh finibus leo
-            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vulputate, ex ac venenatis mollis, diam nibh finibus leo</p>
             <b-collapse id="collapse-5" class="mb-2">
               <div class="card">
                 <kbd class="bg-dark">
@@ -400,41 +286,17 @@
               </div>
             </b-collapse>
             <b-form class="form-horizontal">
-              <b-form-group
-                class="row"
-                label-cols-sm="2"
-                label="Email:"
-                label-for="email"
-              >
-                <b-form-input
-                  id="email"
-                  class="mb-3"
-                  placeholder="Enter Your email"
-                ></b-form-input>
+              <b-form-group class="row" label-cols-sm="2" label="Email:" label-for="email">
+                <b-form-input id="email" class="mb-3" placeholder="Enter Your email"></b-form-input>
               </b-form-group>
-              <b-form-group
-                class="row"
-                label-cols-sm="2"
-                label="Password:"
-                label-for="pwd1"
-              >
-                <b-form-input
-                  id="pwd1"
-                  placeholder="Enter Your password"
-                ></b-form-input>
+              <b-form-group class="row" label-cols-sm="2" label="Password:" label-for="pwd1">
+                <b-form-input id="pwd1" placeholder="Enter Your password"></b-form-input>
               </b-form-group>
               <b-form-group>
                 <b-form-checkbox>Remember me</b-form-checkbox>
               </b-form-group>
-              <b-button type="submit" variant="primary" class="mb-4 mt-3"
-                >Submit</b-button
-              >
-              <b-button
-                type="submit"
-                variant="none"
-                class="iq-bg-danger ms-3 mb-4 mt-3"
-                >Cancle</b-button
-              >
+              <b-button type="submit" variant="primary" class="mb-4 mt-3">Submit</b-button>
+              <b-button type="submit" variant="none" class="iq-bg-danger ms-3 mb-4 mt-3">Cancle</b-button>
             </b-form>
           </template>
         </iq-card>
@@ -448,10 +310,7 @@
             </b-link>
           </template>
           <template v-slot:body>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-              vulputate, ex ac venenatis mollis, diam nibh finibus leo
-            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vulputate, ex ac venenatis mollis, diam nibh finibus leo</p>
             <b-collapse id="collapse-6" class="mb-2">
               <div class="card">
                 <kbd class="bg-dark">
@@ -471,16 +330,10 @@
             </b-collapse>
             <b-form-row>
               <b-col>
-                <b-form-input
-                  type="text"
-                  placeholder="First Name"
-                ></b-form-input>
+                <b-form-input type="text" placeholder="First Name"></b-form-input>
               </b-col>
               <b-col>
-                <b-form-input
-                  type="text"
-                  placeholder="Last Name"
-                ></b-form-input>
+                <b-form-input type="text" placeholder="Last Name"></b-form-input>
               </b-col>
             </b-form-row>
           </template>
@@ -495,10 +348,7 @@
             </b-link>
           </template>
           <template v-slot:body>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-              vulputate, ex ac venenatis mollis, diam nibh finibus leo
-            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vulputate, ex ac venenatis mollis, diam nibh finibus leo</p>
             <b-collapse id="collapse-7" class="mb-2">
               <div class="card">
                 <kbd class="bg-dark">
@@ -598,43 +448,18 @@
               </div>
             </b-collapse>
             <b-form>
-              <b-form-group
-                label-for="exampleInputDisabled1"
-                label="Disabled Input"
-              >
-                <b-form-input
-                  type="text"
-                  id="exampleInputDisabled1"
-                  value="Mark Jhon"
-                  disabled
-                ></b-form-input>
+              <b-form-group label-for="exampleInputDisabled1" label="Disabled Input">
+                <b-form-input type="text" id="exampleInputDisabled1" value="Mark Jhon" disabled></b-form-input>
               </b-form-group>
-              <b-form-group
-                label-for="exampleInputPlaceholder"
-                label="Placeholder"
-              >
-                <b-form-input
-                  type="text"
-                  id="exampleInputPlaceholder"
-                  placeholder="This is Placeholder"
-                ></b-form-input>
+              <b-form-group label-for="exampleInputPlaceholder" label="Placeholder">
+                <b-form-input type="text" id="exampleInputPlaceholder" placeholder="This is Placeholder"></b-form-input>
               </b-form-group>
               <b-form-group label-for="exampleInputReadonly" label="Readonly">
-                <b-form-input
-                  type="text"
-                  id="exampleInputReadonly"
-                  value="Mark Jhon"
-                  readonly
-                ></b-form-input>
+                <b-form-input type="text" id="exampleInputReadonly" value="Mark Jhon" readonly></b-form-input>
               </b-form-group>
               <div class="form-group">
                 <label for="exampleInputcolor">Input Color </label>
-                <input
-                  type="color"
-                  class="form-control my-2"
-                  id="exampleInputcolor"
-                  value="#089bab"
-                />
+                <input type="color" class="form-control my-2" id="exampleInputcolor" value="#089bab" />
               </div>
               <!-- <b-form-group for="exampleInputcolor" label="Input color">
                 <b-form-input
@@ -644,35 +469,15 @@
                   class="my-2"
                 ></b-form-input>
               </b-form-group> -->
-              <b-form-group
-                label-for="exampleFormControlSelect1"
-                label="Select Input"
-              >
-                <b-form-select
-                  plain
-                  v-model="selectedAge"
-                  :options="options1"
-                  id="exampleFormControlSelect1"
-                >
+              <b-form-group label-for="exampleFormControlSelect1" label="Select Input">
+                <b-form-select plain v-model="selectedAge" :options="options1" id="exampleFormControlSelect1">
                   <template v-slot:first>
-                    <b-form-select-option :value="null" disabled
-                      >Select your age</b-form-select-option
-                    >
+                    <b-form-select-option :value="null" disabled>Select your age</b-form-select-option>
                   </template>
                 </b-form-select>
               </b-form-group>
-              <b-form-group
-                label-for="exampleFormControlSelect2"
-                label="Example multiple select"
-              >
-                <b-form-select
-                  plain
-                  v-model="selected"
-                  multiple
-                  :options="options2"
-                  id="exampleFormControlSelect2"
-                >
-                </b-form-select>
+              <b-form-group label-for="exampleFormControlSelect2" label="Example multiple select">
+                <b-form-select plain v-model="selected" multiple :options="options2" id="exampleFormControlSelect2"> </b-form-select>
               </b-form-group>
               <b-form-group label-for="customRange1" label="Range Input">
                 <b-form-input id="customRange1" type="range"></b-form-input>
@@ -681,99 +486,39 @@
                 <b-form-checkbox>Default checkbox</b-form-checkbox>
                 <b-form-checkbox v-model="checked1">Checked</b-form-checkbox>
                 <b-form-checkbox disabled>Disabled checkbox</b-form-checkbox>
-                <b-form-checkbox v-model="checked2" disabled
-                  >Disabled checkbox</b-form-checkbox
-                >
+                <b-form-checkbox v-model="checked2" disabled>Disabled checkbox</b-form-checkbox>
               </b-form-group>
               <b-form-group>
                 <b-form-checkbox inline>Default checkbox</b-form-checkbox>
-                <b-form-checkbox v-model="checked3" inline
-                  >Checked</b-form-checkbox
-                >
-                <b-form-checkbox disabled inline
-                  >Disabled checkbox</b-form-checkbox
-                >
-                <b-form-checkbox v-model="checked2" disabled inline
-                  >Disabled checkbox</b-form-checkbox
-                >
+                <b-form-checkbox v-model="checked3" inline>Checked</b-form-checkbox>
+                <b-form-checkbox disabled inline>Disabled checkbox</b-form-checkbox>
+                <b-form-checkbox v-model="checked2" disabled inline>Disabled checkbox</b-form-checkbox>
               </b-form-group>
               <b-form-group>
-                <b-form-radio v-model="radio1" name="customRadio"
-                  >Default radio</b-form-radio
-                >
-                <b-form-radio v-model="radio1" name="customRadio"
-                  >Default radio</b-form-radio
-                >
-                <b-form-radio v-model="radio6" name="customRadio3" value="true"
-                  >Selected radio</b-form-radio
-                >
-                <b-form-radio disabled name="customRadio4"
-                  >disabled radio</b-form-radio
-                >
-                <b-form-radio
-                  disabled
-                  v-model="radio6"
-                  name="customRadio5"
-                  value="true"
-                  >Selected and disabled radio</b-form-radio
-                >
+                <b-form-radio v-model="radio1" name="customRadio">Default radio</b-form-radio>
+                <b-form-radio v-model="radio1" name="customRadio">Default radio</b-form-radio>
+                <b-form-radio v-model="radio6" name="customRadio3" value="true">Selected radio</b-form-radio>
+                <b-form-radio disabled name="customRadio4">disabled radio</b-form-radio>
+                <b-form-radio disabled v-model="radio6" name="customRadio5" value="true">Selected and disabled radio</b-form-radio>
               </b-form-group>
               <b-form-group>
-                <b-form-radio inline v-model="radio2" name="customRadio1"
-                  >Default radio</b-form-radio
-                >
-                <b-form-radio inline v-model="radio2" name="customRadio1"
-                  >Default radio</b-form-radio
-                >
-                <b-form-radio
-                  inline
-                  v-model="radio6"
-                  name="customRadio6"
-                  value="true"
-                  >Selected radio</b-form-radio
-                >
-                <b-form-radio
-                  inline
-                  v-model="radio7"
-                  disabled
-                  name="customRadio7"
-                  >disabled radio</b-form-radio
-                >
-                <b-form-radio
-                  inline
-                  disabled
-                  v-model="radio8"
-                  name="customRadio8"
-                  value="dissel"
-                  >Selected and disabled radio</b-form-radio
-                >
+                <b-form-radio inline v-model="radio2" name="customRadio1">Default radio</b-form-radio>
+                <b-form-radio inline v-model="radio2" name="customRadio1">Default radio</b-form-radio>
+                <b-form-radio inline v-model="radio6" name="customRadio6" value="true">Selected radio</b-form-radio>
+                <b-form-radio inline v-model="radio7" disabled name="customRadio7">disabled radio</b-form-radio>
+                <b-form-radio inline disabled v-model="radio8" name="customRadio8" value="dissel">Selected and disabled radio</b-form-radio>
               </b-form-group>
               <b-form-group>
-                <b-form-checkbox name="check-button" switch
-                  >Toggle this switch element</b-form-checkbox
-                >
-                <b-form-checkbox v-model="switch1" name="check-button" switch
-                  >Toggle this switch element</b-form-checkbox
-                >
-                <b-form-checkbox disabled name="check-button" switch
-                  >Disabled switch element</b-form-checkbox
-                >
+                <b-form-checkbox name="check-button" switch>Toggle this switch element</b-form-checkbox>
+                <b-form-checkbox v-model="switch1" name="check-button" switch>Toggle this switch element</b-form-checkbox>
+                <b-form-checkbox disabled name="check-button" switch>Disabled switch element</b-form-checkbox>
               </b-form-group>
-              <b-form-group
-                label-for="exampleFormControlFile1"
-                label="Example file input"
-              >
-                <input
-                  type="file"
-                  class="form-control"
-                  id="exampleFormControlFile1"
-                />
+              <b-form-group label-for="exampleFormControlFile1" label="Example file input">
+                <input type="file" class="form-control" id="exampleFormControlFile1" />
                 <!-- <b-form-file plain id="exampleFormControlFile1"></b-form-file> -->
               </b-form-group>
               <b-form-group label-for="customFile">
-                <label class="custom-file-input" for="customFile"
-                  >Choose file</label
-                >
+                <label class="custom-file-input" for="customFile">Choose file</label>
                 <input type="file" class="form-control" id="customFile" />
                 <!-- <b-form-file
                   placeholder="Choose a file"
@@ -781,9 +526,7 @@
                 ></b-form-file> -->
               </b-form-group>
               <b-button type="submit" variant="primary">Submit</b-button>
-              <b-button type="submit" variant="none" class="iq-bg-danger ms-3"
-                >Cancle</b-button
-              >
+              <b-button type="submit" variant="none" class="iq-bg-danger ms-3">Cancle</b-button>
             </b-form>
           </template>
         </iq-card>
@@ -797,10 +540,7 @@
             </b-link>
           </template>
           <template v-slot:body>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-              vulputate, ex ac venenatis mollis, diam nibh finibus leo
-            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vulputate, ex ac venenatis mollis, diam nibh finibus leo</p>
             <b-collapse id="collapse-8" class="mb-2">
               <div class="card">
                 <kbd class="bg-dark">
@@ -832,45 +572,23 @@
               </div>
             </b-collapse>
             <b-form-group label="small">
-              <b-form-select
-                plain
-                v-model="selected3"
-                :options="options3"
-                size="sm"
-                class="mb-3"
-              >
+              <b-form-select plain v-model="selected3" :options="options3" size="sm" class="mb-3">
                 <template v-slot:first>
-                  <b-form-select-option :value="null"
-                    >Open this select menu</b-form-select-option
-                  >
+                  <b-form-select-option :value="null">Open this select menu</b-form-select-option>
                 </template>
               </b-form-select>
             </b-form-group>
             <b-form-group label="Default">
-              <b-form-select
-                plain
-                v-model="selected3"
-                :options="options3"
-                class="mb-3"
-              >
+              <b-form-select plain v-model="selected3" :options="options3" class="mb-3">
                 <template v-slot:first>
-                  <b-form-select-option :value="null"
-                    >Open this select menu</b-form-select-option
-                  >
+                  <b-form-select-option :value="null">Open this select menu</b-form-select-option>
                 </template>
               </b-form-select>
             </b-form-group>
             <b-form-group label="Large">
-              <b-form-select
-                plain
-                v-model="selected3"
-                :options="options3"
-                size="lg"
-              >
+              <b-form-select plain v-model="selected3" :options="options3" size="lg">
                 <template v-slot:first>
-                  <b-form-select-option :value="null"
-                    >Open this select menu</b-form-select-option
-                  >
+                  <b-form-select-option :value="null">Open this select menu</b-form-select-option>
                 </template>
               </b-form-select>
             </b-form-group>
@@ -881,35 +599,35 @@
   </b-container>
 </template>
 <script>
-import { xray } from "../../config/pluginInit";
-import iqCard from "../../components/xray/cards/iq-card";
+import { xray } from '../../config/pluginInit'
+import iqCard from '../../components/xray/cards/iq-card'
 export default {
-  name: "FormLayout",
+  name: 'FormLayout',
   components: { iqCard },
   mounted() {
-    xray.index();
+    xray.index()
   },
   data() {
     return {
-      selectedAge: "0-18",
-      selected: ["select-1"],
+      selectedAge: '0-18',
+      selected: ['select-1'],
       selected3: null,
       options1: [
-        { value: "0-18", text: "0-18" },
-        { value: "18-26", text: "18-26" },
-        { value: "26-46", text: "26-46" },
-        { value: "46-60", text: "46-60" },
-        { value: "Above 60", text: "Above 60" },
+        { value: '0-18', text: '0-18' },
+        { value: '18-26', text: '18-26' },
+        { value: '26-46', text: '26-46' },
+        { value: '46-60', text: '46-60' },
+        { value: 'Above 60', text: 'Above 60' }
       ],
       options2: [
-        { value: "select-1", text: "select-1" },
-        { value: "select-2", text: "select-2" },
-        { value: "select-3", text: "select-3" },
-        { value: "select-4", text: "select-4" },
-        { value: "select-5", text: "select-5" },
-        { value: "select-6", text: "select-6" },
-        { value: "select-7", text: "select-7" },
-        { value: "select-8", text: "select-8" },
+        { value: 'select-1', text: 'select-1' },
+        { value: 'select-2', text: 'select-2' },
+        { value: 'select-3', text: 'select-3' },
+        { value: 'select-4', text: 'select-4' },
+        { value: 'select-5', text: 'select-5' },
+        { value: 'select-6', text: 'select-6' },
+        { value: 'select-7', text: 'select-7' },
+        { value: 'select-8', text: 'select-8' }
       ],
       checked1: true,
       checked2: true,
@@ -918,16 +636,16 @@ export default {
       radio2: true,
       radio3: true,
       radio5: true,
-      radio6: "true",
+      radio6: 'true',
       radio7: false,
-      radio8: "dissel",
+      radio8: 'dissel',
       switch1: true,
       options3: [
-        { value: "1", text: "One" },
-        { value: "2", text: "Two" },
-        { value: "3", text: "Three" },
-      ],
-    };
-  },
-};
+        { value: '1', text: 'One' },
+        { value: '2', text: 'Two' },
+        { value: '3', text: 'Three' }
+      ]
+    }
+  }
+}
 </script>

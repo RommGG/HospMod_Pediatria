@@ -5,11 +5,11 @@
   </div>
 </template>
 <script>
-import SignUp1Form from "./Forms/SignUp1Form";
+import SignUp1Form from './Forms/SignUp1Form'
 
 export default {
-  name: "SignUp1",
+  name: 'SignUp1',
   components: { SignUp1Form },
-  data: () => ({}),
-};
+  data: () => ({})
+}
 </script>

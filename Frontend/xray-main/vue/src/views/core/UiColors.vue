@@ -7,22 +7,14 @@
             <h4 class="card-title">XRay Color</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-1
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-1 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
           <template v-slot:body>
             <p>
-              Similar to the contextual text color classes, easily set the
-              background of an element to any contextual class. Anchor
-              components will darken on hover, just like the text classes.
-              Background utilities <strong>do not set <code>color</code></strong
-              >, so in some cases you’ll want to use
-              <code>.text-*</code> utilities.
+              Similar to the contextual text color classes, easily set the background of an element to any contextual class. Anchor components will darken on hover, just like the text classes. Background utilities <strong>do not set <code>color</code></strong
+              >, so in some cases you’ll want to use <code>.text-*</code> utilities.
             </p>
             <b-collapse id="collapse-1" class="mb-2">
               <div class="card">
@@ -97,22 +89,14 @@
             <h4 class="card-title">XRay Color</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-2
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-2 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
           <template v-slot:body>
             <p>
-              Similar to the contextual text color classes, easily set the
-              background of an element to any contextual class. Anchor
-              components will darken on hover, just like the text classes.
-              Background utilities <strong>do not set <code>color</code></strong
-              >, so in some cases you’ll want to use
-              <code>.text-*</code> utilities.
+              Similar to the contextual text color classes, easily set the background of an element to any contextual class. Anchor components will darken on hover, just like the text classes. Background utilities <strong>do not set <code>color</code></strong
+              >, so in some cases you’ll want to use <code>.text-*</code> utilities.
             </p>
             <b-collapse id="collapse-2" class="mb-2">
               <div class="card">
@@ -138,53 +122,25 @@
             </b-collapse>
             <b-row class="mt-4">
               <b-col lg="2" md="6" class="text-center">
-                <p
-                  class="iq-bg-primary pt-5 pb-5 text-center rounded-4 font-size-18"
-                >
-                  Primary
-                </p>
+                <p class="iq-bg-primary pt-5 pb-5 text-center rounded-4 font-size-18">Primary</p>
               </b-col>
               <b-col lg="2" md="6" class="text-center">
-                <p
-                  class="iq-bg-secondary pt-5 pb-5 text-center rounded-4 font-size-18"
-                >
-                  Secondary
-                </p>
+                <p class="iq-bg-secondary pt-5 pb-5 text-center rounded-4 font-size-18">Secondary</p>
               </b-col>
               <b-col lg="2" md="6" class="text-center">
-                <p
-                  class="iq-bg-success pt-5 pb-5 text-center rounded-4 font-size-18"
-                >
-                  Success
-                </p>
+                <p class="iq-bg-success pt-5 pb-5 text-center rounded-4 font-size-18">Success</p>
               </b-col>
               <b-col lg="2" md="6" class="text-center">
-                <p
-                  class="iq-bg-danger pt-5 pb-5 text-center rounded-4 font-size-18"
-                >
-                  Danger
-                </p>
+                <p class="iq-bg-danger pt-5 pb-5 text-center rounded-4 font-size-18">Danger</p>
               </b-col>
               <b-col lg="2" md="6" class="text-center">
-                <p
-                  class="iq-bg-warning pt-5 pb-5 text-center rounded-4 font-size-18"
-                >
-                  Warning
-                </p>
+                <p class="iq-bg-warning pt-5 pb-5 text-center rounded-4 font-size-18">Warning</p>
               </b-col>
               <b-col lg="2" md="6" class="text-center">
-                <p
-                  class="iq-bg-info pt-5 pb-5 text-center rounded-4 font-size-18"
-                >
-                  Info
-                </p>
+                <p class="iq-bg-info pt-5 pb-5 text-center rounded-4 font-size-18">Info</p>
               </b-col>
               <b-col lg="2" md="6" class="text-center mt-4">
-                <p
-                  class="iq-bg-dark pt-5 pb-5 text-center rounded-4 font-size-18"
-                >
-                  Dark
-                </p>
+                <p class="iq-bg-dark pt-5 pb-5 text-center rounded-4 font-size-18">Dark</p>
               </b-col>
             </b-row>
           </template>
@@ -196,23 +152,14 @@
             <h4 class="card-title">XRay Text Color</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-3
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-3 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
           <template v-slot:body>
             <p>
-              Contextual text classes also work well on anchors with the
-              provided hover and focus states.
-              <strong
-                >Note that the <code>.text-white</code> and
-                <code>.text-muted</code> class has no additional link styling
-                beyond underline.</strong
-              >
+              Contextual text classes also work well on anchors with the provided hover and focus states.
+              <strong>Note that the <code>.text-white</code> and <code>.text-muted</code> class has no additional link styling beyond underline.</strong>
             </p>
             <b-collapse id="collapse-3" class="mb-2">
               <div class="card">
@@ -256,23 +203,14 @@
             <h4 class="card-title">XRay Text Color</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-4
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-4 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
           <template v-slot:body>
             <p>
-              Contextual text classes also work well on anchors with the
-              provided hover and focus states.
-              <strong
-                >Note that the <code>.text-white</code> and
-                <code>.text-muted</code> class has no additional link styling
-                beyond underline.</strong
-              >
+              Contextual text classes also work well on anchors with the provided hover and focus states.
+              <strong>Note that the <code>.text-white</code> and <code>.text-muted</code> class has no additional link styling beyond underline.</strong>
             </p>
             <b-collapse id="collapse-4" class="mb-2">
               <div class="card">
@@ -314,23 +252,14 @@
             <h4 class="card-title">XRay Text Color</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-5
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-5 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
           <template v-slot:body>
             <p>
-              Contextual text classes also work well on anchors with the
-              provided hover and focus states.
-              <strong
-                >Note that the <code>.text-white</code> and
-                <code>.text-muted</code> class has no additional link styling
-                beyond underline.</strong
-              >
+              Contextual text classes also work well on anchors with the provided hover and focus states.
+              <strong>Note that the <code>.text-white</code> and <code>.text-muted</code> class has no additional link styling beyond underline.</strong>
             </p>
             <b-collapse id="collapse-5" class="mb-2">
               <div class="card">
@@ -348,25 +277,13 @@
                 </kbd>
               </div>
             </b-collapse>
-            <p class="iq-bg-primary ps-3 pe-3 pt-2 pb-2 rounded-5">
-              Primary link
-            </p>
-            <p class="iq-bg-secondary ps-3 pe-3 pt-2 pb-2 rounded-5">
-              Secondary link
-            </p>
-            <p class="iq-bg-success ps-3 pe-3 pt-2 pb-2 rounded-5">
-              Success link
-            </p>
-            <p class="iq-bg-danger ps-3 pe-3 pt-2 pb-2 rounded-5">
-              Danger link
-            </p>
-            <p class="iq-bg-warning ps-3 pe-3 pt-2 pb-2 rounded-5">
-              Warning link
-            </p>
+            <p class="iq-bg-primary ps-3 pe-3 pt-2 pb-2 rounded-5">Primary link</p>
+            <p class="iq-bg-secondary ps-3 pe-3 pt-2 pb-2 rounded-5">Secondary link</p>
+            <p class="iq-bg-success ps-3 pe-3 pt-2 pb-2 rounded-5">Success link</p>
+            <p class="iq-bg-danger ps-3 pe-3 pt-2 pb-2 rounded-5">Danger link</p>
+            <p class="iq-bg-warning ps-3 pe-3 pt-2 pb-2 rounded-5">Warning link</p>
             <p class="iq-bg-info ps-3 pe-3 pt-2 pb-2 rounded-5">Info link</p>
-            <p class="iq-bg-dark ps-3 pe-3 pt-2 pb-2 rounded-5 mb-0">
-              Dark link
-            </p>
+            <p class="iq-bg-dark ps-3 pe-3 pt-2 pb-2 rounded-5 mb-0">Dark link</p>
           </template>
         </iq-card>
       </b-col>
@@ -376,23 +293,14 @@
             <h4 class="card-title">XRay Text Color</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-6
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-6 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
           <template v-slot:body>
             <p>
-              Contextual text classes also work well on anchors with the
-              provided hover and focus states.
-              <strong
-                >Note that the <code>.text-white</code> and
-                <code>.text-muted</code> class has no additional link styling
-                beyond underline.</strong
-              >
+              Contextual text classes also work well on anchors with the provided hover and focus states.
+              <strong>Note that the <code>.text-white</code> and <code>.text-muted</code> class has no additional link styling beyond underline.</strong>
             </p>
             <b-collapse id="collapse-6" class="mb-2">
               <div class="card">
@@ -411,53 +319,25 @@
               </div>
             </b-collapse>
             <p>
-              <a
-                href="#"
-                class="iq-bg-primary ps-3 pe-3 pt-2 pb-2 rounded-5 d-inline-block"
-                >Primary link</a
-              >
+              <a href="#" class="iq-bg-primary ps-3 pe-3 pt-2 pb-2 rounded-5 d-inline-block">Primary link</a>
             </p>
             <p>
-              <a
-                href="#"
-                class="iq-bg-secondary ps-3 pe-3 pt-2 pb-2 rounded-5 d-inline-block"
-                >Secondary link</a
-              >
+              <a href="#" class="iq-bg-secondary ps-3 pe-3 pt-2 pb-2 rounded-5 d-inline-block">Secondary link</a>
             </p>
             <p>
-              <a
-                href="#"
-                class="iq-bg-success ps-3 pe-3 pt-2 pb-2 rounded-5 d-inline-block"
-                >Success link</a
-              >
+              <a href="#" class="iq-bg-success ps-3 pe-3 pt-2 pb-2 rounded-5 d-inline-block">Success link</a>
             </p>
             <p>
-              <a
-                href="#"
-                class="iq-bg-danger ps-3 pe-3 pt-2 pb-2 rounded-5 d-inline-block"
-                >Danger link</a
-              >
+              <a href="#" class="iq-bg-danger ps-3 pe-3 pt-2 pb-2 rounded-5 d-inline-block">Danger link</a>
             </p>
             <p>
-              <a
-                href="#"
-                class="iq-bg-warning ps-3 pe-3 pt-2 pb-2 rounded-5 d-inline-block"
-                >Warning link</a
-              >
+              <a href="#" class="iq-bg-warning ps-3 pe-3 pt-2 pb-2 rounded-5 d-inline-block">Warning link</a>
             </p>
             <p>
-              <a
-                href="#"
-                class="iq-bg-info ps-3 pe-3 pt-2 pb-2 rounded-5 d-inline-block"
-                >Info link</a
-              >
+              <a href="#" class="iq-bg-info ps-3 pe-3 pt-2 pb-2 rounded-5 d-inline-block">Info link</a>
             </p>
             <p class="mb-0">
-              <a
-                href="#"
-                class="iq-bg-dark ps-3 pe-3 pt-2 pb-2 rounded-5 d-inline-block"
-                >Dark link</a
-              >
+              <a href="#" class="iq-bg-dark ps-3 pe-3 pt-2 pb-2 rounded-5 d-inline-block">Dark link</a>
             </p>
           </template>
         </iq-card>
@@ -466,13 +346,13 @@
   </b-container>
 </template>
 <script>
-import { xray } from "../../config/pluginInit";
-import iqCard from "../../components/xray/cards/iq-card";
+import { xray } from '../../config/pluginInit'
+import iqCard from '../../components/xray/cards/iq-card'
 export default {
-  name: "UiColor",
+  name: 'UiColor',
   components: { iqCard },
   mounted() {
-    xray.index();
-  },
-};
+    xray.index()
+  }
+}
 </script>

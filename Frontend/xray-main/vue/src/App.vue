@@ -2,15 +2,15 @@
   <router-view />
 </template>
 <script>
-import { xray } from "./config/pluginInit";
+import { xray } from './config/pluginInit'
 
 export default {
-  name: "App",
+  name: 'App',
   components: {},
   mounted() {
-    xray.mainIndex();
-  },
-};
+    xray.mainIndex()
+  }
+}
 </script>
 <style>
 .text-ellipsis {
@@ -22,6 +22,6 @@ export default {
 .text-ellipsis.short-1 {
   -webkit-line-clamp: 4;
 }
-@import "assets/css/index.css";
-@import "assets/css/typography";
+@import 'assets/css/index.css';
+@import 'assets/css/typography';
 </style>

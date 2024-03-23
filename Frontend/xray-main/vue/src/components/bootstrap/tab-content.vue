@@ -5,9 +5,9 @@
 </template>
 <script>
 export default {
-  name: "tab-content",
+  name: 'tab-content',
   props: {
-    id: { type: String, default: "myTabContent" },
-  },
-};
+    id: { type: String, default: 'myTabContent' }
+  }
+}
 </script>

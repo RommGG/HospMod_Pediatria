@@ -7,11 +7,7 @@
             <h4 class="card-title">Basic Dragdrop Example</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-1
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-1 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
@@ -113,27 +109,14 @@ export default {
             <template>
               <div class="row">
                 <div class="col-12">
-                  <div
-                    class="form-group d-flex justify-content-between align-items-center"
-                  >
+                  <div class="form-group d-flex justify-content-between align-items-center">
                     <div class="form-check">
-                      <input
-                        id="disabled"
-                        type="checkbox"
-                        v-model="enabled"
-                        class="form-check-input"
-                      />
-                      <label class="form-check-label" for="disabled"
-                        >Drag and Drop enabled</label
-                      >
+                      <input id="disabled" type="checkbox" v-model="enabled" class="form-check-input" />
+                      <label class="form-check-label" for="disabled">Drag and Drop enabled</label>
                     </div>
                     <div class="buttons" aria-label="Basic example">
-                      <button class="btn btn-primary btn-sm" @click="add">
-                        Add</button
-                      >&nbsp;
-                      <button class="btn btn-primary btn-sm" @click="replace">
-                        Replace
-                      </button>
+                      <button class="btn btn-primary btn-sm" @click="add">Add</button>&nbsp;
+                      <button class="btn btn-primary btn-sm" @click="replace">Replace</button>
                     </div>
                   </div>
                 </div>
@@ -142,20 +125,8 @@ export default {
                 <div class="col-12">
                   <h5 class="mb-2">Draggable {{ draggingInfo }}</h5>
 
-                  <draggable
-                    :list="list"
-                    :disabled="!enabled"
-                    class="list-group"
-                    ghost-class="ghost"
-                    :move="checkMove"
-                    @start="dragging1 = true"
-                    @end="dragging1 = false"
-                  >
-                    <div
-                      class="list-group-item"
-                      v-for="element in list"
-                      :key="element.name"
-                    >
+                  <draggable :list="list" :disabled="!enabled" class="list-group" ghost-class="ghost" :move="checkMove" @start="dragging1 = true" @end="dragging1 = false">
+                    <div class="list-group-item" v-for="element in list" :key="element.name">
                       {{ element.name }}
                     </div>
                   </draggable>
@@ -171,11 +142,7 @@ export default {
             <h4 class="card-title">Two Lists Dragdrop Example</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-2
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-2 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
@@ -265,37 +232,15 @@ export default {
               <div class="row">
                 <div class="col-6">
                   <h5 class="mb-2">Draggable 1</h5>
-                  <draggable
-                    class="list-group"
-                    :list="list1"
-                    group="people"
-                    @change="log"
-                  >
-                    <div
-                      class="list-group-item"
-                      v-for="(element, index) in list1"
-                      :key="element.name"
-                    >
-                      {{ element.name }} {{ index }}
-                    </div>
+                  <draggable class="list-group" :list="list1" group="people" @change="log">
+                    <div class="list-group-item" v-for="(element, index) in list1" :key="element.name">{{ element.name }} {{ index }}</div>
                   </draggable>
                 </div>
 
                 <div class="col-6">
                   <h5 class="mb-2">Draggable 2</h5>
-                  <draggable
-                    class="list-group"
-                    :list="list2"
-                    group="people"
-                    @change="log"
-                  >
-                    <div
-                      class="list-group-item"
-                      v-for="(element, index) in list2"
-                      :key="element.name"
-                    >
-                      {{ element.name }} {{ index }}
-                    </div>
+                  <draggable class="list-group" :list="list2" group="people" @change="log">
+                    <div class="list-group-item" v-for="(element, index) in list2" :key="element.name">{{ element.name }} {{ index }}</div>
                   </draggable>
                 </div>
               </div>
@@ -309,11 +254,7 @@ export default {
             <h4 class="card-title">Transitions Dragdrop Example</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-5
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-5 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
@@ -398,36 +339,12 @@ export default {
                 <div class="col-12">
                   <div class="d-flex justify-content-between">
                     <h5 class="mb-2">Transition</h5>
-                    <button class="btn btn-primary btn-sm mb-2" @click="sort">
-                      To original order
-                    </button>
+                    <button class="btn btn-primary btn-sm mb-2" @click="sort">To original order</button>
                   </div>
-                  <draggable
-                    class="list-group"
-                    tag="ul"
-                    v-model="transitionList"
-                    v-bind="dragOptions"
-                    @start="drag = true"
-                    @end="drag = false"
-                  >
-                    <transition-group
-                      type="transition"
-                      :name="!drag ? 'flip-list' : null"
-                    >
-                      <li
-                        class="list-group-item"
-                        v-for="element in transitionList"
-                        :key="element.order"
-                      >
-                        <i
-                          :class="
-                            element.fixed
-                              ? 'fa fa-anchor'
-                              : 'glyphicon glyphicon-pushpin'
-                          "
-                          @click="element.fixed = !element.fixed"
-                          aria-hidden="true"
-                        ></i>
+                  <draggable class="list-group" tag="ul" v-model="transitionList" v-bind="dragOptions" @start="drag = true" @end="drag = false">
+                    <transition-group type="transition" :name="!drag ? 'flip-list' : null">
+                      <li class="list-group-item" v-for="element in transitionList" :key="element.order">
+                        <i :class="element.fixed ? 'fa fa-anchor' : 'glyphicon glyphicon-pushpin'" @click="element.fixed = !element.fixed" aria-hidden="true"></i>
                         {{ element.name }}
                       </li>
                     </transition-group>
@@ -444,11 +361,7 @@ export default {
             <h4 class="card-title">Table Column Dragdrop Example</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-6
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-6 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
@@ -515,9 +428,7 @@ export default {
                   <table class="table table-striped">
                     <thead class="thead-dark">
                       <draggable v-model="headers" tag="tr">
-                        <th v-for="header in headers" :key="header" scope="col">
-                          <i class="fas fa-arrows-alt"></i>{{ header }}
-                        </th>
+                        <th v-for="header in headers" :key="header" scope="col"><i class="fas fa-arrows-alt"></i>{{ header }}</th>
                       </draggable>
                     </thead>
                     <tbody>
@@ -540,11 +451,7 @@ export default {
             <h4 class="card-title">Custom Clone Dragdrop Example</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-3
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-3 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
@@ -633,18 +540,8 @@ export default {
               <div class="row">
                 <div class="col-6">
                   <h5 class="mb-2">Draggable 1</h5>
-                  <draggable
-                    class="dragArea list-group"
-                    :list="list3"
-                    :group="{ name: 'people', pull: 'clone', put: false }"
-                    :clone="cloneDog"
-                    @change="log"
-                  >
-                    <div
-                      class="list-group-item"
-                      v-for="element in list3"
-                      :key="element.id"
-                    >
+                  <draggable class="dragArea list-group" :list="list3" :group="{ name: 'people', pull: 'clone', put: false }" :clone="cloneDog" @change="log">
+                    <div class="list-group-item" v-for="element in list3" :key="element.id">
                       {{ element.name }}
                     </div>
                   </draggable>
@@ -652,17 +549,8 @@ export default {
 
                 <div class="col-6">
                   <h5 class="mb-2">Draggable 2</h5>
-                  <draggable
-                    class="dragArea list-group"
-                    :list="list4"
-                    group="people"
-                    @change="log"
-                  >
-                    <div
-                      class="list-group-item"
-                      v-for="element in list4"
-                      :key="element.id"
-                    >
+                  <draggable class="dragArea list-group" :list="list4" group="people" @change="log">
+                    <div class="list-group-item" v-for="element in list4" :key="element.id">
                       {{ element.name }}
                     </div>
                   </draggable>
@@ -678,11 +566,7 @@ export default {
             <h4 class="card-title">Nested Dragdrop Example</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-4
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-4 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
@@ -748,136 +632,128 @@ export default{
   </b-container>
 </template>
 <script>
-import { xray } from "../../config/pluginInit";
-import draggable from "vuedraggable";
-import NestedDraggable from "../../components/xray/dragdrop/nested-draggable";
+import { xray } from '../../config/pluginInit'
+import draggable from 'vuedraggable'
+import NestedDraggable from '../../components/xray/dragdrop/nested-draggable'
 
-let id = 1;
-let idGlobal = 8;
-const message = [
-  "vue.draggable",
-  "draggable",
-  "component",
-  "based",
-  "Sortablejs",
-];
+let id = 1
+let idGlobal = 8
+const message = ['vue.draggable', 'draggable', 'component', 'based', 'Sortablejs']
 
 export default {
-  name: "DragDropDemo",
+  name: 'DragDropDemo',
   mounted() {
-    xray.index();
+    xray.index()
   },
   components: {
     draggable,
-    NestedDraggable,
+    NestedDraggable
   },
-  display: "DragDropDemo",
+  display: 'DragDropDemo',
   order: 0,
   data() {
     return {
       enabled: true,
       list: [
-        { name: "John", id: 0 },
-        { name: "Joao", id: 1 },
-        { name: "Jean", id: 2 },
+        { name: 'John', id: 0 },
+        { name: 'Joao', id: 1 },
+        { name: 'Jean', id: 2 }
       ],
       dragging1: false,
       list1: [
-        { name: "John", id: 1 },
-        { name: "Joao", id: 2 },
-        { name: "Jean", id: 3 },
-        { name: "Gerard", id: 4 },
+        { name: 'John', id: 1 },
+        { name: 'Joao', id: 2 },
+        { name: 'Jean', id: 3 },
+        { name: 'Gerard', id: 4 }
       ],
       list2: [
-        { name: "Juan", id: 5 },
-        { name: "Edgard", id: 6 },
-        { name: "Johnson", id: 7 },
+        { name: 'Juan', id: 5 },
+        { name: 'Edgard', id: 6 },
+        { name: 'Johnson', id: 7 }
       ],
       list3: [
-        { name: "dog 1", id: 1 },
-        { name: "dog 2", id: 2 },
-        { name: "dog 3", id: 3 },
-        { name: "dog 4", id: 4 },
+        { name: 'dog 1', id: 1 },
+        { name: 'dog 2', id: 2 },
+        { name: 'dog 3', id: 3 },
+        { name: 'dog 4', id: 4 }
       ],
       list4: [
-        { name: "cat 5", id: 5 },
-        { name: "cat 6", id: 6 },
-        { name: "cat 7", id: 7 },
+        { name: 'cat 5', id: 5 },
+        { name: 'cat 6', id: 6 },
+        { name: 'cat 7', id: 7 }
       ],
       transitionList: message.map((name, index) => {
-        return { name, order: index + 1 };
+        return { name, order: index + 1 }
       }),
       drag: false,
-      headers: ["id", "name", "sport"],
+      headers: ['id', 'name', 'sport'],
       list5: [
-        { id: 1, name: "Abby", sport: "basket" },
-        { id: 2, name: "Brooke", sport: "foot" },
-        { id: 3, name: "Courtenay", sport: "volley" },
-        { id: 4, name: "David", sport: "rugby" },
+        { id: 1, name: 'Abby', sport: 'basket' },
+        { id: 2, name: 'Brooke', sport: 'foot' },
+        { id: 3, name: 'Courtenay', sport: 'volley' },
+        { id: 4, name: 'David', sport: 'rugby' }
       ],
       dragging: true,
       nestedList: [
         {
-          name: "task 1",
+          name: 'task 1',
           tasks: [
             {
-              name: "task 2",
-              tasks: [],
-            },
-          ],
+              name: 'task 2',
+              tasks: []
+            }
+          ]
         },
         {
-          name: "task 3",
+          name: 'task 3',
           tasks: [
             {
-              name: "task 4",
-              tasks: [],
-            },
-          ],
+              name: 'task 4',
+              tasks: []
+            }
+          ]
         },
         {
-          name: "task 5",
-          tasks: [],
-        },
-      ],
-    };
+          name: 'task 5',
+          tasks: []
+        }
+      ]
+    }
   },
   computed: {
     draggingInfo() {
-      return this.dragging ? "under drag" : "";
+      return this.dragging ? 'under drag' : ''
     },
     dragOptions() {
       return {
         animation: 200,
-        group: "description",
+        group: 'description',
         disabled: false,
-        ghostClass: "ghost",
-      };
-    },
+        ghostClass: 'ghost'
+      }
+    }
   },
   methods: {
     log() {},
     checkMove() {},
     add() {
-      this.list.push({ name: "Juan " + id, id: id++ });
+      this.list.push({ name: 'Juan ' + id, id: id++ })
     },
     replace() {
-      this.list = [{ name: "Edgard", id: id++ }];
+      this.list = [{ name: 'Edgard', id: id++ }]
     },
     cloneDog({ id }) {
       return {
         id: idGlobal++,
-        name: `cat ${id}`,
-      };
+        name: `cat ${id}`
+      }
     },
     removeAt(idx) {
-      this.list.splice(idx, 1);
+      this.list.splice(idx, 1)
     },
     sort() {
-      this.transitionList = this.transitionList.sort(
-        (a, b) => a.order - b.order
-      );
-    },
-  },
-};
+      this.transitionList = this.transitionList.sort((a, b) => a.order - b.order)
+    }
+  }
+}
 </script>

@@ -160,7 +160,7 @@
     "title": "User Add",
     "is_active": false,
     "link": {
-      "name" : "user.seguimiento"
+      "name" : "user.add"
     },
     "class_name": "",
     "is_icon_class": true,

@@ -47,35 +47,15 @@
           </div>
           <hr class="mt-0" />
           <div class="iq-inbox-subject p-3">
-            <h5 class="mt-0">
-              Your elite author Graphic Optimization reward is ready!
-            </h5>
+            <h5 class="mt-0">Your elite author Graphic Optimization reward is ready!</h5>
             <div class="iq-inbox-subject-info">
               <div class="iq-subject-info">
-                <img
-                  :src="require('../../../assets/images/user/1.jpg')"
-                  class="img-fluid rounded-circle"
-                  alt="#"
-                />
+                <img :src="require('../../../assets/images/user/1.jpg')" class="img-fluid rounded-circle" alt="#" />
                 <div class="iq-subject-status align-self-center">
-                  <h6 class="mb-0">
-                    Xray team <a href="dummy@Xray.com">dummy@Xray.com</a>
-                  </h6>
+                  <h6 class="mb-0">Xray team <a href="dummy@Xray.com">dummy@Xray.com</a></h6>
                   <div class="dropdown">
-                    <a
-                      class="dropdown-toggle"
-                      href="#"
-                      id="dropdownMenuButton"
-                      data-toggle="dropdown"
-                      aria-haspopup="true"
-                      aria-expanded="false"
-                    >
-                      to Me
-                    </a>
-                    <div
-                      class="dropdown-menu font-size-12"
-                      aria-labelledby="dropdownMenuButton"
-                    >
+                    <a class="dropdown-toggle" href="#" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> to Me </a>
+                    <div class="dropdown-menu font-size-12" aria-labelledby="dropdownMenuButton">
                       <table class="iq-inbox-details">
                         <tbody>
                           <tr>
@@ -107,30 +87,13 @@
                     </div>
                   </div>
                 </div>
-                <span class="float-right align-self-center"
-                  >Jan 15, 2029, 10:20AM</span
-                >
+                <span class="float-right align-self-center">Jan 15, 2029, 10:20AM</span>
               </div>
               <div class="iq-inbox-body mt-5">
                 <p>Hi {{ item.title }},</p>
-                <p>
-                  It is a long established fact that a reader will be distracted
-                  by the readable content of a page when looking at its layout.
-                  The point of using Lorem Ipsum is that it has a more-or-less
-                  normal distribution of letters, as opposed to using 'Content
-                  here, content here', making it look like readable English.
-                  Many desktop publishing packages and web page editors now use
-                  Lorem Ipsum as their default model text, and a search for
-                  'lorem ipsum' will uncover many web sites still in their
-                  infancy.
-                </p>
-                <p>
-                  Various versions have evolved over the years, sometimes by
-                  accident, sometimes on purpose (injected humour and the like).
-                </p>
-                <p class="mt-5 mb-0">
-                  Regards,<span class="d-inline-block w-100">John Deo</span>
-                </p>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</p>
+                <p>Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                <p class="mt-5 mb-0">Regards,<span class="d-inline-block w-100">John Deo</span></p>
               </div>
               <hr />
               <div class="attegement">
@@ -156,7 +119,7 @@
 
 <script>
 export default {
-  name: "EmailDetail",
+  name: 'EmailDetail',
   props: {
     item: {
       type: Object,
@@ -164,18 +127,18 @@ export default {
         is_selected: false,
         is_unread: false,
         favorite: true,
-        title: "",
-        subject: "",
-        emailTime: "",
-      }),
+        title: '',
+        subject: '',
+        emailTime: ''
+      })
     },
-    active: { type: Boolean, default: false },
+    active: { type: Boolean, default: false }
   },
   mounted() {},
   methods: {
     closeDetail(item) {
-      this.$emit("update", item);
-    },
-  },
-};
+      this.$emit('update', item)
+    }
+  }
+}
 </script>

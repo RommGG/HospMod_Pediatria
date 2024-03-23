@@ -7,21 +7,12 @@
             <h4 class="card-title">Basic Tabs</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-1
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-1 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
           <template v-slot:body>
-            <p>
-              The base <code>.nav</code> component does not include any
-              <code>.active</code> state. The following examples include the
-              class, mainly to demonstrate that this particular class does not
-              trigger any special styling.
-            </p>
+            <p>The base <code>.nav</code> component does not include any <code>.active</code> state. The following examples include the class, mainly to demonstrate that this particular class does not trigger any special styling.</p>
             <b-collapse id="collapse-1" class="mb-2">
               <div class="card">
                 <kbd class="bg-dark">
@@ -48,53 +39,14 @@
               </div>
             </b-collapse>
             <b-tabs :tabs="true" id="myTab-1" active-nav-item-class="border-0">
-              <b-tab
-                :active="true"
-                id="home-tab"
-                ariaControls="home"
-                role="tab"
-                :ariaSelected="true"
-                title="Home"
-              >
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book.
-                </p>
+              <b-tab :active="true" id="home-tab" ariaControls="home" role="tab" :ariaSelected="true" title="Home">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
               </b-tab>
-              <b-tab
-                :active="false"
-                id="profile-tab"
-                ariaControls="profile"
-                role="tab"
-                :ariaSelected="false"
-                title="Profile"
-              >
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book.
-                </p>
+              <b-tab :active="false" id="profile-tab" ariaControls="profile" role="tab" :ariaSelected="false" title="Profile">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
               </b-tab>
-              <b-tab
-                :active="false"
-                id="contact-tab"
-                ariaControls="contact"
-                role="tab"
-                :ariaSelected="false"
-                title="Contact"
-              >
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book.
-                </p>
+              <b-tab :active="false" id="contact-tab" ariaControls="contact" role="tab" :ariaSelected="false" title="Contact">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
               </b-tab>
             </b-tabs>
           </template>
@@ -104,11 +56,7 @@
             <h4 class="card-title">Basic Tabs Style 3</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-2
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-2 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
@@ -142,61 +90,15 @@
                 </kbd>
               </div>
             </b-collapse>
-            <b-tabs
-              :tabs="true"
-              id="myTab-two"
-              active-nav-link-class="border-0"
-            >
-              <b-tab
-                :active="true"
-                id="home-tab-two"
-                ariaControls="home"
-                href="#home-two"
-                role="tab"
-                :ariaSelected="true"
-                title="Home"
-              >
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book.
-                </p>
+            <b-tabs :tabs="true" id="myTab-two" active-nav-link-class="border-0">
+              <b-tab :active="true" id="home-tab-two" ariaControls="home" href="#home-two" role="tab" :ariaSelected="true" title="Home">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
               </b-tab>
-              <b-tab
-                :active="false"
-                id="profile-tab-two"
-                ariaControls="profile"
-                href="#profile-two"
-                role="tab"
-                :ariaSelected="false"
-                title="Profile"
-              >
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book.
-                </p>
+              <b-tab :active="false" id="profile-tab-two" ariaControls="profile" href="#profile-two" role="tab" :ariaSelected="false" title="Profile">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
               </b-tab>
-              <b-tab
-                :active="false"
-                id="contact-tab-two"
-                ariaControls="contact"
-                href="#contact-two"
-                role="tab"
-                :ariaSelected="false"
-                title="Contact"
-              >
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book.
-                </p>
+              <b-tab :active="false" id="contact-tab-two" ariaControls="contact" href="#contact-two" role="tab" :ariaSelected="false" title="Contact">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
               </b-tab>
             </b-tabs>
           </template>
@@ -206,11 +108,7 @@
             <h4 class="card-title">Tabs Vertical Pills</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-3
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-3 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
@@ -257,88 +155,18 @@
               </b-collapse>
               <div class="nav-fill mb-3">
                 <b-col sm="12">
-                  <b-tabs
-                    :pills="true"
-                    :vertical="true"
-                    class="ms-4"
-                    nav-class="me-4"
-                    id="v-pills-tab"
-                  >
-                    <b-tab
-                      :active="true"
-                      id="v-pills-home-tab"
-                      href="#v-pills-home"
-                      ariaControls="v-pills-home"
-                      role="tab"
-                      :ariaSelected="true"
-                      title="Home"
-                    >
-                      <p>
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry. Lorem Ipsum has been the
-                        industry's standard dummy text ever since the 1500s,
-                        when an unknown printer took a galley of type and
-                        scrambled it to make a type specimen book. It has
-                        survived not only five centuries, but also the leap into
-                        electronic typesetting, remaining essentially unchanged.
-                      </p>
+                  <b-tabs :pills="true" :vertical="true" class="ms-4" nav-class="me-4" id="v-pills-tab">
+                    <b-tab :active="true" id="v-pills-home-tab" href="#v-pills-home" ariaControls="v-pills-home" role="tab" :ariaSelected="true" title="Home">
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
                     </b-tab>
-                    <b-tab
-                      :active="false"
-                      id="v-pills-profile-tab"
-                      href="#v-pills-profile"
-                      ariaControls="v-pills-profile"
-                      role="tab"
-                      :ariaSelected="false"
-                      title="Profile"
-                    >
-                      <p>
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry. Lorem Ipsum has been the
-                        industry's standard dummy text ever since the 1500s,
-                        when an unknown printer took a galley of type and
-                        scrambled it to make a type specimen book. It has
-                        survived not only five centuries, but also the leap into
-                        electronic typesetting, remaining essentially unchanged.
-                      </p>
+                    <b-tab :active="false" id="v-pills-profile-tab" href="#v-pills-profile" ariaControls="v-pills-profile" role="tab" :ariaSelected="false" title="Profile">
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
                     </b-tab>
-                    <b-tab
-                      :active="false"
-                      id="v-pills-messages-tab"
-                      href="#v-pills-messages"
-                      ariaControls="v-pills-messages"
-                      role="tab"
-                      :ariaSelected="false"
-                      title="Messages"
-                    >
-                      <p>
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry. Lorem Ipsum has been the
-                        industry's standard dummy text ever since the 1500s,
-                        when an unknown printer took a galley of type and
-                        scrambled it to make a type specimen book. It has
-                        survived not only five centuries, but also the leap into
-                        electronic typesetting, remaining essentially unchanged.
-                      </p>
+                    <b-tab :active="false" id="v-pills-messages-tab" href="#v-pills-messages" ariaControls="v-pills-messages" role="tab" :ariaSelected="false" title="Messages">
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
                     </b-tab>
-                    <b-tab
-                      :active="false"
-                      id="v-pills-settings-tab"
-                      href="#v-pills-settings"
-                      ariaControls="v-pills-settings"
-                      role="tab"
-                      :ariaSelected="false"
-                      title="Settings"
-                    >
-                      <p>
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry. Lorem Ipsum has been the
-                        industry's standard dummy text ever since the 1500s,
-                        when an unknown printer took a galley of type and
-                        scrambled it to make a type specimen book. It has
-                        survived not only five centuries, but also the leap into
-                        electronic typesetting, remaining essentially unchanged.
-                      </p>
+                    <b-tab :active="false" id="v-pills-settings-tab" href="#v-pills-settings" ariaControls="v-pills-settings" role="tab" :ariaSelected="false" title="Settings">
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
                     </b-tab>
                   </b-tabs>
                 </b-col>
@@ -351,11 +179,7 @@
             <h4 class="card-title">Tabs Justify Center</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-4
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-4 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
@@ -386,62 +210,15 @@
                 </kbd>
               </div>
             </b-collapse>
-            <b-tabs
-              :tabs="true"
-              id="myTab-2"
-              align="center"
-              active-nav-link-class="border-0"
-            >
-              <b-tab
-                :active="true"
-                id="home-tab-justify"
-                href="#home-justify"
-                ariaControls="home"
-                role="tab"
-                :ariaSelected="true"
-                title="Home"
-              >
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book.
-                </p>
+            <b-tabs :tabs="true" id="myTab-2" align="center" active-nav-link-class="border-0">
+              <b-tab :active="true" id="home-tab-justify" href="#home-justify" ariaControls="home" role="tab" :ariaSelected="true" title="Home">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
               </b-tab>
-              <b-tab
-                :active="false"
-                id="profile-tab-justify"
-                href="#profile-justify"
-                ariaControls="profile"
-                role="tab"
-                :ariaSelected="false"
-                title="Profile"
-              >
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book.
-                </p>
+              <b-tab :active="false" id="profile-tab-justify" href="#profile-justify" ariaControls="profile" role="tab" :ariaSelected="false" title="Profile">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
               </b-tab>
-              <b-tab
-                :active="false"
-                id="contact-tab-justify"
-                href="#contact-justify"
-                ariaControls="contact"
-                role="tab"
-                :ariaSelected="false"
-                title="Contact"
-              >
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book.
-                </p>
+              <b-tab :active="false" id="contact-tab-justify" href="#contact-justify" ariaControls="contact" role="tab" :ariaSelected="false" title="Contact">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
               </b-tab>
             </b-tabs>
           </template>
@@ -453,11 +230,7 @@
             <h4 class="card-title">Basic Tabs Style 2</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-5
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-5 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
@@ -488,62 +261,15 @@
                 </kbd>
               </div>
             </b-collapse>
-            <b-tabs
-              :pills="true"
-              id="pills-tab"
-              active-nav-item-class="border-0"
-              nav-class="mb-3"
-            >
-              <b-tab
-                :active="true"
-                id="pills-home-tab"
-                href="#pills-home"
-                ariaControls="pills-home"
-                role="tab"
-                :ariaSelected="true"
-                title="Home"
-              >
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book.
-                </p>
+            <b-tabs :pills="true" id="pills-tab" active-nav-item-class="border-0" nav-class="mb-3">
+              <b-tab :active="true" id="pills-home-tab" href="#pills-home" ariaControls="pills-home" role="tab" :ariaSelected="true" title="Home">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
               </b-tab>
-              <b-tab
-                :active="false"
-                id="pills-profile-tab"
-                href="#pills-profile"
-                ariaControls="pills-profile"
-                role="tab"
-                :ariaSelected="false"
-                title="Profile"
-              >
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book.
-                </p>
+              <b-tab :active="false" id="pills-profile-tab" href="#pills-profile" ariaControls="pills-profile" role="tab" :ariaSelected="false" title="Profile">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
               </b-tab>
-              <b-tab
-                :active="false"
-                id="pills-contact-tab"
-                href="#pills-contact"
-                ariaControls="pills-contact"
-                role="tab"
-                :ariaSelected="false"
-                title="Contact"
-              >
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book.
-                </p>
+              <b-tab :active="false" id="pills-contact-tab" href="#pills-contact" ariaControls="pills-contact" role="tab" :ariaSelected="false" title="Contact">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
               </b-tab>
             </b-tabs>
           </template>
@@ -553,11 +279,7 @@
             <h4 class="card-title">Basic Tabs Style 4</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-6
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-6 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
@@ -591,61 +313,15 @@
                 </kbd>
               </div>
             </b-collapse>
-            <b-tabs
-              :tabs="true"
-              id="myTab-three"
-              active-nav-item-class="border-0 outline-none"
-            >
-              <b-tab
-                :active="true"
-                id="home-tab-three"
-                ariaControls="home"
-                href="#home-three"
-                role="tab"
-                :ariaSelected="true"
-                title="Home"
-              >
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book.
-                </p>
+            <b-tabs :tabs="true" id="myTab-three" active-nav-item-class="border-0 outline-none">
+              <b-tab :active="true" id="home-tab-three" ariaControls="home" href="#home-three" role="tab" :ariaSelected="true" title="Home">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
               </b-tab>
-              <b-tab
-                :active="false"
-                id="profile-tab-three"
-                ariaControls="profile"
-                href="#profile-three"
-                role="tab"
-                :ariaSelected="false"
-                title="Profile"
-              >
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book.
-                </p>
+              <b-tab :active="false" id="profile-tab-three" ariaControls="profile" href="#profile-three" role="tab" :ariaSelected="false" title="Profile">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
               </b-tab>
-              <b-tab
-                :active="false"
-                id="contact-tab-three"
-                ariaControls="contact"
-                href="#contact-three"
-                role="tab"
-                :ariaSelected="false"
-                title="Contact"
-              >
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book.
-                </p>
+              <b-tab :active="false" id="contact-tab-three" ariaControls="contact" href="#contact-three" role="tab" :ariaSelected="false" title="Contact">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
               </b-tab>
             </b-tabs>
           </template>
@@ -655,22 +331,12 @@
             <h4 class="card-title">Tabs Fill and justify</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-7
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-7 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
           <template v-slot:body>
-            <p>
-              Force your <code>.nav</code>’s contents to extend the full
-              available width one of two modifier classes. To proportionately
-              fill all available space with your <code>.nav-item</code>s, use
-              <code>.nav-fill</code>. Notice that all horizontal space is
-              occupied, but not every nav item has the same width.
-            </p>
+            <p>Force your <code>.nav</code>’s contents to extend the full available width one of two modifier classes. To proportionately fill all available space with your <code>.nav-item</code>s, use <code>.nav-fill</code>. Notice that all horizontal space is occupied, but not every nav item has the same width.</p>
             <b-collapse id="collapse-7" class="mb-2">
               <div class="card">
                 <kbd class="bg-dark">
@@ -697,56 +363,14 @@
               </div>
             </b-collapse>
             <b-tabs :pills="true" nav-class="nav-fill mb-3" id="pills-tab-1">
-              <b-tab
-                :active="true"
-                id="pills-home-tab-fill"
-                href="#pills-home-fill"
-                ariaControls="pills-home-fill"
-                role="tab"
-                :ariaSelected="true"
-                title="Home"
-              >
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book.
-                </p>
+              <b-tab :active="true" id="pills-home-tab-fill" href="#pills-home-fill" ariaControls="pills-home-fill" role="tab" :ariaSelected="true" title="Home">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
               </b-tab>
-              <b-tab
-                :active="false"
-                id="pills-profile-tab-fill"
-                href="#pills-profile-fill"
-                ariaControls="pills-profile-fill"
-                role="tab"
-                :ariaSelected="false"
-                title="Profile"
-              >
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book.
-                </p>
+              <b-tab :active="false" id="pills-profile-tab-fill" href="#pills-profile-fill" ariaControls="pills-profile-fill" role="tab" :ariaSelected="false" title="Profile">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
               </b-tab>
-              <b-tab
-                :active="false"
-                id="pills-contact-tab-fill"
-                href="#pills-contact-fill"
-                ariaControls="pills-contact-fill"
-                role="tab"
-                :ariaSelected="false"
-                title="Contact"
-              >
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book.
-                </p>
+              <b-tab :active="false" id="pills-contact-tab-fill" href="#pills-contact-fill" ariaControls="pills-contact-fill" role="tab" :ariaSelected="false" title="Contact">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
               </b-tab>
             </b-tabs>
           </template>
@@ -756,11 +380,7 @@
             <h4 class="card-title">Tabs Justify Right</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-8
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-8 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
@@ -791,62 +411,15 @@
                 </kbd>
               </div>
             </b-collapse>
-            <b-tabs
-              :tabs="true"
-              id="myTab-4"
-              align="end"
-              active-nav-link-class="border-0"
-            >
-              <b-tab
-                :active="true"
-                id="home-tab-end"
-                href="#home-end"
-                ariaControls="home"
-                role="tab"
-                :ariaSelected="true"
-                title="Home"
-              >
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book.
-                </p>
+            <b-tabs :tabs="true" id="myTab-4" align="end" active-nav-link-class="border-0">
+              <b-tab :active="true" id="home-tab-end" href="#home-end" ariaControls="home" role="tab" :ariaSelected="true" title="Home">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
               </b-tab>
-              <b-tab
-                :active="false"
-                id="profile-tab-end"
-                href="#profile-end"
-                ariaControls="profile"
-                role="tab"
-                :ariaSelected="false"
-                title="Profile"
-              >
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book.
-                </p>
+              <b-tab :active="false" id="profile-tab-end" href="#profile-end" ariaControls="profile" role="tab" :ariaSelected="false" title="Profile">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
               </b-tab>
-              <b-tab
-                :active="false"
-                id="contact-tab-end"
-                href="#contact-end"
-                ariaControls="contact"
-                role="tab"
-                :ariaSelected="false"
-                title="Contact"
-              >
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book.
-                </p>
+              <b-tab :active="false" id="contact-tab-end" href="#contact-end" ariaControls="contact" role="tab" :ariaSelected="false" title="Contact">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
               </b-tab>
             </b-tabs>
           </template>
@@ -856,13 +429,13 @@
   </b-container>
 </template>
 <script>
-import { xray } from "../../config/pluginInit";
-import iqCard from "../../components/xray/cards/iq-card";
+import { xray } from '../../config/pluginInit'
+import iqCard from '../../components/xray/cards/iq-card'
 export default {
-  name: "UiTabs",
+  name: 'UiTabs',
   components: { iqCard },
   mounted() {
-    xray.index();
-  },
-};
+    xray.index()
+  }
+}
 </script>

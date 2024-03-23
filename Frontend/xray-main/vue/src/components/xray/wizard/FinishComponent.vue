@@ -14,19 +14,13 @@
       <br />
       <b-row class="justify-content-center">
         <div class="col-3">
-          <img
-            src="../../../assets/images/page-img/img-success.png"
-            class="img-fluid"
-            alt="fit-image"
-          />
+          <img src="../../../assets/images/page-img/img-success.png" class="img-fluid" alt="fit-image" />
         </div>
       </b-row>
       <br /><br />
       <b-row class="justify-content-center">
         <div class="col-7 text-center">
-          <h5 class="purple-text text-center">
-            You Have Successfully Signed Up
-          </h5>
+          <h5 class="purple-text text-center">You Have Successfully Signed Up</h5>
         </div>
       </b-row>
     </div>
@@ -34,6 +28,6 @@
 </template>
 <script>
 export default {
-  name: "FinishComponent",
-};
+  name: 'FinishComponent'
+}
 </script>

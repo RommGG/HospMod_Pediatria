@@ -4,57 +4,57 @@
 
 <script>
 // import "@fullcalendar/core/vdom";
-import FullCalendar from "@fullcalendar/vue3";
-import InteractionPlugin from "@fullcalendar/interaction";
-import DayGridPlugin from "@fullcalendar/daygrid";
-import TimeGridPlugin from "@fullcalendar/timegrid";
-import ListPlugin from "@fullcalendar/list";
-import BootstrapPlugin from "@fullcalendar/bootstrap";
+import FullCalendar from '@fullcalendar/vue3'
+import InteractionPlugin from '@fullcalendar/interaction'
+import DayGridPlugin from '@fullcalendar/daygrid'
+import TimeGridPlugin from '@fullcalendar/timegrid'
+import ListPlugin from '@fullcalendar/list'
+import BootstrapPlugin from '@fullcalendar/bootstrap'
 export default {
-  name: "FullCalender",
+  name: 'FullCalender',
   props: {
     events: {
       type: Array,
-      default: () => [],
-    },
+      default: () => []
+    }
   },
   setup(props, { emit }) {
     const handleDateSelect = (e) => {
-      emit("onDateSelect", e);
-    };
+      emit('onDateSelect', e)
+    }
     const handleEventSelect = (e) => {
-      emit("onDateSelect", e);
-    };
+      emit('onDateSelect', e)
+    }
     const options = {
       plugins: [
         DayGridPlugin,
         TimeGridPlugin,
         InteractionPlugin, // needed for dateClick
         ListPlugin,
-        BootstrapPlugin,
+        BootstrapPlugin
       ],
-      timeZone: "UTC",
+      timeZone: 'UTC',
       headerToolbar: {
-        left: "prev,next today",
-        center: "title",
-        right: "dayGridMonth,timeGridWeek,timeGridDay,listWeek",
+        left: 'prev,next today',
+        center: 'title',
+        right: 'dayGridMonth,timeGridWeek,timeGridDay,listWeek'
       },
       weekNumbers: false,
-      initialView: "dayGridMonth",
+      initialView: 'dayGridMonth',
       editable: true,
       dayMaxEvents: true,
       select: handleEventSelect,
       dateClick: handleDateSelect,
-      events: props.events,
-    };
+      events: props.events
+    }
     return {
-      options,
-    };
+      options
+    }
   },
   components: {
-    FullCalendar,
-  },
-};
+    FullCalendar
+  }
+}
 </script>
 
 <style>

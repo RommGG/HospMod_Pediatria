@@ -8,21 +8,10 @@
       </div>
       <div class="d-inline-block w-100">
         <p v-html="item.description"></p>
-        <template
-          v-if="item.child.items.length > 0 && item.child.type === 'img'"
-        >
+        <template v-if="item.child.items.length > 0 && item.child.type === 'img'">
           <div class="iq-media-group">
-            <a
-              href="#"
-              class="iq-media"
-              v-for="(childItem, childIndex) in item.child.items"
-              :key="childIndex"
-            >
-              <img
-                :src="childItem"
-                class="img-fluid avatar-40 rounded-circle"
-                alt="img"
-              />
+            <a href="#" class="iq-media" v-for="(childItem, childIndex) in item.child.items" :key="childIndex">
+              <img :src="childItem" class="img-fluid avatar-40 rounded-circle" alt="img" />
             </a>
           </div>
         </template>
@@ -33,9 +22,9 @@
 
 <script>
 export default {
-  name: "TimeLine",
+  name: 'TimeLine',
   props: {
-    items: { type: Array, default: () => [] },
-  },
-};
+    items: { type: Array, default: () => [] }
+  }
+}
 </script>
