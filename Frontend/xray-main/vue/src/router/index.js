@@ -76,13 +76,17 @@ import FormSwitches from "../views/Forms/FormSwitches";
 import FormRadios from "../views/Forms/FormRadios";
 import FormCheckboxes from "../views/Forms/FormCheckboxes";
 /* User View */
+
 import Profile from "../views/User/Profile";
-// import {ProfileCopia1, ProfileCopia2, ProfileCopia3, ProfileCopia4, ProfileCopia5, ProfileCopia6}  from "../views/User/ProfileCopia";
-import Pacientes  from "../views/User/Pacientes";
-import Seguimiento  from "../views/User/Seguimiento";
-import Registro  from "../views/User/Registro";
 
+/*Creacion de rutas*/
+/*------------------------------------------------------------------------------------------------------*/
+import Pediatria from "../views/Pediatria/Pediatria.vue";
+import Seguimiento from "../views/Pediatria/Seguimiento";
+import Registro from "../views/Pediatria/Registro";
+import Pacientes from "../views/Pediatria/Pacientes.vue"
 
+/*------------------------------------------------------------------------------------------------------*/
 import ProfileEdit from "../views/User/ProfileEdit";
 import UserList from "../views/User/UserList";
 /* Plugins Views */
@@ -104,7 +108,7 @@ const childRoutes = (prop, mode) => [
     meta: { dark: mode, auth: true, name: "Home 1" },
     component: Dashboard1,
   },
-  
+
   {
     path: "/",
     name: prop + ".home-2",
@@ -526,18 +530,20 @@ const userChildRoute = (prop, mode = false) => [
     meta: { dark: mode, auth: true, name: "Profile" },
     component: Profile,
   },
+
+  /*-------------------------------------------------------------------------------------------------------------------------*/
+  /*Creacion de las rutas*/
+  {
+    path: "pediatria",
+    name: prop + ".pediatria",
+    meta: { dark: mode, auth: true, name: "Pediatria" },
+    component: Pediatria,
+  },
   {
     path: "pacientes",
     name: prop + ".pacientes",
     meta: { dark: mode, auth: true, name: "Pacientes" },
     component: Pacientes,
-  },
-  
-  {
-    path: "profile",
-    name: prop + ".perfilInfanteUrl",
-    meta: { dark: mode, auth: true, name: "perfilInfanteUrl" },
-    component: Profile,
   },
   {
     path: "Seguimiento",
@@ -551,13 +557,21 @@ const userChildRoute = (prop, mode = false) => [
     meta: { dark: mode, auth: true, name: "registro" },
     component: Registro,
   },
+  /*-------------------------------------------------------------------------------------------------------------------------*/
+
+  {
+    path: "profile",
+    name: prop + ".perfilInfanteUrl",
+    meta: { dark: mode, auth: true, name: "perfilInfanteUrl" },
+    component: Profile,
+  },
   {
     path: "profile-edit",
     name: prop + ".edit",
     meta: { dark: mode, auth: true, name: "Edit Profile" },
     component: ProfileEdit,
   },
- 
+
   {
     path: "user-list",
     name: prop + ".list",
