@@ -1,0 +1,71 @@
+[
+  {
+    "title": "Dashboard",
+    "name": "sidebar.dashboard",
+    "is_heading": true,
+    "is_active": false,
+    "class_name": "",
+    "is_icon_class": true,
+    "icon": "",
+    "badge" : false
+  },
+  
+  {
+    "title": "Pediatria",
+    "name": "Pediatria",
+    "is_heading": false,
+    "is_active": false,
+    "link": {
+      "name": "dashboard.home-2"
+    },
+    "class_name": "",
+    "is_icon_class": true,
+    "icon": "ri-hospital-fill",
+
+    "badge" : false,
+    "children": [
+      {
+        "title": "registro",
+        "name": "registro",
+        "is_active": false,
+        "link": {
+          "name" : "user.registro"
+        },
+        "class_name": "",
+        "is_icon_class": true,
+        "icon": "ri-user-add-fill"
+      },
+      {
+        "title": "Seguimiento",
+        "name": "Seguimiento",
+        "is_active": false,
+        
+        "link": {
+          "name" : "user.seguimiento"
+        },
+        "class_name": "",
+        "is_icon_class": true,
+        "icon": "ri-server-fill"
+      },
+      {
+        "title": "Pacientes",
+        "name": "Pacientes",
+        "is_active": false,
+        "link": {
+          "name" : "user.pacientes"
+        },
+        "class_name": "",
+        "is_icon_class": true,
+        "icon": "ri-user-3-fill"
+      }
+      
+
+      
+    ]
+  }
+  
+
+  
+  
+  
+]
