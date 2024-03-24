@@ -7,14 +7,14 @@
   </draggable>
 </template>
 <script>
-import draggable from "vuedraggable";
+import draggable from 'vuedraggable'
 export default {
-  props: ["tasks"],
+  props: ['tasks'],
   components: {
-    draggable,
+    draggable
   },
-  name: "nested-draggable",
-};
+  name: 'nested-draggable'
+}
 </script>
 <style scoped>
 .dragArea {

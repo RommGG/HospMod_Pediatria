@@ -1,1 +1,1 @@
-import "./flatpicker";
+import './flatpicker'

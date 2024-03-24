@@ -12,13 +12,13 @@
   </b-container>
 </template>
 <script>
-import ComposeBody from "./ComposeBody";
-import { xray } from "../../../config/pluginInit";
+import ComposeBody from './ComposeBody'
+import { xray } from '../../../config/pluginInit'
 export default {
-  name: "EmailCompose",
+  name: 'EmailCompose',
   components: { ComposeBody },
   mounted() {
-    xray.index();
-  },
-};
+    xray.index()
+  }
+}
 </script>

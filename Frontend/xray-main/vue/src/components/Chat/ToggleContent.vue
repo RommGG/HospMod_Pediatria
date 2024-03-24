@@ -11,10 +11,7 @@
         <slot name="title" />
       </div>
       <hr />
-      <div
-        class="user-detail mt-4 pl-4 pr-4"
-        :class="center ? ' text-center ' + bodyClass : bodyClass"
-      >
+      <div class="user-detail mt-4 pl-4 pr-4" :class="center ? ' text-center ' + bodyClass : bodyClass">
         <slot name="body" />
       </div>
     </div>
@@ -22,15 +19,15 @@
 </template>
 <script>
 export default {
-  name: "ToggleContent",
+  name: 'ToggleContent',
   props: {
-    bodyClass: { type: String, default: "" },
-    center: { type: Boolean },
+    bodyClass: { type: String, default: '' },
+    center: { type: Boolean }
   },
   methods: {
     dismiss() {
-      this.$refs.removeContent.classList.remove("show");
-    },
-  },
-};
+      this.$refs.removeContent.classList.remove('show')
+    }
+  }
+}
 </script>

@@ -7,11 +7,7 @@
             <h4 class="card-title">Basic Treeview</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-1
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-1 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
@@ -72,11 +68,7 @@ data(){
             <h4 class="card-title">Customize Treeview</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-2
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-2 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
@@ -137,29 +129,13 @@ data(){
             <ul class="p-0">
               <TreeView :item="treeData" :isOpened="true">
                 <template v-slot:groupOpened>
-                  <img
-                    :src="
-                      require('../../assets/images/treeview/t-open-folder.png')
-                    "
-                    alt=""
-                    class="img-fluid height-25 mb-1"
-                  />
+                  <img :src="require('../../assets/images/treeview/t-open-folder.png')" alt="" class="img-fluid height-25 mb-1" />
                 </template>
                 <template v-slot:groupClosed>
-                  <img
-                    :src="
-                      require('../../assets/images/treeview/t-close-folder.png')
-                    "
-                    alt=""
-                    class="img-fluid height-25 mb-1"
-                  />
+                  <img :src="require('../../assets/images/treeview/t-close-folder.png')" alt="" class="img-fluid height-25 mb-1" />
                 </template>
                 <template v-slot:item>
-                  <img
-                    :src="require('../../assets/images/treeview/t-files.png')"
-                    alt=""
-                    class="img-fluid height-25 mb-1"
-                  />
+                  <img :src="require('../../assets/images/treeview/t-files.png')" alt="" class="img-fluid height-25 mb-1" />
                 </template>
               </TreeView>
             </ul>
@@ -170,108 +146,108 @@ data(){
   </b-container>
 </template>
 <script>
-import TreeView from "../../components/xray/treeview/TreeView";
-import { xray } from "../../config/pluginInit";
+import TreeView from '../../components/xray/treeview/TreeView'
+import { xray } from '../../config/pluginInit'
 export default {
-  name: "AppTreeView",
+  name: 'AppTreeView',
   components: { TreeView },
   mounted() {
-    xray.index();
+    xray.index()
   },
   data() {
     return {
       treeData: {
-        name: "Vue",
+        name: 'Vue',
         children: [
           {
-            name: "documantion",
-            children: [{ name: "index.html" }],
+            name: 'documantion',
+            children: [{ name: 'index.html' }]
           },
           {
-            name: "public",
-            children: [{ name: "index.html" }],
+            name: 'public',
+            children: [{ name: 'index.html' }]
           },
           {
-            name: "src",
+            name: 'src',
             children: [
               {
-                name: "assets",
+                name: 'assets',
                 children: [
                   {
-                    name: "style.css",
-                  },
-                ],
+                    name: 'style.css'
+                  }
+                ]
               },
               {
-                name: "components",
+                name: 'components',
                 children: [
                   {
-                    name: "Loader.vue",
-                  },
-                ],
+                    name: 'Loader.vue'
+                  }
+                ]
               },
               {
-                name: "config",
+                name: 'config',
                 children: [
                   {
-                    name: "config.js",
-                  },
-                ],
+                    name: 'config.js'
+                  }
+                ]
               },
               {
-                name: "FakeApi",
+                name: 'FakeApi',
                 children: [
                   {
-                    name: "api.json",
-                  },
-                ],
+                    name: 'api.json'
+                  }
+                ]
               },
               {
-                name: "layouts",
+                name: 'layouts',
                 children: [
                   {
-                    name: "Layout.vue",
-                  },
-                ],
+                    name: 'Layout.vue'
+                  }
+                ]
               },
               {
-                name: "locales",
+                name: 'locales',
                 children: [
                   {
-                    name: "en.json",
-                  },
-                ],
+                    name: 'en.json'
+                  }
+                ]
               },
               {
-                name: "Model",
-                children: [{ name: "User.js" }, { name: "Event.js" }],
+                name: 'Model',
+                children: [{ name: 'User.js' }, { name: 'Event.js' }]
               },
               {
-                name: "plugins",
+                name: 'plugins',
                 children: [
                   {
-                    name: "vue-flatpicker.js",
+                    name: 'vue-flatpicker.js'
                   },
                   {
-                    name: "index.js",
-                  },
-                ],
+                    name: 'index.js'
+                  }
+                ]
               },
-              { name: "router" },
-              { name: "store" },
-              { name: "views" },
-            ],
+              { name: 'router' },
+              { name: 'store' },
+              { name: 'views' }
+            ]
           },
-          { name: ".env" },
-          { name: "env.example" },
-          { name: "bable.config.js" },
-          { name: "firebase.json" },
-          { name: "package.json" },
-          { name: "README.md" },
-          { name: "vue.config.js" },
-        ],
-      },
-    };
-  },
-};
+          { name: '.env' },
+          { name: 'env.example' },
+          { name: 'bable.config.js' },
+          { name: 'firebase.json' },
+          { name: 'package.json' },
+          { name: 'README.md' },
+          { name: 'vue.config.js' }
+        ]
+      }
+    }
+  }
+}
 </script>

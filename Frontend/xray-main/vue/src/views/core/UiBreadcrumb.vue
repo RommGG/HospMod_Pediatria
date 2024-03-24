@@ -7,18 +7,13 @@
             <h4 class="card-title">Breadcrumb</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-4
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-4 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
           <template v-slot:body>
             <p>
-              Use the items in order to programatically generate the breadcrumb
-              links.use class
+              Use the items in order to programatically generate the breadcrumb links.use class
               <code>.breadcrumb to ol</code>
             </p>
             <b-collapse id="collapse-4" class="mb-2">
@@ -58,9 +53,7 @@
                 <li class="breadcrumb-item">
                   <a href="#" class="">Home</a>
                 </li>
-                <li class="breadcrumb-item active" aria-current="page">
-                  Library
-                </li>
+                <li class="breadcrumb-item active" aria-current="page">Library</li>
               </ol>
             </nav>
             <nav aria-label="breadcrumb">
@@ -83,18 +76,13 @@
             <h4 class="card-title">Breadcrumb With Icon</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-4
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-4 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
           <template v-slot:body>
             <p>
-              Use the items in order to programatically generate the breadcrumb
-              links.use class
+              Use the items in order to programatically generate the breadcrumb links.use class
               <code>.breadcrumb to ol</code>
               with Icon.
             </p>
@@ -127,29 +115,21 @@
             </b-collapse>
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb bg-white">
-                <li class="breadcrumb-item active" aria-current="page">
-                  <i class="ri-home-4-line me-1 float-left"></i>Home
-                </li>
+                <li class="breadcrumb-item active" aria-current="page"><i class="ri-home-4-line me-1 float-left"></i>Home</li>
               </ol>
             </nav>
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb bg-white">
                 <li class="breadcrumb-item">
-                  <a href="#" class=""
-                    ><i class="ri-home-4-line me-1 float-left"></i>Home</a
-                  >
+                  <a href="#" class=""><i class="ri-home-4-line me-1 float-left"></i>Home</a>
                 </li>
-                <li class="breadcrumb-item active" aria-current="page">
-                  Library
-                </li>
+                <li class="breadcrumb-item active" aria-current="page">Library</li>
               </ol>
             </nav>
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb bg-white">
                 <li class="breadcrumb-item">
-                  <a href="#" class=""
-                    ><i class="ri-home-4-line me-1 float-left"></i>Home</a
-                  >
+                  <a href="#" class=""><i class="ri-home-4-line me-1 float-left"></i>Home</a>
                 </li>
                 <li class="breadcrumb-item">
                   <a href="#" class="">Library</a>
@@ -168,11 +148,7 @@
             <h4 class="card-title">Breadcrumb</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-3
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-3 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
@@ -207,12 +183,7 @@
             </b-collapse>
             <nav aria-label="breadcrumb ">
               <ol class="breadcrumb bg-primary p-3 rounded-2">
-                <li
-                  class="breadcrumb-item active text-white"
-                  aria-current="page"
-                >
-                  Home
-                </li>
+                <li class="breadcrumb-item active text-white" aria-current="page">Home</li>
               </ol>
             </nav>
             <nav aria-label="breadcrumb">
@@ -220,12 +191,7 @@
                 <li class="breadcrumb-item">
                   <a href="#" class="text-white">Home</a>
                 </li>
-                <li
-                  class="breadcrumb-item active text-white"
-                  aria-current="page"
-                >
-                  Library
-                </li>
+                <li class="breadcrumb-item active text-white" aria-current="page">Library</li>
               </ol>
             </nav>
             <nav aria-label="breadcrumb">
@@ -236,12 +202,7 @@
                 <li class="breadcrumb-item">
                   <a href="#" class="text-white">Library</a>
                 </li>
-                <li
-                  class="breadcrumb-item active text-white"
-                  aria-current="page"
-                >
-                  Data
-                </li>
+                <li class="breadcrumb-item active text-white" aria-current="page">Data</li>
               </ol>
             </nav>
           </template>
@@ -253,11 +214,7 @@
             <h4 class="card-title">Breadcrumb With Icon</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-4
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-4 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
@@ -292,45 +249,26 @@
             </b-collapse>
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb bg-primary p-3 rounded-2">
-                <li
-                  class="breadcrumb-item active text-white"
-                  aria-current="page"
-                >
-                  <i class="ri-home-4-line me-1 float-left"></i>Home
-                </li>
+                <li class="breadcrumb-item active text-white" aria-current="page"><i class="ri-home-4-line me-1 float-left"></i>Home</li>
               </ol>
             </nav>
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb bg-primary p-3 rounded-2">
                 <li class="breadcrumb-item">
-                  <a href="#" class="text-white"
-                    ><i class="ri-home-4-line me-1 float-left"></i>Home</a
-                  >
+                  <a href="#" class="text-white"><i class="ri-home-4-line me-1 float-left"></i>Home</a>
                 </li>
-                <li
-                  class="breadcrumb-item active text-white"
-                  aria-current="page"
-                >
-                  Library
-                </li>
+                <li class="breadcrumb-item active text-white" aria-current="page">Library</li>
               </ol>
             </nav>
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb bg-primary p-3 rounded-2 mb-0">
                 <li class="breadcrumb-item">
-                  <a href="#" class="text-white"
-                    ><i class="ri-home-4-line me-1 float-left"></i>Home</a
-                  >
+                  <a href="#" class="text-white"><i class="ri-home-4-line me-1 float-left"></i>Home</a>
                 </li>
                 <li class="breadcrumb-item">
                   <a href="#" class="text-white">Library</a>
                 </li>
-                <li
-                  class="breadcrumb-item active text-white"
-                  aria-current="page"
-                >
-                  Data
-                </li>
+                <li class="breadcrumb-item active text-white" aria-current="page">Data</li>
               </ol>
             </nav>
           </template>
@@ -344,11 +282,7 @@
             <h4 class="card-title">Breadcrumb With Icon</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-4
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-4 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
@@ -383,29 +317,21 @@
             </b-collapse>
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb iq-bg-primary p-3 rounded-2">
-                <li class="breadcrumb-item active" aria-current="page">
-                  <i class="ri-home-4-line me-1 float-left"></i>Home
-                </li>
+                <li class="breadcrumb-item active" aria-current="page"><i class="ri-home-4-line me-1 float-left"></i>Home</li>
               </ol>
             </nav>
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb iq-bg-primary p-3 rounded-2">
                 <li class="breadcrumb-item">
-                  <a href="#" class=""
-                    ><i class="ri-home-4-line me-1 float-left"></i>Home</a
-                  >
+                  <a href="#" class=""><i class="ri-home-4-line me-1 float-left"></i>Home</a>
                 </li>
-                <li class="breadcrumb-item active" aria-current="page">
-                  Library
-                </li>
+                <li class="breadcrumb-item active" aria-current="page">Library</li>
               </ol>
             </nav>
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb iq-bg-primary p-3 rounded-2 mb-0">
                 <li class="breadcrumb-item">
-                  <a href="#" class=""
-                    ><i class="ri-home-4-line me-1 float-left"></i>Home</a
-                  >
+                  <a href="#" class=""><i class="ri-home-4-line me-1 float-left"></i>Home</a>
                 </li>
                 <li class="breadcrumb-item">
                   <a href="#" class="">Library</a>
@@ -422,11 +348,7 @@
             <h4 class="card-title">Breadcrumb With Icon</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-6
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-6 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
@@ -461,29 +383,21 @@
             </b-collapse>
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb iq-bg-danger p-3 rounded-2">
-                <li class="breadcrumb-item active" aria-current="page">
-                  <i class="ri-home-4-line me-1 float-left"></i>Home
-                </li>
+                <li class="breadcrumb-item active" aria-current="page"><i class="ri-home-4-line me-1 float-left"></i>Home</li>
               </ol>
             </nav>
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb iq-bg-danger p-3 rounded-2">
                 <li class="breadcrumb-item">
-                  <a href="#" class="text-danger"
-                    ><i class="ri-home-4-line me-1 float-left"></i>Home</a
-                  >
+                  <a href="#" class="text-danger"><i class="ri-home-4-line me-1 float-left"></i>Home</a>
                 </li>
-                <li class="breadcrumb-item active" aria-current="page">
-                  Library
-                </li>
+                <li class="breadcrumb-item active" aria-current="page">Library</li>
               </ol>
             </nav>
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb iq-bg-danger p-3 rounded-2 mb-0">
                 <li class="breadcrumb-item">
-                  <a href="#" class="text-danger"
-                    ><i class="ri-home-4-line me-1 float-left"></i>Home</a
-                  >
+                  <a href="#" class="text-danger"><i class="ri-home-4-line me-1 float-left"></i>Home</a>
                 </li>
                 <li class="breadcrumb-item">
                   <a href="#" class="text-danger">Library</a>
@@ -498,77 +412,77 @@
   </b-container>
 </template>
 <script>
-import { xray } from "../../config/pluginInit";
-import iqCard from "../../components/xray/cards/iq-card";
+import { xray } from '../../config/pluginInit'
+import iqCard from '../../components/xray/cards/iq-card'
 export default {
-  name: "UiBreadcrumb",
+  name: 'UiBreadcrumb',
   components: { iqCard },
   mounted() {
-    xray.index();
+    xray.index()
   },
   data() {
     return {
       items1: [
         {
-          text: "Home",
-          active: true,
-        },
+          text: 'Home',
+          active: true
+        }
       ],
       items2: [
         {
-          text: "Home",
-          href: "#",
+          text: 'Home',
+          href: '#'
         },
         {
-          text: "Library",
-          active: true,
-        },
+          text: 'Library',
+          active: true
+        }
       ],
       items3: [
         {
-          text: "Home",
-          href: "#",
+          text: 'Home',
+          href: '#'
         },
         {
-          text: "Library",
-          href: "#",
+          text: 'Library',
+          href: '#'
         },
         {
-          text: "Data",
-          active: true,
-        },
+          text: 'Data',
+          active: true
+        }
       ],
       itemsIcon1: [
         {
           html: '<i class="ri-home-4-line me-1 float-left"></i>Home',
-          active: true,
-        },
+          active: true
+        }
       ],
       itemsIcon2: [
         {
           html: '<i class="ri-home-4-line me-1 float-left"></i>Home',
-          href: "#",
+          href: '#'
         },
         {
-          text: "Library",
-          active: true,
-        },
+          text: 'Library',
+          active: true
+        }
       ],
       itemsIcon3: [
         {
           html: '<i class="ri-home-4-line me-1 float-left"></i>Home',
-          href: "#",
+          href: '#'
         },
         {
-          text: "Library",
-          href: "#",
+          text: 'Library',
+          href: '#'
         },
         {
-          text: "Data",
-          active: true,
-        },
-      ],
-    };
-  },
-};
+          text: 'Data',
+          active: true
+        }
+      ]
+    }
+  }
+}
 </script>

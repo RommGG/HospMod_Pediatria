@@ -266,12 +266,7 @@
               </b-col>
               <b-col sm="12" class="text-center mt-3">
                 <!-- <b-link class="btn btn-primary" href="http://demo.amitjakhu.com/dripicons/" target="blank">View All Icon</b-link> -->
-                <b-button
-                  href="http://demo.amitjakhu.com/dripicons/"
-                  target="blank"
-                  variant="primary"
-                  >View All Icon</b-button
-                >
+                <b-button href="http://demo.amitjakhu.com/dripicons/" target="blank" variant="primary">View All Icon</b-button>
               </b-col>
             </b-row>
           </template>
@@ -281,13 +276,13 @@
   </b-container>
 </template>
 <script>
-import { xray } from "../../config/pluginInit";
-import iqCard from "../../components/xray/cards/iq-card";
+import { xray } from '../../config/pluginInit'
+import iqCard from '../../components/xray/cards/iq-card'
 export default {
-  name: "IconDripicons",
+  name: 'IconDripicons',
   components: { iqCard },
   mounted() {
-    xray.index();
-  },
-};
+    xray.index()
+  }
+}
 </script>

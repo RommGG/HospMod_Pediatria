@@ -3,11 +3,7 @@
     <div id="sidebar-toggle" v-if="miniToggle" class="sidebar-toggle">
       <i class="ri-menu-3-line"></i>
     </div>
-    <div
-      class="avatar chat-profile mr-3"
-      :class="mediaClass"
-      @click="toggleContent"
-    >
+    <div class="avatar chat-profile mr-3" :class="mediaClass" @click="toggleContent">
       <slot name="media" />
     </div>
     <div class="chat-caption">
@@ -20,35 +16,35 @@
 </template>
 <script>
 export default {
-  name: "ToggleButton",
+  name: 'ToggleButton',
   props: {
-    toggleShow: { type: String, default: "" },
-    mediaClass: { type: String, default: "" },
+    toggleShow: { type: String, default: '' },
+    mediaClass: { type: String, default: '' },
     miniToggle: { type: Boolean, default: false },
-    closeButton: { type: Boolean, default: true },
+    closeButton: { type: Boolean, default: true }
   },
   data() {
     return {
-      active: false,
-    };
+      active: false
+    }
   },
   methods: {
     toggleContent() {
-      let selector = document.querySelector(this.toggleShow);
-      selector.classList.add("show");
+      let selector = document.querySelector(this.toggleShow)
+      selector.classList.add('show')
     },
     checkToggle(type) {
       if (this.link === type) {
         switch (type) {
-          case "media":
-          case "body":
-            this.active = false;
-            break;
+          case 'media':
+          case 'body':
+            this.active = false
+            break
         }
       } else {
-        this.active = true;
+        this.active = true
       }
-    },
-  },
-};
+    }
+  }
+}
 </script>

@@ -7,20 +7,12 @@
             <h4 class="card-title">Default Buttons</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-1
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-1 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
           <template v-slot:body>
-            <p class="mb-4">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever
-            </p>
+            <p class="mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p>
             <b-collapse id="collapse-1" class="mb-2">
               <div class="card">
                 <kbd class="bg-dark">
@@ -57,20 +49,12 @@
             <h4 class="card-title">Default Buttons Rounded Shape</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-2
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-2 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
           <template v-slot:body>
-            <p class="mb-4">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever
-            </p>
+            <p class="mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p>
             <b-collapse id="collapse-2" class="mb-2">
               <div class="card">
                 <kbd class="bg-dark">
@@ -89,19 +73,11 @@
                 </kbd>
               </div>
             </b-collapse>
-            <b-button pill variant="primary" class="mb-3 me-1"
-              >Primary</b-button
-            >
-            <b-button pill variant="secondary" class="mb-3 me-1"
-              >Secondary</b-button
-            >
-            <b-button pill variant="success" class="mb-3 me-1"
-              >Success</b-button
-            >
+            <b-button pill variant="primary" class="mb-3 me-1">Primary</b-button>
+            <b-button pill variant="secondary" class="mb-3 me-1">Secondary</b-button>
+            <b-button pill variant="success" class="mb-3 me-1">Success</b-button>
             <b-button pill variant="danger" class="mb-3 me-1">Danger</b-button>
-            <b-button pill variant="warning" class="mb-3 me-1"
-              >Warning</b-button
-            >
+            <b-button pill variant="warning" class="mb-3 me-1">Warning</b-button>
             <b-button pill variant="info" class="mb-3 me-1">Info</b-button>
             <b-button pill variant="light" class="mb-3 me-1">Light</b-button>
             <b-button pill variant="dark" class="mb-3 me-1">Dark</b-button>
@@ -117,20 +93,12 @@
             <h4 class="card-title">Outline Buttons</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-3
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-3 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
           <template v-slot:body>
-            <p class="mb-4">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever
-            </p>
+            <p class="mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p>
             <b-collapse id="collapse-3" class="mb-2">
               <div class="card">
                 <kbd class="bg-dark">
@@ -148,21 +116,11 @@
                 </kbd>
               </div>
             </b-collapse>
-            <b-button variant="outline-primary" class="mb-3 me-1"
-              >Primary</b-button
-            >
-            <b-button variant="outline-secondary" class="mb-3 me-1"
-              >Secondary</b-button
-            >
-            <b-button variant="outline-success" class="mb-3 me-1"
-              >Success</b-button
-            >
-            <b-button variant="outline-danger" class="mb-3 me-1"
-              >Danger</b-button
-            >
-            <b-button variant="outline-warning" class="mb-3 me-1"
-              >Warning</b-button
-            >
+            <b-button variant="outline-primary" class="mb-3 me-1">Primary</b-button>
+            <b-button variant="outline-secondary" class="mb-3 me-1">Secondary</b-button>
+            <b-button variant="outline-success" class="mb-3 me-1">Success</b-button>
+            <b-button variant="outline-danger" class="mb-3 me-1">Danger</b-button>
+            <b-button variant="outline-warning" class="mb-3 me-1">Warning</b-button>
             <b-button variant="outline-info" class="mb-3 me-1">Info</b-button>
             <b-button variant="outline-dark" class="mb-3 me-1">Dark</b-button>
             <b-button variant="outline-link" class="mb-3 me-1">Link</b-button>
@@ -175,20 +133,12 @@
             <h4 class="card-title">Rounded Outline Buttons</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-4
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-4 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
           <template v-slot:body>
-            <p class="mb-4">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever
-            </p>
+            <p class="mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p>
             <b-collapse id="collapse-4" class="mb-2">
               <div class="card">
                 <kbd class="bg-dark">
@@ -206,30 +156,14 @@
                 </kbd>
               </div>
             </b-collapse>
-            <b-button pill variant="outline-primary" class="mb-3 me-1"
-              >Primary</b-button
-            >
-            <b-button pill variant="outline-secondary" class="mb-3 me-1"
-              >Secondary</b-button
-            >
-            <b-button pill variant="outline-success" class="mb-3 me-1"
-              >Success</b-button
-            >
-            <b-button pill variant="outline-danger" class="mb-3 me-1"
-              >Danger</b-button
-            >
-            <b-button pill variant="outline-warning" class="mb-3 me-1"
-              >Warning</b-button
-            >
-            <b-button pill variant="outline-info" class="mb-3 me-1"
-              >Info</b-button
-            >
-            <b-button pill variant="outline-dark" class="mb-3 me-1"
-              >Dark</b-button
-            >
-            <b-button pill variant="outline-link" class="mb-3 me-1"
-              >Link</b-button
-            >
+            <b-button pill variant="outline-primary" class="mb-3 me-1">Primary</b-button>
+            <b-button pill variant="outline-secondary" class="mb-3 me-1">Secondary</b-button>
+            <b-button pill variant="outline-success" class="mb-3 me-1">Success</b-button>
+            <b-button pill variant="outline-danger" class="mb-3 me-1">Danger</b-button>
+            <b-button pill variant="outline-warning" class="mb-3 me-1">Warning</b-button>
+            <b-button pill variant="outline-info" class="mb-3 me-1">Info</b-button>
+            <b-button pill variant="outline-dark" class="mb-3 me-1">Dark</b-button>
+            <b-button pill variant="outline-link" class="mb-3 me-1">Link</b-button>
           </template>
         </iq-card>
       </b-col>
@@ -241,20 +175,12 @@
             <h4 class="card-title">Default Buttons</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-5
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-5 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
           <template v-slot:body>
-            <p class="mb-4">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever
-            </p>
+            <p class="mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p>
             <b-collapse id="collapse-5" class="mb-2">
               <div class="card">
                 <kbd class="bg-dark">
@@ -273,33 +199,15 @@
                 </kbd>
               </div>
             </b-collapse>
-            <b-button variant="primary" class="mb-3 me-1"
-              ><i class="ri-bill-fill"></i>Primary</b-button
-            >
-            <b-button variant="secondary" class="mb-3 me-1"
-              ><i class="ri-heart-fill"></i>Secondary</b-button
-            >
-            <b-button variant="success" class="mb-3 me-1"
-              ><i class="ri-bill-fill"></i>Success</b-button
-            >
-            <b-button variant="danger" class="mb-3 me-1"
-              ><i class="ri-heart-fill"></i>Danger</b-button
-            >
-            <b-button variant="warning" class="mb-3 me-1"
-              ><i class="ri-bill-fill"></i>Warning</b-button
-            >
-            <b-button variant="info" class="mb-3 me-1"
-              ><i class="ri-heart-fill"></i>Info</b-button
-            >
-            <b-button variant="light" class="mb-3 me-1"
-              ><i class="ri-bill-fill"></i>Light</b-button
-            >
-            <b-button variant="dark" class="mb-3 me-1"
-              ><i class="ri-heart-fill"></i>Dark</b-button
-            >
-            <b-button variant="link" class="mb-3 me-1"
-              ><i class="ri-bill-fill"></i>Link</b-button
-            >
+            <b-button variant="primary" class="mb-3 me-1"><i class="ri-bill-fill"></i>Primary</b-button>
+            <b-button variant="secondary" class="mb-3 me-1"><i class="ri-heart-fill"></i>Secondary</b-button>
+            <b-button variant="success" class="mb-3 me-1"><i class="ri-bill-fill"></i>Success</b-button>
+            <b-button variant="danger" class="mb-3 me-1"><i class="ri-heart-fill"></i>Danger</b-button>
+            <b-button variant="warning" class="mb-3 me-1"><i class="ri-bill-fill"></i>Warning</b-button>
+            <b-button variant="info" class="mb-3 me-1"><i class="ri-heart-fill"></i>Info</b-button>
+            <b-button variant="light" class="mb-3 me-1"><i class="ri-bill-fill"></i>Light</b-button>
+            <b-button variant="dark" class="mb-3 me-1"><i class="ri-heart-fill"></i>Dark</b-button>
+            <b-button variant="link" class="mb-3 me-1"><i class="ri-bill-fill"></i>Link</b-button>
           </template>
         </iq-card>
       </b-col>
@@ -309,20 +217,12 @@
             <h4 class="card-title">Default Buttons Rounded Shape</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-6
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-6 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
           <template v-slot:body>
-            <p class="mb-4">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever
-            </p>
+            <p class="mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p>
             <b-collapse id="collapse-6" class="mb-2">
               <div class="card">
                 <kbd class="bg-dark">
@@ -341,33 +241,15 @@
                 </kbd>
               </div>
             </b-collapse>
-            <b-button pill variant="primary" class="mb-3 me-1"
-              ><i class="ri-bill-fill"></i>Primary</b-button
-            >
-            <b-button pill variant="secondary" class="mb-3 me-1"
-              ><i class="ri-heart-fill"></i>Secondary</b-button
-            >
-            <b-button pill variant="success" class="mb-3 me-1"
-              ><i class="ri-bill-fill"></i>Success</b-button
-            >
-            <b-button pill variant="danger" class="mb-3 me-1"
-              ><i class="ri-heart-fill"></i>Danger</b-button
-            >
-            <b-button pill variant="warning" class="mb-3 me-1"
-              ><i class="ri-bill-fill"></i>Warning</b-button
-            >
-            <b-button pill variant="info" class="mb-3 me-1"
-              ><i class="ri-heart-fill"></i>Info</b-button
-            >
-            <b-button pill variant="light" class="mb-3 me-1"
-              ><i class="ri-bill-fill"></i>Light</b-button
-            >
-            <b-button pill variant="dark" class="mb-3 me-1"
-              ><i class="ri-heart-fill"></i>Dark</b-button
-            >
-            <b-button pill variant="link" class="mb-3 me-1"
-              ><i class="ri-bill-fill"></i>Link</b-button
-            >
+            <b-button pill variant="primary" class="mb-3 me-1"><i class="ri-bill-fill"></i>Primary</b-button>
+            <b-button pill variant="secondary" class="mb-3 me-1"><i class="ri-heart-fill"></i>Secondary</b-button>
+            <b-button pill variant="success" class="mb-3 me-1"><i class="ri-bill-fill"></i>Success</b-button>
+            <b-button pill variant="danger" class="mb-3 me-1"><i class="ri-heart-fill"></i>Danger</b-button>
+            <b-button pill variant="warning" class="mb-3 me-1"><i class="ri-bill-fill"></i>Warning</b-button>
+            <b-button pill variant="info" class="mb-3 me-1"><i class="ri-heart-fill"></i>Info</b-button>
+            <b-button pill variant="light" class="mb-3 me-1"><i class="ri-bill-fill"></i>Light</b-button>
+            <b-button pill variant="dark" class="mb-3 me-1"><i class="ri-heart-fill"></i>Dark</b-button>
+            <b-button pill variant="link" class="mb-3 me-1"><i class="ri-bill-fill"></i>Link</b-button>
           </template>
         </iq-card>
       </b-col>
@@ -379,20 +261,12 @@
             <h4 class="card-title">Outline Buttons</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-7
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-7 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
           <template v-slot:body>
-            <p class="mb-4">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever
-            </p>
+            <p class="mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p>
             <b-collapse id="collapse-7" class="mb-2">
               <div class="card">
                 <kbd class="bg-dark">
@@ -410,30 +284,14 @@
                 </kbd>
               </div>
             </b-collapse>
-            <b-button variant="outline-primary" class="mb-3 me-1"
-              ><i class="ri-heart-line"></i>Primary</b-button
-            >
-            <b-button variant="outline-secondary" class="mb-3 me-1"
-              ><i class="ri-alert-fill"></i>Secondary</b-button
-            >
-            <b-button variant="outline-success" class="mb-3 me-1"
-              ><i class="ri-heart-line"></i>Success</b-button
-            >
-            <b-button variant="outline-danger" class="mb-3 me-1"
-              ><i class="ri-alert-fill"></i>Danger</b-button
-            >
-            <b-button variant="outline-warning" class="mb-3 me-1"
-              ><i class="ri-heart-line"></i>Warning</b-button
-            >
-            <b-button variant="outline-info" class="mb-3 me-1"
-              ><i class="ri-alert-fill"></i>Info</b-button
-            >
-            <b-button variant="outline-dark" class="mb-3 me-1"
-              ><i class="ri-alert-fill"></i>Dark</b-button
-            >
-            <b-button variant="outline-link" class="mb-3 me-1"
-              ><i class="ri-heart-line"></i>Link</b-button
-            >
+            <b-button variant="outline-primary" class="mb-3 me-1"><i class="ri-heart-line"></i>Primary</b-button>
+            <b-button variant="outline-secondary" class="mb-3 me-1"><i class="ri-alert-fill"></i>Secondary</b-button>
+            <b-button variant="outline-success" class="mb-3 me-1"><i class="ri-heart-line"></i>Success</b-button>
+            <b-button variant="outline-danger" class="mb-3 me-1"><i class="ri-alert-fill"></i>Danger</b-button>
+            <b-button variant="outline-warning" class="mb-3 me-1"><i class="ri-heart-line"></i>Warning</b-button>
+            <b-button variant="outline-info" class="mb-3 me-1"><i class="ri-alert-fill"></i>Info</b-button>
+            <b-button variant="outline-dark" class="mb-3 me-1"><i class="ri-alert-fill"></i>Dark</b-button>
+            <b-button variant="outline-link" class="mb-3 me-1"><i class="ri-heart-line"></i>Link</b-button>
           </template>
         </iq-card>
       </b-col>
@@ -443,20 +301,12 @@
             <h4 class="card-title">Rounded Outline Buttons</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-8
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-8 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
           <template v-slot:body>
-            <p class="mb-4">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever
-            </p>
+            <p class="mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p>
             <b-collapse id="collapse-8" class="mb-2">
               <div class="card">
                 <kbd class="bg-dark">
@@ -474,30 +324,14 @@
                 </kbd>
               </div>
             </b-collapse>
-            <b-button pill variant="outline-primary" class="mb-3 me-1"
-              ><i class="ri-heart-line"></i>Primary</b-button
-            >
-            <b-button pill variant="outline-secondary" class="mb-3 me-1"
-              ><i class="ri-alert-fill"></i>Secondary</b-button
-            >
-            <b-button pill variant="outline-success" class="mb-3 me-1"
-              ><i class="ri-heart-line"></i>Success</b-button
-            >
-            <b-button pill variant="outline-danger" class="mb-3 me-1"
-              ><i class="ri-alert-fill"></i>Danger</b-button
-            >
-            <b-button pill variant="outline-warning" class="mb-3 me-1"
-              ><i class="ri-heart-line"></i>Warning</b-button
-            >
-            <b-button pill variant="outline-info" class="mb-3 me-1"
-              ><i class="ri-alert-fill"></i>Info</b-button
-            >
-            <b-button pill variant="outline-dark" class="mb-3 me-1"
-              ><i class="ri-alert-fill"></i>Dark</b-button
-            >
-            <b-button pill variant="outline-link" class="mb-3 me-1"
-              ><i class="ri-heart-line"></i>Link</b-button
-            >
+            <b-button pill variant="outline-primary" class="mb-3 me-1"><i class="ri-heart-line"></i>Primary</b-button>
+            <b-button pill variant="outline-secondary" class="mb-3 me-1"><i class="ri-alert-fill"></i>Secondary</b-button>
+            <b-button pill variant="outline-success" class="mb-3 me-1"><i class="ri-heart-line"></i>Success</b-button>
+            <b-button pill variant="outline-danger" class="mb-3 me-1"><i class="ri-alert-fill"></i>Danger</b-button>
+            <b-button pill variant="outline-warning" class="mb-3 me-1"><i class="ri-heart-line"></i>Warning</b-button>
+            <b-button pill variant="outline-info" class="mb-3 me-1"><i class="ri-alert-fill"></i>Info</b-button>
+            <b-button pill variant="outline-dark" class="mb-3 me-1"><i class="ri-alert-fill"></i>Dark</b-button>
+            <b-button pill variant="outline-link" class="mb-3 me-1"><i class="ri-heart-line"></i>Link</b-button>
           </template>
         </iq-card>
       </b-col>
@@ -509,20 +343,12 @@
             <h4 class="card-title">Button Tags</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-9
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-9 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
           <template v-slot:body>
-            <p class="mb-4">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever
-            </p>
+            <p class="mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p>
             <b-collapse id="collapse-9" class="mb-2">
               <div class="card">
                 <kbd class="bg-dark">
@@ -537,18 +363,10 @@
                 </kbd>
               </div>
             </b-collapse>
-            <b-button variant="primary" class="me-1" type="button"
-              >Link</b-button
-            >
-            <b-button variant="success" class="me-1" type="button"
-              >Button</b-button
-            >
-            <b-button variant="danger" class="me-1" type="button"
-              >Input</b-button
-            >
-            <b-button variant="warning" class="me-1" type="button"
-              >Submit</b-button
-            >
+            <b-button variant="primary" class="me-1" type="button">Link</b-button>
+            <b-button variant="success" class="me-1" type="button">Button</b-button>
+            <b-button variant="danger" class="me-1" type="button">Input</b-button>
+            <b-button variant="warning" class="me-1" type="button">Submit</b-button>
             <b-button variant="info" class="me-1" type="button">Reset</b-button>
           </template>
         </iq-card>
@@ -559,20 +377,12 @@
             <h4 class="card-title">Buttons Sizes</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-10
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-10 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
           <template v-slot:body>
-            <p class="mb-4">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever
-            </p>
+            <p class="mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p>
             <b-collapse id="collapse-10" class="mb-2">
               <div class="card">
                 <kbd class="bg-dark">
@@ -585,9 +395,7 @@
                 </kbd>
               </div>
             </b-collapse>
-            <b-button size="sm" variant="primary" class="me-2"
-              >Small Button</b-button
-            >
+            <b-button size="sm" variant="primary" class="me-2">Small Button</b-button>
             <b-button variant="success" class="me-2">Button</b-button>
             <b-button size="lg" variant="info">Large Button</b-button>
           </template>
@@ -601,20 +409,12 @@
             <h4 class="card-title">Block Buttons</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-11
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-11 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
           <template v-slot:body>
-            <p class="mb-4">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever
-            </p>
+            <p class="mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p>
             <b-collapse id="collapse-11" class="mb-2">
               <div class="card">
                 <kbd class="bg-dark">
@@ -637,20 +437,12 @@
             <h4 class="card-title">Icons Buttons</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-12
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-12 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
           <template v-slot:body>
-            <p class="mb-4">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever
-            </p>
+            <p class="mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p>
             <b-collapse id="collapse-12" class="mb-2">
               <div class="card">
                 <kbd class="bg-dark">
@@ -676,49 +468,21 @@
                 </kbd>
               </div>
             </b-collapse>
-            <b-button variant="primary" class="mb-3 me-1"
-              ><i class="ri-heart-fill pr-0"></i
-            ></b-button>
-            <b-button variant="secondary" class="mb-3 me-1"
-              ><i class="ri-star-fill pr-0"></i
-            ></b-button>
-            <b-button variant="success" class="mb-3 me-1"
-              ><i class="ri-settings-4-fill pr-0"></i
-            ></b-button>
-            <b-button variant="danger" class="mb-3 me-1"
-              ><i class="ri-radio-button-fill pr-0"></i
-            ></b-button>
-            <b-button variant="warning" class="mb-3 me-1"
-              ><i class="ri-delete-bin-2-fill pr-0"></i
-            ></b-button>
-            <b-button variant="info" class="mb-3 me-1"
-              ><i class="ri-lock-fill pr-0"></i
-            ></b-button>
-            <b-button variant="light" class="mb-3 me-1"
-              ><i class="ri-time-fill pr-0"></i
-            ></b-button>
-            <b-button variant="dark" class="mb-3 me-1"
-              ><i class="ri-sun-fill pr-0"></i
-            ></b-button>
-            <b-button variant="link" class="mb-3 me-1"
-              ><i class="ri-moon-fill pr-0"></i
-            ></b-button>
+            <b-button variant="primary" class="mb-3 me-1"><i class="ri-heart-fill pr-0"></i></b-button>
+            <b-button variant="secondary" class="mb-3 me-1"><i class="ri-star-fill pr-0"></i></b-button>
+            <b-button variant="success" class="mb-3 me-1"><i class="ri-settings-4-fill pr-0"></i></b-button>
+            <b-button variant="danger" class="mb-3 me-1"><i class="ri-radio-button-fill pr-0"></i></b-button>
+            <b-button variant="warning" class="mb-3 me-1"><i class="ri-delete-bin-2-fill pr-0"></i></b-button>
+            <b-button variant="info" class="mb-3 me-1"><i class="ri-lock-fill pr-0"></i></b-button>
+            <b-button variant="light" class="mb-3 me-1"><i class="ri-time-fill pr-0"></i></b-button>
+            <b-button variant="dark" class="mb-3 me-1"><i class="ri-sun-fill pr-0"></i></b-button>
+            <b-button variant="link" class="mb-3 me-1"><i class="ri-moon-fill pr-0"></i></b-button>
             <div class="d-inline-block w-100 mt-3">
-              <b-button variant="primary" class="mb-3 me-1"
-                ><i class="ri-heart-fill"></i>Buttons</b-button
-              >
-              <b-button variant="secondary" class="mb-3 me-1"
-                ><i class="ri-star-fill"></i>Buttons</b-button
-              >
-              <b-button variant="success" class="mb-3 me-1"
-                ><i class="ri-settings-4-fill"></i>Buttons</b-button
-              >
-              <b-button variant="danger" class="mb-3 me-1"
-                ><i class="ri-radio-button-fill"></i>Buttons</b-button
-              >
-              <b-button variant="info" class="mb-3 me-1"
-                ><i class="ri-lock-fill"></i>Buttons</b-button
-              >
+              <b-button variant="primary" class="mb-3 me-1"><i class="ri-heart-fill"></i>Buttons</b-button>
+              <b-button variant="secondary" class="mb-3 me-1"><i class="ri-star-fill"></i>Buttons</b-button>
+              <b-button variant="success" class="mb-3 me-1"><i class="ri-settings-4-fill"></i>Buttons</b-button>
+              <b-button variant="danger" class="mb-3 me-1"><i class="ri-radio-button-fill"></i>Buttons</b-button>
+              <b-button variant="info" class="mb-3 me-1"><i class="ri-lock-fill"></i>Buttons</b-button>
             </div>
           </template>
         </iq-card>
@@ -731,20 +495,12 @@
             <h4 class="card-title">Social Disabled State</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-13
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-13 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
           <template v-slot:body>
-            <p class="mb-4">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever
-            </p>
+            <p class="mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p>
             <b-collapse id="collapse-13" class="mb-2">
               <div class="card">
                 <kbd class="bg-dark">
@@ -757,13 +513,9 @@
                 </kbd>
               </div>
             </b-collapse>
-            <b-button disabled variant="primary" class="me-1"
-              >Primary button</b-button
-            >
+            <b-button disabled variant="primary" class="me-1">Primary button</b-button>
             <b-button disabled variant="success" class="me-1">Button</b-button>
-            <b-button disabled variant="outline-primary" class="me-1"
-              >Button</b-button
-            >
+            <b-button disabled variant="outline-primary" class="me-1">Button</b-button>
           </template>
         </iq-card>
       </b-col>
@@ -773,20 +525,12 @@
             <h4 class="card-title">Buttons Toggle States</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-14
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-14 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
           <template v-slot:body>
-            <p class="mb-4">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever
-            </p>
+            <p class="mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p>
             <b-collapse id="collapse-14" class="mb-2">
               <div class="card">
                 <kbd class="bg-dark">
@@ -797,14 +541,7 @@
                 </kbd>
               </div>
             </b-collapse>
-            <button
-              type="button"
-              class="btn btn-primary"
-              data-toggle="button"
-              aria-pressed="false"
-            >
-              Single toggle
-            </button>
+            <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false">Single toggle</button>
           </template>
         </iq-card>
       </b-col>
@@ -816,20 +553,12 @@
             <h4 class="card-title">Default Buttons Active</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-15
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-15 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
           <template v-slot:body>
-            <p class="mb-4">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever
-            </p>
+            <p class="mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p>
             <b-collapse id="collapse-15" class="mb-2">
               <div class="card">
                 <kbd class="bg-dark">
@@ -845,24 +574,12 @@
                 </kbd>
               </div>
             </b-collapse>
-            <b-button variant="primary" class="active mb-3 me-1"
-              >Active</b-button
-            >
-            <b-button variant="secondary" class="active mb-3 me-1"
-              >Active</b-button
-            >
-            <b-button variant="warning" class="active mb-3 me-1"
-              >Active</b-button
-            >
-            <b-button variant="accent" class="mb-3 me-1" disabled
-              >Disabled</b-button
-            >
-            <b-button variant="primary" class="mb-3 me-1" disabled
-              >Disabled</b-button
-            >
-            <b-button variant="outline-primary" class="mb-3 me-1" disabled
-              >Disabled</b-button
-            >
+            <b-button variant="primary" class="active mb-3 me-1">Active</b-button>
+            <b-button variant="secondary" class="active mb-3 me-1">Active</b-button>
+            <b-button variant="warning" class="active mb-3 me-1">Active</b-button>
+            <b-button variant="accent" class="mb-3 me-1" disabled>Disabled</b-button>
+            <b-button variant="primary" class="mb-3 me-1" disabled>Disabled</b-button>
+            <b-button variant="outline-primary" class="mb-3 me-1" disabled>Disabled</b-button>
           </template>
         </iq-card>
       </b-col>
@@ -872,20 +589,12 @@
             <h4 class="card-title">Button Group</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-17
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-17 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
           <template v-slot:body>
-            <p class="mb-4">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever
-            </p>
+            <p class="mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p>
             <b-collapse id="collapse-17" class="mb-2">
               <div class="card">
                 <kbd class="bg-dark">
@@ -921,10 +630,7 @@
               <b-button variant="primary">Middle</b-button>
               <b-button variant="primary">Right</b-button>
             </b-button-group>
-            <b-button-toolbar
-              aria-label="Toolbar with button groups"
-              class="mt-3"
-            >
+            <b-button-toolbar aria-label="Toolbar with button groups" class="mt-3">
               <b-button-group class="me-2">
                 <b-button variant="secondary">1</b-button>
                 <b-button variant="secondary">2</b-button>
@@ -951,20 +657,12 @@
             <h4 class="card-title">Button Group Sizing</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-16
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-16 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
           <template v-slot:body>
-            <p class="mb-4">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever
-            </p>
+            <p class="mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p>
             <b-collapse id="collapse-16" class="mb-2">
               <div class="card">
                 <kbd class="bg-dark">
@@ -1021,20 +719,12 @@
             <h4 class="card-title">Button Dropdown</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-18
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-18 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
           <template v-slot:body>
-            <p class="mb-4">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever
-            </p>
+            <p class="mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p>
             <b-collapse id="collapse-18" class="mb-2">
               <div class="card">
                 <kbd class="bg-dark">
@@ -1087,13 +777,13 @@
   </b-container>
 </template>
 <script>
-import { xray } from "../../config/pluginInit";
-import iqCard from "../../components/xray/cards/iq-card";
+import { xray } from '../../config/pluginInit'
+import iqCard from '../../components/xray/cards/iq-card'
 export default {
-  name: "UiButtons",
+  name: 'UiButtons',
   components: { iqCard },
   mounted() {
-    xray.index();
-  },
-};
+    xray.index()
+  }
+}
 </script>

@@ -7,11 +7,7 @@
             <h4 class="card-title">Tables</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-1
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-1 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
@@ -46,21 +42,14 @@
             <h4 class="card-title">Table Head Options</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-2
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-2 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
           <template v-slot:body>
             <p>
               Similar to tables and dark tables, use the modifier classes
-              <code class="highlighter-rouge">.thead-light</code> or
-              <code class="highlighter-rouge">.thead-dark</code> to make
-              <code class="highlighter-rouge">&lt;thead&gt;</code>s appear light
-              or dark gray.
+              <code class="highlighter-rouge">.thead-light</code> or <code class="highlighter-rouge">.thead-dark</code> to make <code class="highlighter-rouge">&lt;thead&gt;</code>s appear light or dark gray.
             </p>
             <b-collapse id="collapse-2" class="mb-2">
               <div class="card">
@@ -93,19 +82,12 @@
             <h4 class="card-title">Borderless table</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-3
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-3 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
           <template v-slot:body>
-            <p>
-              Add <code class="highlighter-rouge">.table-borderless</code> for a
-              table without borders.
-            </p>
+            <p>Add <code class="highlighter-rouge">.table-borderless</code> for a table without borders.</p>
             <b-collapse id="collapse-3" class="mb-2">
               <div class="card">
                 <kbd class="bg-dark">
@@ -130,15 +112,8 @@
               </div>
             </b-collapse>
             <b-table :items="items" borderless></b-table>
-            <p>
-              <code class="highlighter-rouge">.table-borderless</code> can also
-              be used on dark tables.
-            </p>
-            <b-table
-              :items="items"
-              variant="table table-dark"
-              borderless
-            ></b-table>
+            <p><code class="highlighter-rouge">.table-borderless</code> can also be used on dark tables.</p>
+            <b-table :items="items" variant="table table-dark" borderless></b-table>
           </template>
         </iq-card>
         <iq-card>
@@ -146,19 +121,12 @@
             <h4 class="card-title">Small table</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-4
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-4 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
           <template v-slot:body>
-            <p>
-              Add <code class="highlighter-rouge">.table-sm</code> to make
-              tables more compact by cutting cell padding in half.
-            </p>
+            <p>Add <code class="highlighter-rouge">.table-sm</code> to make tables more compact by cutting cell padding in half.</p>
             <b-collapse id="collapse-4" class="mb-2">
               <div class="card">
                 <kbd class="bg-dark">
@@ -190,21 +158,12 @@
             <h4 class="card-title">Captions</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-5
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-5 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
           <template v-slot:body>
-            <p>
-              A <code class="highlighter-rouge">&lt;caption&gt;</code> functions
-              like a heading for a table. It helps users with screen readers to
-              find a table and understand what it’s about and decide if they
-              want to read it.
-            </p>
+            <p>A <code class="highlighter-rouge">&lt;caption&gt;</code> functions like a heading for a table. It helps users with screen readers to find a table and understand what it’s about and decide if they want to read it.</p>
             <b-collapse id="collapse-5" class="mb-2">
               <div class="card">
                 <kbd class="bg-dark">
@@ -240,18 +199,13 @@
             <h4 class="card-title">Table Dark</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-6
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-6 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
           <template v-slot:body>
             <p>
-              You can also invert the colors—with light text on dark
-              backgrounds—with
+              You can also invert the colors—with light text on dark backgrounds—with
               <code class="highlighter-rouge">.table-dark</code>.
             </p>
             <b-collapse id="collapse-6" class="mb-2">
@@ -283,20 +237,12 @@
             <h4 class="card-title">Striped rows</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-7
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-7 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
           <template v-slot:body>
-            <p>
-              Use <code class="highlighter-rouge">.table-striped</code> to add
-              zebra-striping to any table row within the
-              <code class="highlighter-rouge">&lt;tbody&gt;</code>.
-            </p>
+            <p>Use <code class="highlighter-rouge">.table-striped</code> to add zebra-striping to any table row within the <code class="highlighter-rouge">&lt;tbody&gt;</code>.</p>
             <b-collapse id="collapse-7" class="mb-2">
               <div class="card">
                 <kbd class="bg-dark">
@@ -320,11 +266,7 @@
               </div>
             </b-collapse>
             <b-table :items="items" striped></b-table>
-            <b-table
-              :items="items"
-              variant="table table-dark"
-              striped
-            ></b-table>
+            <b-table :items="items" variant="table table-dark" striped></b-table>
           </template>
         </iq-card>
         <iq-card>
@@ -332,20 +274,12 @@
             <h4 class="card-title">Hoverable rows</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-8
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-8 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
           <template v-slot:body>
-            <p>
-              Add <code class="highlighter-rouge">.table-hover</code> to enable
-              a hover state on table rows within a
-              <code class="highlighter-rouge">&lt;tbody&gt;</code>.
-            </p>
+            <p>Add <code class="highlighter-rouge">.table-hover</code> to enable a hover state on table rows within a <code class="highlighter-rouge">&lt;tbody&gt;</code>.</p>
             <b-collapse id="collapse-8" class="mb-2">
               <div class="card">
                 <kbd class="bg-dark">
@@ -377,18 +311,12 @@
             <h4 class="card-title">Contextual classes</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-9
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-9 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
           <template v-slot:body>
-            <p>
-              Use contextual classes to color table rows or individual cells.
-            </p>
+            <p>Use contextual classes to color table rows or individual cells.</p>
             <b-collapse id="collapse-9" class="mb-2">
               <div class="card">
                 <kbd class="bg-dark">
@@ -554,11 +482,8 @@
               </b-tbody>
             </b-table-simple>
             <p>
-              Regular table background variants are not available with the dark
-              table, however, you may use
-              <a href="https://getbootstrap.com/" target="_blank"
-                >text or background utilities</a
-              >
+              Regular table background variants are not available with the dark table, however, you may use
+              <a href="https://getbootstrap.com/" target="_blank">text or background utilities</a>
               to achieve similar styles.
             </p>
             <b-table-simple>
@@ -626,25 +551,14 @@
             <h4 class="card-title">Responsive tables</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-10
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-10 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
           <template v-slot:body>
             <p>
-              Responsive tables allow tables to be scrolled horizontally with
-              ease. Make any table responsive across all viewports by wrapping a
-              <code class="highlighter-rouge">.table</code> with
-              <code class="highlighter-rouge">.table-responsive</code>. Or, pick
-              a maximum breakpoint with which to have a responsive table up to
-              by using
-              <code class="highlighter-rouge"
-                >.table-responsive{-sm|-md|-lg|-xl|-xxl}</code
-              >.
+              Responsive tables allow tables to be scrolled horizontally with ease. Make any table responsive across all viewports by wrapping a
+              <code class="highlighter-rouge">.table</code> with <code class="highlighter-rouge">.table-responsive</code>. Or, pick a maximum breakpoint with which to have a responsive table up to by using <code class="highlighter-rouge">.table-responsive{-sm|-md|-lg|-xl|-xxl}</code>.
             </p>
             <b-collapse id="collapse-10" class="mb-2">
               <div class="card">
@@ -768,27 +682,27 @@
   </b-container>
 </template>
 <script>
-import { xray } from "../../config/pluginInit";
-import iqCard from "../../components/xray/cards/iq-card";
+import { xray } from '../../config/pluginInit'
+import iqCard from '../../components/xray/cards/iq-card'
 export default {
-  name: "TablesBasic",
+  name: 'TablesBasic',
   components: { iqCard },
   mounted() {
-    xray.index();
+    xray.index()
   },
   data() {
     return {
       items: [
-        { "#": "1", first: "Mark", last: "Otto", handle: "@mdo" },
-        { "#": "2", first: "Jacob", last: "Thornton", handle: "@fat" },
-        { "#": "3", first: "Larry", last: "the Bird", handle: "@twitter" },
-      ],
+        { '#': '1', first: 'Mark', last: 'Otto', handle: '@mdo' },
+        { '#': '2', first: 'Jacob', last: 'Thornton', handle: '@fat' },
+        { '#': '3', first: 'Larry', last: 'the Bird', handle: '@twitter' }
+      ]
       // items1: [
       //   { '#': '1' , heading: 'Cell', heading: 'Cell', heading: 'Cell', heading: 'Cell', heading: 'Cell', heading: 'Cell', heading: 'Cell', heading: 'Cell', heading: 'Cell' },
       //   { '#': '2' , heading: 'Cell', heading: 'Cell', heading: 'Cell', heading: 'Cell', heading: 'Cell', heading: 'Cell', heading: 'Cell', heading: 'Cell', heading: 'Cell' },
       //   { '#': '3' , heading: 'Cell', heading: 'Cell', heading: 'Cell', heading: 'Cell', heading: 'Cell', heading: 'Cell', heading: 'Cell', heading: 'Cell', heading: 'Cell' }
       // ]
-    };
-  },
-};
+    }
+  }
+}
 </script>

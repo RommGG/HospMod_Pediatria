@@ -7,21 +7,14 @@
             <h4 class="card-title">Embeds Video</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-1
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-1 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
           <template v-slot:body>
             <p>
               Wrap any embed like an
-              <code class="highlighter-rouge">&lt;iframe&gt;</code> in a parent
-              element with
-              <code class="highlighter-rouge">.embed-responsive</code> and an
-              aspect ratio. The
+              <code class="highlighter-rouge">&lt;iframe&gt;</code> in a parent element with <code class="highlighter-rouge">.embed-responsive</code> and an aspect ratio. The
               <code class="highlighter-rouge">.embed-responsive-item</code>
               isn’t strictly required, but we encourage it.
             </p>
@@ -47,11 +40,7 @@
               allowfullscreen
             ></b-embed> -->
             <div class="ratio ratio-16x9">
-              <iframe
-                src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"
-                title="YouTube video"
-                allowfullscreen
-              ></iframe>
+              <iframe src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" title="YouTube video" allowfullscreen></iframe>
             </div>
           </template>
         </iq-card>
@@ -60,19 +49,12 @@
             <h4 class="card-title">Responsive Aspect ratios 4:3</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-2
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-2 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
           <template v-slot:body>
-            <p>
-              Progress components are built with two HTML elements, some CSS to
-              set the width, and a few attributes.
-            </p>
+            <p>Progress components are built with two HTML elements, some CSS to set the width, and a few attributes.</p>
             <b-collapse id="collapse-2" class="mb-2">
               <div class="card">
                 <kbd class="bg-dark">
@@ -95,11 +77,7 @@
               allowfullscreen
             ></b-embed> -->
             <div class="ratio ratio-4x3">
-              <iframe
-                src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"
-                title="YouTube video"
-                allowfullscreen
-              ></iframe>
+              <iframe src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" title="YouTube video" allowfullscreen></iframe>
             </div>
           </template>
         </iq-card>
@@ -110,19 +88,12 @@
             <h4 class="card-title">Responsive Aspect ratios 21:9</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-3
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-3 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
           <template v-slot:body>
-            <p>
-              Progress components are built with two HTML elements, some CSS to
-              set the width, and a few attributes.
-            </p>
+            <p>Progress components are built with two HTML elements, some CSS to set the width, and a few attributes.</p>
             <b-collapse id="collapse-3" class="mb-2">
               <div class="card">
                 <kbd class="bg-dark">
@@ -145,11 +116,7 @@
               allowfullscreen
             ></b-embed> -->
             <div class="ratio ratio-21x9">
-              <iframe
-                src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"
-                title="YouTube video"
-                allowfullscreen
-              ></iframe>
+              <iframe src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" title="YouTube video" allowfullscreen></iframe>
             </div>
           </template>
         </iq-card>
@@ -158,19 +125,12 @@
             <h4 class="card-title">Responsive Aspect ratios 1:1</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-4
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-4 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
           <template v-slot:body>
-            <p>
-              Progress components are built with two HTML elements, some CSS to
-              set the width, and a few attributes.
-            </p>
+            <p>Progress components are built with two HTML elements, some CSS to set the width, and a few attributes.</p>
             <b-collapse id="collapse-4" class="mb-2">
               <div class="card">
                 <kbd class="bg-dark">
@@ -193,11 +153,7 @@
               allowfullscreen
             ></b-embed> -->
             <div class="ratio ratio-1x1">
-              <iframe
-                src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"
-                title="YouTube video"
-                allowfullscreen
-              ></iframe>
+              <iframe src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" title="YouTube video" allowfullscreen></iframe>
             </div>
           </template>
         </iq-card>
@@ -206,13 +162,13 @@
   </b-container>
 </template>
 <script>
-import { xray } from "../../config/pluginInit";
-import iqCard from "../../components/xray/cards/iq-card";
+import { xray } from '../../config/pluginInit'
+import iqCard from '../../components/xray/cards/iq-card'
 export default {
-  name: "UiEmbedVideo",
+  name: 'UiEmbedVideo',
   components: { iqCard },
   mounted() {
-    xray.index();
-  },
-};
+    xray.index()
+  }
+}
 </script>

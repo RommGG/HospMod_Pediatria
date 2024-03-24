@@ -41,41 +41,22 @@
                   <b-table-simple striped class="text-left">
                     <thead>
                       <tr>
-                        <th
-                          v-for="(item, index) in invoice.orderSummaryFields"
-                          :key="index"
-                          :class="item.key === 'item' ? 'text-left' : ''"
-                        >
+                        <th v-for="(item, index) in invoice.orderSummaryFields" :key="index" :class="item.key === 'item' ? 'text-left' : ''">
                           {{ item.label }}
                         </th>
                       </tr>
                     </thead>
                     <tbody>
-                      <tr
-                        v-for="(body, bodyKey) in invoice.orderSummary"
-                        :key="bodyKey"
-                      >
-                        <template
-                          v-for="(item, index) in invoice.orderSummaryFields"
-                        >
+                      <tr v-for="(body, bodyKey) in invoice.orderSummary" :key="bodyKey">
+                        <template v-for="(item, index) in invoice.orderSummaryFields">
                           <th v-if="item.key === 'id'" :key="item.key + index">
                             {{ body[item.key] }}
                           </th>
-                          <td
-                            v-else-if="item.key === 'item'"
-                            :key="item.key + index"
-                            class="text-left"
-                          >
+                          <td v-else-if="item.key === 'item'" :key="item.key + index" class="text-left">
                             <h6 class="mb-0">{{ body[item.key].title }}</h6>
                             <p class="mb-0">{{ body[item.key].description }}</p>
                           </td>
-                          <td
-                            v-else
-                            :key="item.key + index"
-                            :class="
-                              item.key === 'total' ? 'font-weight-bold' : ''
-                            "
-                          >
+                          <td v-else :key="item.key + index" :class="item.key === 'total' ? 'font-weight-bold' : ''">
                             {{ body[item.key] }}
                           </td>
                         </template>
@@ -88,36 +69,18 @@
                   <b-table-simple striped>
                     <thead>
                       <tr>
-                        <th
-                          v-for="(item, index) in invoice.OrderDetailField"
-                          :key="index"
-                          :class="item.key === 'bank' ? 'text-left' : ''"
-                        >
+                        <th v-for="(item, index) in invoice.OrderDetailField" :key="index" :class="item.key === 'bank' ? 'text-left' : ''">
                           {{ item.label }}
                         </th>
                       </tr>
                     </thead>
                     <tbody>
-                      <tr
-                        v-for="(body, bodyKey) in invoice.OrderDetails"
-                        :key="bodyKey"
-                      >
-                        <template
-                          v-for="(item, index) in invoice.OrderDetailField"
-                        >
-                          <th
-                            v-if="item.key === 'bank'"
-                            :key="item.key + index"
-                          >
+                      <tr v-for="(body, bodyKey) in invoice.OrderDetails" :key="bodyKey">
+                        <template v-for="(item, index) in invoice.OrderDetailField">
+                          <th v-if="item.key === 'bank'" :key="item.key + index">
                             {{ body[item.key] }}
                           </th>
-                          <td
-                            v-else
-                            :key="item.key + index"
-                            :class="
-                              item.key === 'total' ? 'font-weight-bold' : ''
-                            "
-                          >
+                          <td v-else :key="item.key + index" :class="item.key === 'total' ? 'font-weight-bold' : ''">
                             {{ body[item.key] }}
                           </td>
                         </template>
@@ -145,143 +108,136 @@
   </b-container>
 </template>
 <script>
-import { xray } from "../../config/pluginInit";
-import iqCard from "../../components/xray/cards/iq-card";
+import { xray } from '../../config/pluginInit'
+import iqCard from '../../components/xray/cards/iq-card'
 export default {
-  name: "InvoicePage",
+  name: 'InvoicePage',
   components: { iqCard },
   mounted() {
-    xray.index();
+    xray.index()
   },
   data() {
     return {
       dialog: false,
-      image: require("../../assets/images/logo1.png"),
-      title: "Invoice",
+      image: require('../../assets/images/logo1.png'),
+      title: 'Invoice',
       invoice: {
-        name: "Hello, Bini Jetss",
-        summary: "Order Summary",
-        detail: "Order Detail",
-        description:
-          "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
+        name: 'Hello, Bini Jetss',
+        summary: 'Order Summary',
+        detail: 'Order Detail',
+        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
         order: [
           {
-            orderDate: "Jan 17, 2016",
+            orderDate: 'Jan 17, 2016',
             orderStatus: 2,
-            orderID: "250028",
-            billingAddress:
-              "PO Box 16122 Collins Street West <br> Victoria 8007 Australia <br> Phone: +123 456 7890 <br> Email: demo@XRay.com <br> Web: www.XRay.com",
-            shippingAddress:
-              "PO Box 16122 Collins Street West <br> Victoria 8007 Australia <br> Phone: +123 456 7890 <br> Email: demo@XRay.com <br> Web: www.XRay.com",
-          },
+            orderID: '250028',
+            billingAddress: 'PO Box 16122 Collins Street West <br> Victoria 8007 Australia <br> Phone: +123 456 7890 <br> Email: demo@XRay.com <br> Web: www.XRay.com',
+            shippingAddress: 'PO Box 16122 Collins Street West <br> Victoria 8007 Australia <br> Phone: +123 456 7890 <br> Email: demo@XRay.com <br> Web: www.XRay.com'
+          }
         ],
         orderSummaryFields: [
           {
-            key: "id",
-            label: "#",
+            key: 'id',
+            label: '#'
           },
           {
-            key: "item",
-            label: "Item",
+            key: 'item',
+            label: 'Item'
           },
           {
-            key: "quantity",
-            label: "Quantity",
+            key: 'quantity',
+            label: 'Quantity'
           },
           {
-            key: "price",
-            label: "Price",
+            key: 'price',
+            label: 'Price'
           },
           {
-            key: "total",
-            label: "Totals",
-          },
+            key: 'total',
+            label: 'Totals'
+          }
         ],
         orderSummary: [
           {
             id: 1,
             item: {
-              title: "Web Design",
-              description:
-                "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              title: 'Web Design',
+              description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
             },
-            quantity: "5",
-            price: "$120",
-            total: "$2,880.00",
+            quantity: '5',
+            price: '$120',
+            total: '$2,880.00'
           },
           {
             id: 2,
             item: {
-              title: "Web Design",
-              description:
-                "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              title: 'Web Design',
+              description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
             },
-            quantity: "5",
-            price: "$120",
-            total: "$2,880.00",
+            quantity: '5',
+            price: '$120',
+            total: '$2,880.00'
           },
           {
             id: 3,
             item: {
-              title: "Web Design",
-              description:
-                "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              title: 'Web Design',
+              description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
             },
-            quantity: "5",
-            price: "$120",
-            total: "$2,880.00",
+            quantity: '5',
+            price: '$120',
+            total: '$2,880.00'
           },
           {
             id: 4,
             item: {
-              title: "Web Design",
-              description:
-                "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              title: 'Web Design',
+              description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
             },
-            quantity: "5",
-            price: "$120",
-            total: "$2,880.00",
-          },
+            quantity: '5',
+            price: '$120',
+            total: '$2,880.00'
+          }
         ],
         OrderDetailField: [
           {
-            key: "bank",
-            label: "Bank",
+            key: 'bank',
+            label: 'Bank'
           },
           {
-            key: "accNo",
-            label: "Acc.No",
+            key: 'accNo',
+            label: 'Acc.No'
           },
           {
-            key: "dueDate",
-            label: "Due Date",
+            key: 'dueDate',
+            label: 'Due Date'
           },
           {
-            key: "subTotal",
-            label: "Sub-total",
+            key: 'subTotal',
+            label: 'Sub-total'
           },
           {
-            key: "discount",
-            label: "Discount",
+            key: 'discount',
+            label: 'Discount'
           },
           {
-            key: "total",
-            label: "Total",
-          },
+            key: 'total',
+            label: 'Total'
+          }
         ],
         OrderDetails: [
           {
-            bank: "Threadneedle St",
-            accNo: "12333456789",
-            dueDate: "12 November 2019",
-            subTotal: "$4597.50",
-            discount: "10%",
-            total: "$4137.75 USD",
-          },
+            bank: 'Threadneedle St',
+            accNo: '12333456789',
+            dueDate: '12 November 2019',
+            subTotal: '$4597.50',
+            discount: '10%',
+            total: '$4137.75 USD'
+          }
         ],
-        note: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
-      },
-    };
-  },
-};
+        note: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+      }
+    }
+  }
+}
 </script>

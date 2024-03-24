@@ -2,6 +2,30 @@
   <b-container fluid>
     <Form @submit="onSubmit()" :validation-schema="schema" v-slot="{ errors }">
       <b-row>
+
+        <div class="row">
+              
+              <div class="col-sm-12">
+                <b-alert :show="true" variant="success">
+                  <div class="iq-alert-text">
+                    <h5 class="alert-heading">Alerta</h5>
+                    <p>Se ha realizado con exito el nuevo registro.</p>
+                    
+                  </div>
+                </b-alert>
+              </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
         <b-col lg="12">
           <iq-card>
             <template v-slot:headerTitle>

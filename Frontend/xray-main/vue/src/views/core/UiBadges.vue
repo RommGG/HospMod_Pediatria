@@ -7,19 +7,12 @@
             <h4 class="card-title">Badges</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-1
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-1 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
           <template v-slot:body>
-            <p>
-              Badges scale to match the size of the immediate parent element by
-              using relative font sizing and <code>em</code> units.
-            </p>
+            <p>Badges scale to match the size of the immediate parent element by using relative font sizing and <code>em</code> units.</p>
             <b-collapse id="collapse-1" class="mb-2">
               <div class="card">
                 <kbd class="bg-dark">
@@ -37,21 +30,13 @@
                 </kbd>
               </div>
             </b-collapse>
-            <h1 class="mb-3">
-              Example heading <b-badge variant="primary">New</b-badge>
-            </h1>
-            <h2 class="mb-3">
-              Example heading <b-badge variant="secondary">New</b-badge>
-            </h2>
+            <h1 class="mb-3">Example heading <b-badge variant="primary">New</b-badge></h1>
+            <h2 class="mb-3">Example heading <b-badge variant="secondary">New</b-badge></h2>
             <h3 class="mb-3">
               Example heading
-              <b-button variant="success">
-                Notifications <b-badge variant="light" class="ms-2">4</b-badge>
-              </b-button>
+              <b-button variant="success"> Notifications <b-badge variant="light" class="ms-2">4</b-badge> </b-button>
             </h3>
-            <h4 class="mb-3">
-              Example heading <b-badge variant="danger">New</b-badge>
-            </h4>
+            <h4 class="mb-3">Example heading <b-badge variant="danger">New</b-badge></h4>
             <h5 class="mb-3">
               Example heading
               <b-badge variant="warning" class="text-white">New</b-badge>
@@ -67,11 +52,7 @@
             <h4 class="card-title">Button Badges</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-2
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-2 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
@@ -95,15 +76,9 @@
                 </kbd>
               </div>
             </b-collapse>
-            <b-button variant="primary" class="mb-1 me-1">
-              Notifications <b-badge variant="light" class="ms-2">4</b-badge>
-            </b-button>
-            <b-button variant="success" class="mb-1 me-1">
-              Notifications <b-badge variant="light" class="ms-2">4</b-badge>
-            </b-button>
-            <b-button variant="danger" class="mb-1 me-1">
-              Notifications <b-badge variant="light" class="ms-2">4</b-badge>
-            </b-button>
+            <b-button variant="primary" class="mb-1 me-1"> Notifications <b-badge variant="light" class="ms-2">4</b-badge> </b-button>
+            <b-button variant="success" class="mb-1 me-1"> Notifications <b-badge variant="light" class="ms-2">4</b-badge> </b-button>
+            <b-button variant="danger" class="mb-1 me-1"> Notifications <b-badge variant="light" class="ms-2">4</b-badge> </b-button>
           </template>
         </iq-card>
         <iq-card>
@@ -111,11 +86,7 @@
             <h4 class="card-title">Button Light background Badges</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-3
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-3 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
@@ -139,15 +110,9 @@
                 </kbd>
               </div>
             </b-collapse>
-            <b-button variant="outline-primary" class="mb-1 me-1">
-              Notifications <b-badge variant="primary" class="ms-2">4</b-badge>
-            </b-button>
-            <b-button variant="outline-success" class="mb-1 me-1">
-              Notifications <b-badge variant="success" class="ms-2">4</b-badge>
-            </b-button>
-            <b-button variant="outline-danger" class="mb-1 me-1">
-              Notifications <b-badge variant="danger" class="ms-2">4</b-badge>
-            </b-button>
+            <b-button variant="outline-primary" class="mb-1 me-1"> Notifications <b-badge variant="primary" class="ms-2">4</b-badge> </b-button>
+            <b-button variant="outline-success" class="mb-1 me-1"> Notifications <b-badge variant="success" class="ms-2">4</b-badge> </b-button>
+            <b-button variant="outline-danger" class="mb-1 me-1"> Notifications <b-badge variant="danger" class="ms-2">4</b-badge> </b-button>
           </template>
         </iq-card>
         <iq-card>
@@ -155,11 +120,7 @@
             <h4 class="card-title">Button Border Badges</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-4
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-4 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
@@ -183,15 +144,9 @@
                 </kbd>
               </div>
             </b-collapse>
-            <b-button variant="none" class="iq-bg-primary mb-1 me-1">
-              Notifications <b-badge variant="primary" class="ms-2">4</b-badge>
-            </b-button>
-            <b-button variant="none" class="iq-bg-success mb-1 me-1">
-              Notifications <b-badge variant="success" class="ms-2">4</b-badge>
-            </b-button>
-            <b-button variant="none" class="iq-bg-danger mb-1 me-1">
-              Notifications <b-badge variant="danger" class="ms-2">4</b-badge>
-            </b-button>
+            <b-button variant="none" class="iq-bg-primary mb-1 me-1"> Notifications <b-badge variant="primary" class="ms-2">4</b-badge> </b-button>
+            <b-button variant="none" class="iq-bg-success mb-1 me-1"> Notifications <b-badge variant="success" class="ms-2">4</b-badge> </b-button>
+            <b-button variant="none" class="iq-bg-danger mb-1 me-1"> Notifications <b-badge variant="danger" class="ms-2">4</b-badge> </b-button>
           </template>
         </iq-card>
       </b-col>
@@ -201,19 +156,12 @@
             <h4 class="card-title">Contextual variations</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-5
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-5 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
           <template v-slot:body>
-            <p>
-              Add any of the below mentioned modifier classes to change the
-              appearance of a badge.
-            </p>
+            <p>Add any of the below mentioned modifier classes to change the appearance of a badge.</p>
             <b-collapse id="collapse-5" class="mb-2">
               <div class="card">
                 <kbd class="bg-dark">
@@ -264,12 +212,7 @@
             <b-badge variant="light" class="me-1 text-white">Light</b-badge>
             <b-badge variant="dark" class="me-1">Dark</b-badge>
             <h5 class="card-title mt-4">Pill badges</h5>
-            <p>
-              Use the <code>.badge-pill</code> modifier class to make badges
-              more rounded (with a larger <code>border-radius</code> and
-              additional horizontal <code>padding</code>). Useful if you miss
-              the badges from v3.
-            </p>
+            <p>Use the <code>.badge-pill</code> modifier class to make badges more rounded (with a larger <code>border-radius</code> and additional horizontal <code>padding</code>). Useful if you miss the badges from v3.</p>
             <b-badge variant="primary" class="me-1">Primary</b-badge>
             <b-badge variant="secondary" class="me-1">Secondary</b-badge>
             <b-badge variant="success" class="me-1">Success</b-badge>
@@ -279,26 +222,14 @@
             <b-badge variant="light" class="me-1 text-white">Light</b-badge>
             <b-badge variant="dark" class="me-1">Dark</b-badge>
             <h5 class="card-title mt-4">Links</h5>
-            <p>
-              Using the contextual <code>.badge-*</code> classes on an
-              <code>&lt;a&gt;</code> element quickly provide
-              <em>actionable</em> badges with hover and focus states.
-            </p>
+            <p>Using the contextual <code>.badge-*</code> classes on an <code>&lt;a&gt;</code> element quickly provide <em>actionable</em> badges with hover and focus states.</p>
             <b-badge href="#" variant="primary" class="me-1">Primary</b-badge>
-            <b-badge href="#" variant="secondary" class="me-1"
-              >Secondary</b-badge
-            >
+            <b-badge href="#" variant="secondary" class="me-1">Secondary</b-badge>
             <b-badge href="#" variant="success" class="me-1">Success</b-badge>
             <b-badge href="#" variant="danger" class="me-1">Danger</b-badge>
-            <b-badge href="#" variant="warning" class="me-1 text-white"
-              >Warning</b-badge
-            >
-            <b-badge href="#" variant="info" class="me-1 text-white"
-              >Info</b-badge
-            >
-            <b-badge href="#" variant="light" class="me-1 text-white"
-              >Light</b-badge
-            >
+            <b-badge href="#" variant="warning" class="me-1 text-white">Warning</b-badge>
+            <b-badge href="#" variant="info" class="me-1 text-white">Info</b-badge>
+            <b-badge href="#" variant="light" class="me-1 text-white">Light</b-badge>
             <b-badge href="#" variant="dark" class="me-1">Dark</b-badge>
           </template>
         </iq-card>
@@ -307,19 +238,12 @@
             <h4 class="card-title">Contextual variations Border</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-6
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-6 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
           <template v-slot:body>
-            <p>
-              Add any of the below mentioned modifier classes to change the
-              appearance of a badge.
-            </p>
+            <p>Add any of the below mentioned modifier classes to change the appearance of a badge.</p>
             <b-collapse id="collapse-6" class="mb-2">
               <div class="card">
                 <kbd class="bg-dark">
@@ -359,135 +283,34 @@
                 </kbd>
               </div>
             </b-collapse>
-            <b-badge
-              class="border border-primary text-primary me-1"
-              variant="none"
-              >Primary</b-badge
-            >
-            <b-badge
-              class="border border-secondary text-secondary me-1"
-              variant="none"
-              >Secondary</b-badge
-            >
-            <b-badge
-              class="border border-success text-success me-1"
-              variant="none"
-              >Success</b-badge
-            >
-            <b-badge
-              class="border border-danger text-danger me-1"
-              variant="none"
-              >Danger</b-badge
-            >
-            <b-badge
-              class="border border-warning text-warning me-1"
-              variant="none"
-              >Warning</b-badge
-            >
-            <b-badge class="border border-info text-info me-1" variant="none"
-              >Info</b-badge
-            >
-            <b-badge class="border border-light text-light me-1" variant="none"
-              >Light</b-badge
-            >
-            <b-badge class="border border-dark text-dark me-1" variant="none"
-              >Dark</b-badge
-            >
+            <b-badge class="border border-primary text-primary me-1" variant="none">Primary</b-badge>
+            <b-badge class="border border-secondary text-secondary me-1" variant="none">Secondary</b-badge>
+            <b-badge class="border border-success text-success me-1" variant="none">Success</b-badge>
+            <b-badge class="border border-danger text-danger me-1" variant="none">Danger</b-badge>
+            <b-badge class="border border-warning text-warning me-1" variant="none">Warning</b-badge>
+            <b-badge class="border border-info text-info me-1" variant="none">Info</b-badge>
+            <b-badge class="border border-light text-light me-1" variant="none">Light</b-badge>
+            <b-badge class="border border-dark text-dark me-1" variant="none">Dark</b-badge>
             <h5 class="card-title mt-4">Pill badges</h5>
-            <p>
-              Use the <code>.badge-pill</code> modifier class to make badges
-              more rounded (with a larger <code>border-radius</code> and
-              additional horizontal <code>padding</code>). Useful if you miss
-              the badges from v3.
-            </p>
-            <b-badge
-              class="border border-primary text-primary me-1"
-              variant="none"
-              >Primary</b-badge
-            >
-            <b-badge
-              class="border border-secondary text-secondary me-1"
-              variant="none"
-              >Secondary</b-badge
-            >
-            <b-badge
-              class="border border-success text-success me-1"
-              variant="none"
-              >Success</b-badge
-            >
-            <b-badge
-              class="border border-danger text-danger me-1"
-              variant="none"
-              >Danger</b-badge
-            >
-            <b-badge
-              class="border border-warning text-warning me-1"
-              variant="none"
-              >Warning</b-badge
-            >
-            <b-badge class="border border-info text-info me-1" variant="none"
-              >Info</b-badge
-            >
-            <b-badge class="border border-light text-light me-1" variant="none"
-              >Light</b-badge
-            >
-            <b-badge class="border border-dark text-dark me-1" variant="none"
-              >Dark</b-badge
-            >
+            <p>Use the <code>.badge-pill</code> modifier class to make badges more rounded (with a larger <code>border-radius</code> and additional horizontal <code>padding</code>). Useful if you miss the badges from v3.</p>
+            <b-badge class="border border-primary text-primary me-1" variant="none">Primary</b-badge>
+            <b-badge class="border border-secondary text-secondary me-1" variant="none">Secondary</b-badge>
+            <b-badge class="border border-success text-success me-1" variant="none">Success</b-badge>
+            <b-badge class="border border-danger text-danger me-1" variant="none">Danger</b-badge>
+            <b-badge class="border border-warning text-warning me-1" variant="none">Warning</b-badge>
+            <b-badge class="border border-info text-info me-1" variant="none">Info</b-badge>
+            <b-badge class="border border-light text-light me-1" variant="none">Light</b-badge>
+            <b-badge class="border border-dark text-dark me-1" variant="none">Dark</b-badge>
             <h5 class="card-title mt-4">Links</h5>
-            <p>
-              Using the contextual <code>.badge-*</code> classes on an
-              <code>&lt;a&gt;</code> element quickly provide
-              <em>actionable</em> badges with hover and focus states.
-            </p>
-            <b-badge
-              href="#"
-              class="border border-primary text-primary me-1"
-              variant="none"
-              >Primary</b-badge
-            >
-            <b-badge
-              href="#"
-              class="border border-secondary text-secondary me-1"
-              variant="none"
-              >Secondary</b-badge
-            >
-            <b-badge
-              href="#"
-              class="border border-success text-success me-1"
-              variant="none"
-              >Success</b-badge
-            >
-            <b-badge
-              href="#"
-              class="border border-danger text-danger me-1"
-              variant="none"
-              >Danger</b-badge
-            >
-            <b-badge
-              href="#"
-              class="border border-warning text-warning me-1"
-              variant="none"
-              >Warning</b-badge
-            >
-            <b-badge
-              href="#"
-              class="border border-info text-info me-1"
-              variant="none"
-              >Info</b-badge
-            >
-            <b-badge
-              href="#"
-              class="border border-light text-light me-1"
-              variant="none"
-              >Light</b-badge
-            >
-            <b-badge
-              href="#"
-              class="border border-dark text-dark me-1"
-              variant="none"
-              >Dark</b-badge
-            >
+            <p>Using the contextual <code>.badge-*</code> classes on an <code>&lt;a&gt;</code> element quickly provide <em>actionable</em> badges with hover and focus states.</p>
+            <b-badge href="#" class="border border-primary text-primary me-1" variant="none">Primary</b-badge>
+            <b-badge href="#" class="border border-secondary text-secondary me-1" variant="none">Secondary</b-badge>
+            <b-badge href="#" class="border border-success text-success me-1" variant="none">Success</b-badge>
+            <b-badge href="#" class="border border-danger text-danger me-1" variant="none">Danger</b-badge>
+            <b-badge href="#" class="border border-warning text-warning me-1" variant="none">Warning</b-badge>
+            <b-badge href="#" class="border border-info text-info me-1" variant="none">Info</b-badge>
+            <b-badge href="#" class="border border-light text-light me-1" variant="none">Light</b-badge>
+            <b-badge href="#" class="border border-dark text-dark me-1" variant="none">Dark</b-badge>
           </template>
         </iq-card>
       </b-col>
@@ -495,13 +318,13 @@
   </b-container>
 </template>
 <script>
-import { xray } from "../../config/pluginInit";
-import iqCard from "../../components/xray/cards/iq-card";
+import { xray } from '../../config/pluginInit'
+import iqCard from '../../components/xray/cards/iq-card'
 export default {
-  name: "UiBadges",
+  name: 'UiBadges',
   components: { iqCard },
   mounted() {
-    xray.index();
-  },
-};
+    xray.index()
+  }
+}
 </script>

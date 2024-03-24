@@ -7,18 +7,12 @@
             <h4 class="card-title">Basic Example</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-1
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-1 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
           <template v-slot:body>
-            <p>
-              <span class="text-danger">flatpickr</span> without any config.
-            </p>
+            <p><span class="text-danger">flatpickr</span> without any config.</p>
             <b-collapse id="collapse-1" class="mb-2">
               <div class="card">
                 <kbd class="bg-dark">
@@ -41,12 +35,7 @@ data(){
                 </kbd>
               </div>
             </b-collapse>
-            <flat-pickr
-              class="form-control"
-              value=""
-              :config="basicConfig"
-              placeholder="Select Date"
-            ></flat-pickr>
+            <flat-pickr class="form-control" value="" :config="basicConfig" placeholder="Select Date"></flat-pickr>
           </template>
         </iq-card>
       </b-col>
@@ -56,19 +45,12 @@ data(){
             <h4 class="card-title">Basic Datetime Example</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-2
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-2 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
           <template v-slot:body>
-            <p>
-              <span class="text-danger">flatpickr</span> with date and time
-              config.
-            </p>
+            <p><span class="text-danger">flatpickr</span> with date and time config.</p>
             <b-collapse id="collapse-2" class="mb-2">
               <div class="card">
                 <kbd class="bg-dark">
@@ -94,12 +76,7 @@ data(){
                 </kbd>
               </div>
             </b-collapse>
-            <flat-pickr
-              class="form-control"
-              value=""
-              :config="basicTimeConfig"
-              placeholder="Select DateTime"
-            ></flat-pickr>
+            <flat-pickr class="form-control" value="" :config="basicTimeConfig" placeholder="Select DateTime"></flat-pickr>
           </template>
         </iq-card>
       </b-col>
@@ -109,18 +86,12 @@ data(){
             <h4 class="card-title">Basic Mindate Example</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-3
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-3 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
           <template v-slot:body>
-            <p>
-              <span class="text-danger">flatpickr</span> with min date config.
-            </p>
+            <p><span class="text-danger">flatpickr</span> with min date config.</p>
             <b-collapse id="collapse-3" class="mb-2">
               <div class="card">
                 <kbd class="bg-dark">
@@ -145,12 +116,7 @@ data(){
                 </kbd>
               </div>
             </b-collapse>
-            <flat-pickr
-              class="form-control"
-              value=""
-              :config="basicMinTimeConfig"
-              placeholder="Select Date"
-            ></flat-pickr>
+            <flat-pickr class="form-control" value="" :config="basicMinTimeConfig" placeholder="Select Date"></flat-pickr>
           </template>
         </iq-card>
       </b-col>
@@ -160,18 +126,12 @@ data(){
             <h4 class="card-title">Basic Maxdate Example</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-4
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-4 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
           <template v-slot:body>
-            <p>
-              <span class="text-danger">flatpickr</span> with max date config.
-            </p>
+            <p><span class="text-danger">flatpickr</span> with max date config.</p>
             <b-collapse id="collapse-4" class="mb-2">
               <div class="card">
                 <kbd class="bg-dark">
@@ -197,12 +157,7 @@ data(){
                 </kbd>
               </div>
             </b-collapse>
-            <flat-pickr
-              class="form-control"
-              value=""
-              :config="basicMaxDateConfig"
-              placeholder="Select Date"
-            ></flat-pickr>
+            <flat-pickr class="form-control" value="" :config="basicMaxDateConfig" placeholder="Select Date"></flat-pickr>
           </template>
         </iq-card>
       </b-col>
@@ -212,19 +167,12 @@ data(){
             <h4 class="card-title">Basic Multipledate Example</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-5
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-5 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
           <template v-slot:body>
-            <p>
-              <span class="text-danger">flatpickr</span> with multiple date
-              config.
-            </p>
+            <p><span class="text-danger">flatpickr</span> with multiple date config.</p>
             <b-collapse id="collapse-5" class="mb-2">
               <div class="card">
                 <kbd class="bg-dark">
@@ -250,12 +198,7 @@ data(){
                 </kbd>
               </div>
             </b-collapse>
-            <flat-pickr
-              class="form-control"
-              value=""
-              :config="basicMultipleDateConfig"
-              placeholder="Select Date"
-            ></flat-pickr>
+            <flat-pickr class="form-control" value="" :config="basicMultipleDateConfig" placeholder="Select Date"></flat-pickr>
           </template>
         </iq-card>
       </b-col>
@@ -265,18 +208,12 @@ data(){
             <h4 class="card-title">Basic Rangedate Example</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-6
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-6 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
           <template v-slot:body>
-            <p>
-              <span class="text-danger">flatpickr</span> with range date config.
-            </p>
+            <p><span class="text-danger">flatpickr</span> with range date config.</p>
             <b-collapse id="collapse-6" class="mb-2">
               <div class="card">
                 <kbd class="bg-dark">
@@ -301,12 +238,7 @@ data(){
                 </kbd>
               </div>
             </b-collapse>
-            <flat-pickr
-              class="form-control"
-              value=""
-              :config="basicRangeDateConfig"
-              placeholder="Select Date"
-            ></flat-pickr>
+            <flat-pickr class="form-control" value="" :config="basicRangeDateConfig" placeholder="Select Date"></flat-pickr>
           </template>
         </iq-card>
       </b-col>
@@ -314,12 +246,12 @@ data(){
   </b-container>
 </template>
 <script>
-import { xray } from "../../config/pluginInit";
+import { xray } from '../../config/pluginInit'
 
 export default {
-  name: "DatepickerDemo",
+  name: 'DatepickerDemo',
   mounted() {
-    xray.index();
+    xray.index()
   },
   data() {
     return {
@@ -327,25 +259,25 @@ export default {
       basicConfig: {},
       basicTimeConfig: {
         enableTime: true,
-        dateFormat: "Y-m-d H:i",
+        dateFormat: 'Y-m-d H:i'
       },
       basicMinTimeConfig: {
-        minDate: "today",
+        minDate: 'today'
       },
       basicMaxDateConfig: {
-        maxDate: "today",
+        maxDate: 'today'
       },
       basicMultipleDateConfig: {
-        mode: "multiple",
-        dateFormat: "Y-m-d",
+        mode: 'multiple',
+        dateFormat: 'Y-m-d'
       },
       basicRangeDateConfig: {
-        mode: "range",
-      },
-    };
+        mode: 'range'
+      }
+    }
   },
   methods: {
-    onChangeDateOption() {},
-  },
-};
+    onChangeDateOption() {}
+  }
+}
 </script>

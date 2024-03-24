@@ -8,10 +8,7 @@
               <b-table-simple class="text-center">
                 <b-thead>
                   <b-tr>
-                    <th
-                      v-for="(item, index) in headerColumn"
-                      :key="item.key + index"
-                    >
+                    <th v-for="(item, index) in headerColumn" :key="item.key + index">
                       {{ item.label }}
                     </th>
                   </b-tr>
@@ -25,14 +22,9 @@
                           {{ item.starter }}
                           <small>{{ item.starter_per }}</small>
                         </h2>
-                        <b-button variant="primary  mt-3 rounded-3"
-                          >Purchase</b-button
-                        >
+                        <b-button variant="primary  mt-3 rounded-3">Purchase</b-button>
                       </template>
-                      <i
-                        class="ri-check-line ri-2x text-success"
-                        v-if="item.starter && !item.button"
-                      />
+                      <i class="ri-check-line ri-2x text-success" v-if="item.starter && !item.button" />
                     </td>
                     <td>
                       <template v-if="item.button">
@@ -40,14 +32,9 @@
                           {{ item.business }}
                           <small>{{ item.business_per }}</small>
                         </h2>
-                        <b-button variant="primary  mt-3 rounded-3"
-                          >Purchase</b-button
-                        >
+                        <b-button variant="primary  mt-3 rounded-3">Purchase</b-button>
                       </template>
-                      <i
-                        class="ri-check-line ri-2x text-success"
-                        v-if="item.business && !item.button"
-                      />
+                      <i class="ri-check-line ri-2x text-success" v-if="item.business && !item.button" />
                     </td>
                     <td>
                       <template v-if="item.button">
@@ -55,14 +42,9 @@
                           {{ item.enterprise }}
                           <small>{{ item.enterprise_per }}</small>
                         </h2>
-                        <b-button variant="primary  mt-3 rounded-3"
-                          >Purchase</b-button
-                        >
+                        <b-button variant="primary  mt-3 rounded-3">Purchase</b-button>
                       </template>
-                      <i
-                        class="ri-check-line ri-2x text-success"
-                        v-if="item.enterprise && !item.button"
-                      />
+                      <i class="ri-check-line ri-2x text-success" v-if="item.enterprise && !item.button" />
                     </td>
                     <td>
                       <template v-if="item.button">
@@ -72,10 +54,7 @@
                         </h2>
                         <b-button variant="primary  mt-3">Purchase</b-button>
                       </template>
-                      <i
-                        class="ri-check-line ri-2x text-success"
-                        v-if="item.unlimited && !item.button"
-                      />
+                      <i class="ri-check-line ri-2x text-success" v-if="item.unlimited && !item.button" />
                     </td>
                   </b-tr>
                 </b-tbody>
@@ -88,95 +67,95 @@
   </b-container>
 </template>
 <script>
-import { xray } from "../../config/pluginInit";
-import iqCard from "../../components/xray/cards/iq-card";
+import { xray } from '../../config/pluginInit'
+import iqCard from '../../components/xray/cards/iq-card'
 export default {
-  name: "PricingPage",
+  name: 'PricingPage',
   components: { iqCard },
   mounted() {
-    xray.index();
+    xray.index()
   },
   data() {
     return {
       headerColumn: [
         {
-          key: "name",
-          label: "",
+          key: 'name',
+          label: ''
         },
         {
-          key: "starter",
-          label: "Starter",
+          key: 'starter',
+          label: 'Starter'
         },
         {
-          key: "business",
-          label: "Business",
+          key: 'business',
+          label: 'Business'
         },
         {
-          key: "enterprise",
-          label: "Enterprise",
+          key: 'enterprise',
+          label: 'Enterprise'
         },
         {
-          key: "unlimited",
-          label: "Unlimited",
-        },
+          key: 'unlimited',
+          label: 'Unlimited'
+        }
       ],
       rows: [
         {
-          name: "Email support",
+          name: 'Email support',
           starter: true,
           business: true,
           enterprise: true,
-          unlimited: true,
+          unlimited: true
         },
         {
-          name: "UI Kit",
+          name: 'UI Kit',
           starter: false,
           business: true,
           enterprise: true,
-          unlimited: true,
+          unlimited: true
         },
         {
-          name: "100% support",
+          name: '100% support',
           starter: false,
           business: true,
           enterprise: true,
-          unlimited: true,
+          unlimited: true
         },
         {
-          name: "Advance form",
+          name: 'Advance form',
           starter: true,
           business: true,
           enterprise: true,
-          unlimited: true,
+          unlimited: true
         },
         {
-          name: "Custom shortcode",
+          name: 'Custom shortcode',
           starter: false,
           business: false,
           enterprise: false,
-          unlimited: true,
+          unlimited: true
         },
         {
-          name: "Thousand of Widgets",
+          name: 'Thousand of Widgets',
           starter: false,
           business: false,
           enterprise: true,
-          unlimited: true,
+          unlimited: true
         },
         {
-          name: "",
+          name: '',
           button: true,
-          starter: "$19",
-          starter_per: " / Per month",
-          business: "$39",
-          business_per: " / Per month",
-          enterprise: "$119",
-          enterprise_per: " / Per month",
-          unlimited: "$219",
-          unlimited_per: " / Per month",
-        },
-      ],
-    };
-  },
-};
+          starter: '$19',
+          starter_per: ' / Per month',
+          business: '$39',
+          business_per: ' / Per month',
+          enterprise: '$119',
+          enterprise_per: ' / Per month',
+          unlimited: '$219',
+          unlimited_per: ' / Per month'
+        }
+      ]
+    }
+  }
+}
 </script>

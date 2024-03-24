@@ -31,12 +31,7 @@
     </div>
     <ul class="tree" v-show="isOpen" v-if="isFolder">
       <template v-if="item.children">
-        <TreeView
-          class=""
-          v-for="(child, index) in item.children"
-          :key="index"
-          :item="child"
-        >
+        <TreeView class="" v-for="(child, index) in item.children" :key="index" :item="child">
           <template v-slot:groupOpened>
             <template v-if="hasGroupOpenSlot">
               <slot name="groupOpened" />
@@ -69,45 +64,45 @@
 </template>
 
 <script>
-import TreeView from "./TreeView";
+import TreeView from './TreeView'
 
 export default {
-  name: "TreeView",
-  props: ["item", "isOpened"],
+  name: 'TreeView',
+  props: ['item', 'isOpened'],
   comments: {
-    TreeView,
+    TreeView
   },
   data() {
     return {
-      isOpen: !!this.isOpened,
-    };
+      isOpen: !!this.isOpened
+    }
   },
   computed: {
     isFolder: function () {
-      return this.item.children && this.item.children.length;
+      return this.item.children && this.item.children.length
     },
     hasGroupOpenSlot() {
-      return !!this.$slots.groupOpened;
+      return !!this.$slots.groupOpened
     },
     hasGroupCloseSlot() {
-      return !!this.$slots.groupClosed;
+      return !!this.$slots.groupClosed
     },
     hasItemSlot() {
-      return !!this.$slots.item;
-    },
+      return !!this.$slots.item
+    }
   },
   methods: {
     toggle: function () {
       if (this.isFolder) {
-        this.isOpen = !this.isOpen;
+        this.isOpen = !this.isOpen
       }
     },
     makeFolder: function () {
       if (!this.isFolder) {
-        this.$emit("make-folder", this.item);
-        this.isOpen = true;
+        this.$emit('make-folder', this.item)
+        this.isOpen = true
       }
-    },
-  },
-};
+    }
+  }
+}
 </script>
