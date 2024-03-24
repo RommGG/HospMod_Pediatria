@@ -7,20 +7,12 @@
             <h4 class="card-title">Tooltips</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-1
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-1 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
           <template v-slot:body>
-            <p>
-              Hover over the buttons below to see the four tooltips directions:
-              top, right, bottom, and left. The data-placement attribute
-              specifies the tooltip position.
-            </p>
+            <p>Hover over the buttons below to see the four tooltips directions: top, right, bottom, and left. The data-placement attribute specifies the tooltip position.</p>
             <b-collapse id="collapse-1" class="mb-2">
               <div class="card">
                 <kbd class="bg-dark">
@@ -34,35 +26,11 @@
                 </kbd>
               </div>
             </b-collapse>
-            <b-button
-              v-b-tooltip.hover.top
-              title="Tooltip on top"
-              variant="secondary"
-              class="mt-3 me-1"
-              >Tooltip on top</b-button
-            >
+            <b-button v-b-tooltip.hover.top title="Tooltip on top" variant="secondary" class="mt-3 me-1">Tooltip on top</b-button>
 
-            <b-button
-              v-b-tooltip.right
-              title="Tooltip on right"
-              variant="secondary"
-              class="mt-3 me-1"
-              >Tooltip on right</b-button
-            >
-            <b-button
-              v-b-tooltip.bottom
-              title="Tooltip on bottom"
-              variant="secondary"
-              class="mt-3 me-1"
-              >Tooltip on bottom</b-button
-            >
-            <b-button
-              v-b-tooltip.left
-              title="Tooltip on left"
-              variant="secondary"
-              class="mt-3 me-1"
-              >Tooltip on left</b-button
-            >
+            <b-button v-b-tooltip.right title="Tooltip on right" variant="secondary" class="mt-3 me-1">Tooltip on right</b-button>
+            <b-button v-b-tooltip.bottom title="Tooltip on bottom" variant="secondary" class="mt-3 me-1">Tooltip on bottom</b-button>
+            <b-button v-b-tooltip.left title="Tooltip on left" variant="secondary" class="mt-3 me-1">Tooltip on left</b-button>
           </template>
         </iq-card>
         <iq-card>
@@ -70,24 +38,12 @@
             <h4 class="card-title">Disabled elements</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-2
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-2 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
           <template v-slot:body>
-            <p>
-              Elements with the <code>disabled</code> attribute aren’t
-              interactive, meaning users cannot focus, hover, or click them to
-              trigger a tooltip (or popover). As a workaround, you’ll want to
-              trigger the tooltip from a wrapper <code>&lt;div&gt;</code> or
-              <code>&lt;span&gt;</code>, ideally made keyboard-focusable using
-              <code>tabindex="0"</code>, and override the
-              <code>pointer-events</code> on the disabled element.
-            </p>
+            <p>Elements with the <code>disabled</code> attribute aren’t interactive, meaning users cannot focus, hover, or click them to trigger a tooltip (or popover). As a workaround, you’ll want to trigger the tooltip from a wrapper <code>&lt;div&gt;</code> or <code>&lt;span&gt;</code>, ideally made keyboard-focusable using <code>tabindex="0"</code>, and override the <code>pointer-events</code> on the disabled element.</p>
             <b-collapse id="collapse-2" class="mb-2">
               <div class="card">
                 <kbd class="bg-dark">
@@ -100,15 +56,8 @@
                 </kbd>
               </div>
             </b-collapse>
-            <span
-              class="d-inline-block"
-              tabindex="0"
-              v-b-tooltip.top
-              title="Disabled tooltip"
-            >
-              <b-button variant="primary" style="pointer-events: none" disabled
-                >Disabled button</b-button
-              >
+            <span class="d-inline-block" tabindex="0" v-b-tooltip.top title="Disabled tooltip">
+              <b-button variant="primary" style="pointer-events: none" disabled>Disabled button</b-button>
             </span>
           </template>
         </iq-card>
@@ -119,19 +68,12 @@
             <h4 class="card-title">Tooltips</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-3
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-3 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
           <template v-slot:body>
-            <p>
-              Hover over the buttons below to see the four tooltips directions:
-              top, right, bottom, and left Using background colors
-            </p>
+            <p>Hover over the buttons below to see the four tooltips directions: top, right, bottom, and left Using background colors</p>
             <b-collapse id="collapse-3" class="mb-2">
               <div class="card">
                 <kbd class="bg-dark">
@@ -145,34 +87,10 @@
                 </kbd>
               </div>
             </b-collapse>
-            <b-button
-              v-b-tooltip.top
-              title="Tooltip on top"
-              variant="primary"
-              class="mt-3 me-1"
-              >Tooltip on top</b-button
-            >
-            <b-button
-              v-b-tooltip.right
-              title="Tooltip on right"
-              variant="success"
-              class="mt-3 me-1"
-              >Tooltip on right</b-button
-            >
-            <b-button
-              v-b-tooltip.bottomn
-              title="Tooltip on bottom"
-              variant="danger"
-              class="mt-3 me-1"
-              >Tooltip on bottom</b-button
-            >
-            <b-button
-              v-b-tooltip.left
-              title="Tooltip on left"
-              variant="info"
-              class="mt-3 me-1"
-              >Tooltip on left</b-button
-            >
+            <b-button v-b-tooltip.top title="Tooltip on top" variant="primary" class="mt-3 me-1">Tooltip on top</b-button>
+            <b-button v-b-tooltip.right title="Tooltip on right" variant="success" class="mt-3 me-1">Tooltip on right</b-button>
+            <b-button v-b-tooltip.bottomn title="Tooltip on bottom" variant="danger" class="mt-3 me-1">Tooltip on bottom</b-button>
+            <b-button v-b-tooltip.left title="Tooltip on left" variant="info" class="mt-3 me-1">Tooltip on left</b-button>
           </template>
         </iq-card>
         <iq-card>
@@ -180,19 +98,12 @@
             <h4 class="card-title">Tooltips</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-4
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-4 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
           <template v-slot:body>
-            <p>
-              Hover over the buttons below to see the four tooltips directions:
-              top, right, bottom, and left Using Light background colors
-            </p>
+            <p>Hover over the buttons below to see the four tooltips directions: top, right, bottom, and left Using Light background colors</p>
             <b-collapse id="collapse-4" class="mb-2">
               <div class="card">
                 <kbd class="bg-dark">
@@ -206,34 +117,10 @@
                 </kbd>
               </div>
             </b-collapse>
-            <b-button
-              v-b-tooltip.top
-              title="Tooltip on top"
-              variant="none"
-              class="iq-bg-primary mt-3 me-1"
-              >Tooltip on top</b-button
-            >
-            <b-button
-              v-b-tooltip.right
-              title="Tooltip on right"
-              variant="none"
-              class="iq-bg-success mt-3 me-1"
-              >Tooltip on right</b-button
-            >
-            <b-button
-              v-b-tooltip.bottom
-              title="Tooltip on bottom"
-              variant="none"
-              class="iq-bg-danger mt-3 me-1"
-              >Tooltip on bottom</b-button
-            >
-            <b-button
-              v-b-tooltip.left
-              title="Tooltip on left"
-              variant="none"
-              class="iq-bg-info mt-3 me-1"
-              >Tooltip on left</b-button
-            >
+            <b-button v-b-tooltip.top title="Tooltip on top" variant="none" class="iq-bg-primary mt-3 me-1">Tooltip on top</b-button>
+            <b-button v-b-tooltip.right title="Tooltip on right" variant="none" class="iq-bg-success mt-3 me-1">Tooltip on right</b-button>
+            <b-button v-b-tooltip.bottom title="Tooltip on bottom" variant="none" class="iq-bg-danger mt-3 me-1">Tooltip on bottom</b-button>
+            <b-button v-b-tooltip.left title="Tooltip on left" variant="none" class="iq-bg-info mt-3 me-1">Tooltip on left</b-button>
           </template>
         </iq-card>
       </b-col>
@@ -243,11 +130,7 @@
             <h4 class="card-title">Hover elements</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-5
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-5 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
@@ -263,13 +146,7 @@
                 </kbd>
               </div>
             </b-collapse>
-            <a
-              href="#"
-              v-b-tooltip.hover
-              title="Some tooltip text!"
-              variant="link"
-              >Hover over me</a
-            >
+            <a href="#" v-b-tooltip.hover title="Some tooltip text!" variant="link">Hover over me</a>
             <div class="tooltip bs-tooltip-top" role="tooltip">
               <div class="arrow"></div>
               <div class="tooltip-inner">Some tooltip text!</div>
@@ -281,13 +158,13 @@
   </b-container>
 </template>
 <script>
-import { xray } from "../../config/pluginInit";
-import iqCard from "../../components/xray/cards/iq-card";
+import { xray } from '../../config/pluginInit'
+import iqCard from '../../components/xray/cards/iq-card'
 export default {
-  name: "UiTooltips",
+  name: 'UiTooltips',
   components: { iqCard },
   mounted() {
-    xray.index();
-  },
-};
+    xray.index()
+  }
+}
 </script>

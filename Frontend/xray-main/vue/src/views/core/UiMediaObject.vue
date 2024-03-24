@@ -7,23 +7,14 @@
             <h4 class="card-title">Equal-width multi-row</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-2
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-2 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
           <template v-slot:body>
             <p>
               Create equal-width columns that span multiple rows by inserting a
-              <code>.w-100</code> where you want the columns to break to a new
-              line. Make the breaks responsive by mixing the
-              <code>.w-100</code> with some
-              <a href="/docs/4.3/utilities/display/"
-                >responsive display utilities</a
-              >.
+              <code>.w-100</code> where you want the columns to break to a new line. Make the breaks responsive by mixing the <code>.w-100</code> with some <a href="/docs/4.3/utilities/display/">responsive display utilities</a>.
             </p>
             <b-collapse id="collapse-2" class="mb-2">
               <div class="card">
@@ -63,51 +54,27 @@
             </b-collapse>
             <b-media class="d-flex mb-3">
               <!-- <template v-slot:aside> -->
-              <b-img
-                :src="require('../../assets/images/page-img/15.jpg')"
-                alt="#"
-                class="me-3 avatar-80"
-              ></b-img>
+              <b-img :src="require('../../assets/images/page-img/15.jpg')" alt="#" class="me-3 avatar-80"></b-img>
               <!-- </template> -->
               <b-media-body>
                 <h5 class="mt-0">Media heading</h5>
-                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
-                scelerisque ante sollicitudin. Cras purus odio, vestibulum in
-                vulputate at, tempus viverra turpis. Fusce condimentum nunc ac
-                nisi vulputate fringilla. Donec lacinia congue felis in
-                faucibus.
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
               </b-media-body>
             </b-media>
             <b-media class="d-flex">
               <!-- <template v-slot:aside> -->
-              <b-img
-                :src="require('../../assets/images/page-img/16.jpg')"
-                alt="#"
-                class="avatar-80 me-3"
-              ></b-img>
+              <b-img :src="require('../../assets/images/page-img/16.jpg')" alt="#" class="avatar-80 me-3"></b-img>
               <!-- </template> -->
               <b-media-body>
                 <h5 class="mt-0">Media heading</h5>
-                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
-                scelerisque ante sollicitudin. Cras purus odio, vestibulum in
-                vulputate at, tempus viverra turpis. Fusce condimentum nunc ac
-                nisi vulputate fringilla. Donec lacinia congue felis in
-                faucibus.
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
                 <b-media no-body class="mt-3 d-flex">
                   <b-media-aside tag="a">
-                    <b-img
-                      :src="require('../../assets/images/page-img/17.jpg')"
-                      class="me-3 avatar-80"
-                      alt="#"
-                    ></b-img>
+                    <b-img :src="require('../../assets/images/page-img/17.jpg')" class="me-3 avatar-80" alt="#"></b-img>
                   </b-media-aside>
                   <b-media-body>
                     <h5 class="mt-0">Media heading</h5>
-                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
-                    scelerisque ante sollicitudin. Cras purus odio, vestibulum
-                    in vulputate at, tempus viverra turpis. Fusce condimentum
-                    nunc ac nisi vulputate fringilla. Donec lacinia congue felis
-                    in faucibus.
+                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
                   </b-media-body>
                 </b-media>
               </b-media-body>
@@ -119,18 +86,13 @@
             <h4 class="card-title">Order</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse- role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
           <template v-slot:body>
             <p>
-              Change the order of content in media objects by modifying the HTML
-              itself, or by adding some custom flexbox CSS to set the
+              Change the order of content in media objects by modifying the HTML itself, or by adding some custom flexbox CSS to set the
               <code>order</code> property (to an integer of your choosing).
             </p>
             <b-collapse id="collapse-" class="mb-2">
@@ -171,53 +133,29 @@
             </b-collapse>
             <b-media right-align class="mb-5 d-flex">
               <!-- <template v-slot:aside> -->
-              <b-img
-                :src="require('../../assets/images/page-img/18.jpg')"
-                alt="#"
-                class="avatar-80 ms-3 order-2"
-              ></b-img>
+              <b-img :src="require('../../assets/images/page-img/18.jpg')" alt="#" class="avatar-80 ms-3 order-2"></b-img>
               <!-- </template> -->
               <b-media-body>
                 <h5 class="mt-0 mb-1">Top-aligned media</h5>
-                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
-                scelerisque ante sollicitudin. Cras purus odio, vestibulum in
-                vulputate at, tempus viverra turpis. Fusce condimentum nunc ac
-                nisi vulputate fringilla. Donec lacinia congue felis in
-                faucibus.
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
               </b-media-body>
             </b-media>
             <b-media right-align vertical-align="center" class="mb-5 d-flex">
               <!-- <template v-slot:aside> -->
-              <b-img
-                :src="require('../../assets/images/page-img/19.jpg')"
-                alt="#"
-                class="lr-3 avatar-80 order-2 align-self-center"
-              ></b-img>
+              <b-img :src="require('../../assets/images/page-img/19.jpg')" alt="#" class="lr-3 avatar-80 order-2 align-self-center"></b-img>
               <!-- </template> -->
               <b-media-body>
                 <h5 class="mt-0 mb-1">Center-aligned media</h5>
-                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
-                scelerisque ante sollicitudin. Cras purus odio, vestibulum in
-                vulputate at, tempus viverra turpis. Fusce condimentum nunc ac
-                nisi vulputate fringilla. Donec lacinia congue felis in
-                faucibus.
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
               </b-media-body>
             </b-media>
             <b-media right-align vertical-align="end" class="d-flex">
               <!-- <template v-slot:aside> -->
-              <b-img
-                :src="require('../../assets/images/page-img/20.jpg')"
-                alt="#"
-                class="avatar-80 ms-3 order-2 align-self-end"
-              ></b-img>
+              <b-img :src="require('../../assets/images/page-img/20.jpg')" alt="#" class="avatar-80 ms-3 order-2 align-self-end"></b-img>
               <!-- </template> -->
               <b-media-body>
                 <h5 class="mt-0 mb-1">Bottom-aligned media</h5>
-                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
-                scelerisque ante sollicitudin. Cras purus odio, vestibulum in
-                vulputate at, tempus viverra turpis. Fusce condimentum nunc ac
-                nisi vulputate fringilla. Donec lacinia congue felis in
-                faucibus.
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
               </b-media-body>
             </b-media>
           </template>
@@ -229,19 +167,12 @@
             <h4 class="card-title">Media object</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-6
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-6 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
           <template v-slot:body>
-            <p>
-              The images or other media can be aligned top, middle, or bottom.
-              The default is top aligned.
-            </p>
+            <p>The images or other media can be aligned top, middle, or bottom. The default is top aligned.</p>
             <b-collapse id="collapse-6" class="mb-2">
               <div class="card">
                 <kbd class="bg-dark">
@@ -280,55 +211,29 @@
             </b-collapse>
             <b-media class="mb-4 d-flex">
               <!-- <template v-slot:aside> -->
-              <b-img
-                :src="require('../../assets/images/page-img/21.jpg')"
-                alt="#"
-                class="me-2 avatar-80 align-self-top"
-              ></b-img>
+              <b-img :src="require('../../assets/images/page-img/21.jpg')" alt="#" class="me-2 avatar-80 align-self-top"></b-img>
               <!-- </template> -->
               <b-media-body>
                 <h5 class="mt-0">Top-aligned media</h5>
-                <p>
-                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
-                  scelerisque ante sollicitudin. Cras purus odio, vestibulum in
-                  vulputate at, tempus viverra turpis. Fusce condimentum nunc ac
-                  nisi vulputate fringilla. Donec lacinia congue felis in
-                  faucibus.
-                </p>
+                <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
               </b-media-body>
             </b-media>
             <b-media vertical-align="center" class="mb-4 d-flex">
               <!-- <template v-slot:aside> -->
-              <b-img
-                :src="require('../../assets/images/page-img/22.jpg')"
-                alt="#"
-                class="me-2 avatar-80 align-self-center"
-              ></b-img>
+              <b-img :src="require('../../assets/images/page-img/22.jpg')" alt="#" class="me-2 avatar-80 align-self-center"></b-img>
               <!-- </template> -->
               <b-media-body>
                 <h5 class="mt-0 mb-1">Center-aligned media</h5>
-                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
-                scelerisque ante sollicitudin. Cras purus odio, vestibulum in
-                vulputate at, tempus viverra turpis. Fusce condimentum nunc ac
-                nisi vulputate fringilla. Donec lacinia congue felis in
-                faucibus.
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
               </b-media-body>
             </b-media>
             <b-media vertical-align="end" class="d-flex">
               <!-- <template v-slot:aside> -->
-              <b-img
-                :src="require('../../assets/images/page-img/23.jpg')"
-                alt="#"
-                class="me-2 avatar-80 align-self-end"
-              ></b-img>
+              <b-img :src="require('../../assets/images/page-img/23.jpg')" alt="#" class="me-2 avatar-80 align-self-end"></b-img>
               <!-- </template> -->
               <b-media-body>
                 <h5 class="mt-0 mb-1">Bottom-aligned media</h5>
-                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
-                scelerisque ante sollicitudin. Cras purus odio, vestibulum in
-                vulputate at, tempus viverra turpis. Fusce condimentum nunc ac
-                nisi vulputate fringilla. Donec lacinia congue felis in
-                faucibus.
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
               </b-media-body>
             </b-media>
           </template>
@@ -338,23 +243,14 @@
             <h4 class="card-title">Media list</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-7
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-7 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
           <template v-slot:body>
             <p>
-              Because the media object has so few structural requirements, you
-              can also use these classes on list HTML elements. On your
-              <code>&lt;ul&gt;</code> or <code>&lt;ol&gt;</code>, add the
-              <code>.list-unstyled</code> to remove any browser default list
-              styles, and then apply <code>.media</code> to your
-              <code>&lt;li&gt;</code>s. As always, use spacing utilities
-              wherever needed to fine tune.
+              Because the media object has so few structural requirements, you can also use these classes on list HTML elements. On your
+              <code>&lt;ul&gt;</code> or <code>&lt;ol&gt;</code>, add the <code>.list-unstyled</code> to remove any browser default list styles, and then apply <code>.media</code> to your <code>&lt;li&gt;</code>s. As always, use spacing utilities wherever needed to fine tune.
             </p>
             <b-collapse id="collapse-7" class="mb-2">
               <div class="card">
@@ -397,55 +293,29 @@
             <ul class="list-unstyled">
               <b-media tag="li" class="d-flex">
                 <!-- <template v-slot:aside> -->
-                <b-img
-                  :src="require('../../assets/images/page-img/24.jpg')"
-                  alt="#"
-                  class="me-2 avatar-80"
-                ></b-img>
+                <b-img :src="require('../../assets/images/page-img/24.jpg')" alt="#" class="me-2 avatar-80"></b-img>
                 <!-- </template> -->
                 <b-media-body>
                   <h5 class="mt-0">List-based media object</h5>
-                  <p>
-                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
-                    scelerisque ante sollicitudin. Cras purus odio, vestibulum
-                    in vulputate at, tempus viverra turpis. Fusce condimentum
-                    nunc ac nisi vulputate fringilla. Donec lacinia congue felis
-                    in faucibus.
-                  </p>
+                  <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
                 </b-media-body>
               </b-media>
               <b-media tag="li" class="my-4 d-flex">
                 <!-- <template v-slot:aside> -->
-                <b-img
-                  :src="require('../../assets/images/page-img/15.jpg')"
-                  alt="#"
-                  class="me-3 avatar-80"
-                ></b-img>
+                <b-img :src="require('../../assets/images/page-img/15.jpg')" alt="#" class="me-3 avatar-80"></b-img>
                 <!-- </template> -->
                 <b-media-body>
                   <h5 class="mt-0 mb-1">List-based media object</h5>
-                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
-                  scelerisque ante sollicitudin. Cras purus odio, vestibulum in
-                  vulputate at, tempus viverra turpis. Fusce condimentum nunc ac
-                  nisi vulputate fringilla. Donec lacinia congue felis in
-                  faucibus.
+                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
                 </b-media-body>
               </b-media>
               <b-media tag="li" class="d-flex">
                 <!-- <template v-slot:aside> -->
-                <b-img
-                  :src="require('../../assets/images/page-img/16.jpg')"
-                  alt="#"
-                  class="me-2 avatar-80"
-                ></b-img>
+                <b-img :src="require('../../assets/images/page-img/16.jpg')" alt="#" class="me-2 avatar-80"></b-img>
                 <!-- </template> -->
                 <b-media-body>
                   <h5 class="mt-0 mb-1">List-based media object</h5>
-                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
-                  scelerisque ante sollicitudin. Cras purus odio, vestibulum in
-                  vulputate at, tempus viverra turpis. Fusce condimentum nunc ac
-                  nisi vulputate fringilla. Donec lacinia congue felis in
-                  faucibus.
+                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
                 </b-media-body>
               </b-media>
             </ul>
@@ -456,13 +326,13 @@
   </b-container>
 </template>
 <script>
-import { xray } from "../../config/pluginInit";
-import iqCard from "../../components/xray/cards/iq-card";
+import { xray } from '../../config/pluginInit'
+import iqCard from '../../components/xray/cards/iq-card'
 export default {
-  name: "UiMediaObject",
+  name: 'UiMediaObject',
   components: { iqCard },
   mounted() {
-    xray.index();
-  },
-};
+    xray.index()
+  }
+}
 </script>

@@ -3,10 +3,7 @@
     <div class="avatar mr-3">
       <img :src="item.image" :alt="item.image" class="avatar-50" />
       <span class="avatar-status">
-        <i
-          class="ri-checkbox-blank-circle-fill"
-          :class="item.isActive ? 'text-success' : 'text-warning'"
-        />
+        <i class="ri-checkbox-blank-circle-fill" :class="item.isActive ? 'text-success' : 'text-warning'" />
       </span>
     </div>
     <div class="chat-sidebar-name">
@@ -17,9 +14,9 @@
 </template>
 <script>
 export default {
-  name: "ChatItem",
+  name: 'ChatItem',
   props: {
-    item: { type: Object },
-  },
-};
+    item: { type: Object }
+  }
+}
 </script>

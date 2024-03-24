@@ -7,42 +7,20 @@
             <h4 class="card-title">Examples</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-1
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-1 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
           <template v-slot:body>
             <p>
-              Progress components are built with two HTML elements, some CSS to
-              set the width, and a few attributes. We don't use
-              <a
-                href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress"
-                >the HTML5 <code>&lt;progress&gt;</code> element</a
-              >, ensuring you can stack progress bars, animate them, and place
-              text labels over them.
+              Progress components are built with two HTML elements, some CSS to set the width, and a few attributes. We don't use
+              <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress">the HTML5 <code>&lt;progress&gt;</code> element</a>, ensuring you can stack progress bars, animate them, and place text labels over them.
             </p>
             <ul>
-              <li>
-                We use the <code>.progress</code> as a wrapper to indicate the
-                max value of the progress bar.
-              </li>
-              <li>
-                We use the inner <code>.progress-bar</code> to indicate the
-                progress so far.
-              </li>
-              <li>
-                The <code>.progress-bar</code> requires an inline style, utility
-                class, or custom CSS to set their width.
-              </li>
-              <li>
-                The <code>.progress-bar</code> also requires some
-                <code>role</code> and <code>aria</code> attributes to make it
-                accessible.
-              </li>
+              <li>We use the <code>.progress</code> as a wrapper to indicate the max value of the progress bar.</li>
+              <li>We use the inner <code>.progress-bar</code> to indicate the progress so far.</li>
+              <li>The <code>.progress-bar</code> requires an inline style, utility class, or custom CSS to set their width.</li>
+              <li>The <code>.progress-bar</code> also requires some <code>role</code> and <code>aria</code> attributes to make it accessible.</li>
             </ul>
             <p>Put that all together, and you have the following examples.</p>
             <b-collapse id="collapse-1" class="mb-2">
@@ -71,20 +49,12 @@
             <h4 class="card-title">Height</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-2
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-2 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
           <template v-slot:body>
-            <p>
-              We only set a <code>height</code> value on the
-              <code>.progress</code>, so if you change that value the inner
-              <code>.progress-bar</code> will automatically resize accordingly.
-            </p>
+            <p>We only set a <code>height</code> value on the <code>.progress</code>, so if you change that value the inner <code>.progress-bar</code> will automatically resize accordingly.</p>
             <b-collapse id="collapse-2" class="mb-2">
               <div class="card">
                 <kbd class="bg-dark">
@@ -99,28 +69,16 @@
               </div>
             </b-collapse>
             <b-progress max="100" class="mb-3">
-              <b-progress-bar
-                value="25"
-                :label="`${(25 / 100) * 100}%`"
-              ></b-progress-bar>
+              <b-progress-bar value="25" :label="`${(25 / 100) * 100}%`"></b-progress-bar>
             </b-progress>
             <b-progress max="100" class="mb-3">
-              <b-progress-bar
-                value="50"
-                :label="`${(50 / 100) * 100}%`"
-              ></b-progress-bar>
+              <b-progress-bar value="50" :label="`${(50 / 100) * 100}%`"></b-progress-bar>
             </b-progress>
             <b-progress max="100" class="mb-3">
-              <b-progress-bar
-                value="75"
-                :label="`${(75 / 100) * 100}%`"
-              ></b-progress-bar>
+              <b-progress-bar value="75" :label="`${(75 / 100) * 100}%`"></b-progress-bar>
             </b-progress>
             <b-progress max="100">
-              <b-progress-bar
-                value="99"
-                :label="`${(99 / 100) * 100}%`"
-              ></b-progress-bar>
+              <b-progress-bar value="99" :label="`${(99 / 100) * 100}%`"></b-progress-bar>
             </b-progress>
           </template>
         </iq-card>
@@ -129,20 +87,14 @@
             <h4 class="card-title">Animated stripes</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-3
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-3 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
           <template v-slot:body>
             <p>
               The striped gradient can also be animated. Add
-              <code>.progress-bar-animated</code> to
-              <code>.progress-bar</code> to animate the stripes right to left
-              via CSS3 animations.
+              <code>.progress-bar-animated</code> to <code>.progress-bar</code> to animate the stripes right to left via CSS3 animations.
             </p>
             <b-collapse id="collapse-3" class="mb-2">
               <div class="card">
@@ -155,18 +107,8 @@
                 </kbd>
               </div>
             </b-collapse>
-            <b-progress
-              :value="75"
-              animated
-              max="100"
-              class="mb-3"
-            ></b-progress>
-            <b-progress
-              :value="75"
-              variant="success"
-              animated
-              max="100"
-            ></b-progress>
+            <b-progress :value="75" animated max="100" class="mb-3"></b-progress>
+            <b-progress :value="75" variant="success" animated max="100"></b-progress>
           </template>
         </iq-card>
       </b-col>
@@ -176,11 +118,7 @@
             <h4 class="card-title">Labels</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-4
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-4 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
@@ -203,28 +141,16 @@
               </div>
             </b-collapse>
             <b-progress max="100" class="mb-3">
-              <b-progress-bar
-                value="25"
-                :label="`${(25 / 100) * 100}%`"
-              ></b-progress-bar>
+              <b-progress-bar value="25" :label="`${(25 / 100) * 100}%`"></b-progress-bar>
             </b-progress>
             <b-progress max="100" class="mb-3">
-              <b-progress-bar
-                value="50"
-                :label="`${(50 / 100) * 100}%`"
-              ></b-progress-bar>
+              <b-progress-bar value="50" :label="`${(50 / 100) * 100}%`"></b-progress-bar>
             </b-progress>
             <b-progress max="100" class="mb-3">
-              <b-progress-bar
-                value="75"
-                :label="`${(75 / 100) * 100}%`"
-              ></b-progress-bar>
+              <b-progress-bar value="75" :label="`${(75 / 100) * 100}%`"></b-progress-bar>
             </b-progress>
             <b-progress max="100">
-              <b-progress-bar
-                value="99"
-                :label="`${(99 / 100) * 100}%`"
-              ></b-progress-bar>
+              <b-progress-bar value="99" :label="`${(99 / 100) * 100}%`"></b-progress-bar>
             </b-progress>
           </template>
         </iq-card>
@@ -233,19 +159,12 @@
             <h4 class="card-title">Backgrounds</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-5
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-5 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
           <template v-slot:body>
-            <p>
-              Use background utility classes to change the appearance of
-              individual progress bars.
-            </p>
+            <p>Use background utility classes to change the appearance of individual progress bars.</p>
             <b-collapse id="collapse-5" class="mb-2">
               <div class="card">
                 <kbd class="bg-dark">
@@ -259,24 +178,9 @@
                 </kbd>
               </div>
             </b-collapse>
-            <b-progress
-              :value="25"
-              variant="success"
-              max="100"
-              class="mb-3"
-            ></b-progress>
-            <b-progress
-              :value="50"
-              variant="info"
-              max="100"
-              class="mb-3"
-            ></b-progress>
-            <b-progress
-              :value="75"
-              variant="warning"
-              max="100"
-              class="mb-3"
-            ></b-progress>
+            <b-progress :value="25" variant="success" max="100" class="mb-3"></b-progress>
+            <b-progress :value="50" variant="info" max="100" class="mb-3"></b-progress>
+            <b-progress :value="75" variant="warning" max="100" class="mb-3"></b-progress>
             <b-progress :value="100" variant="danger" max="100"></b-progress>
           </template>
         </iq-card>
@@ -285,19 +189,12 @@
             <h4 class="card-title">Multiple bars</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-6
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-6 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
           <template v-slot:body>
-            <p>
-              Include multiple progress bars in a progress component if you
-              need.
-            </p>
+            <p>Include multiple progress bars in a progress component if you need.</p>
             <b-collapse id="collapse-6" class="mb-2">
               <div class="card">
                 <kbd class="bg-dark">
@@ -324,20 +221,12 @@
             <h4 class="card-title">Striped</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-7
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-7 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
           <template v-slot:body>
-            <p>
-              Add <code>.progress-bar-striped</code> to any
-              <code>.progress-bar</code> to apply a stripe via CSS gradient over
-              the progress bar’s background color.
-            </p>
+            <p>Add <code>.progress-bar-striped</code> to any <code>.progress-bar</code> to apply a stripe via CSS gradient over the progress bar’s background color.</p>
             <b-collapse id="collapse-7" class="mb-2">
               <div class="card">
                 <kbd class="bg-dark">
@@ -353,33 +242,10 @@
               </div>
             </b-collapse>
             <b-progress :value="10" striped max="100" class="mb-3"></b-progress>
-            <b-progress
-              :value="25"
-              striped
-              variant="success"
-              max="100"
-              class="mb-3"
-            ></b-progress>
-            <b-progress
-              :value="50"
-              striped
-              variant="info"
-              max="100"
-              class="mb-3"
-            ></b-progress>
-            <b-progress
-              :value="75"
-              striped
-              variant="warning"
-              max="100"
-              class="mb-3"
-            ></b-progress>
-            <b-progress
-              :value="100"
-              striped
-              variant="danger"
-              max="100"
-            ></b-progress>
+            <b-progress :value="25" striped variant="success" max="100" class="mb-3"></b-progress>
+            <b-progress :value="50" striped variant="info" max="100" class="mb-3"></b-progress>
+            <b-progress :value="75" striped variant="warning" max="100" class="mb-3"></b-progress>
+            <b-progress :value="100" striped variant="danger" max="100"></b-progress>
           </template>
         </iq-card>
       </b-col>
@@ -387,13 +253,13 @@
   </b-container>
 </template>
 <script>
-import { xray } from "../../config/pluginInit";
-import iqCard from "../../components/xray/cards/iq-card";
+import { xray } from '../../config/pluginInit'
+import iqCard from '../../components/xray/cards/iq-card'
 export default {
-  name: "UiProgressBars",
+  name: 'UiProgressBars',
   components: { iqCard },
   mounted() {
-    xray.index();
-  },
-};
+    xray.index()
+  }
+}
 </script>

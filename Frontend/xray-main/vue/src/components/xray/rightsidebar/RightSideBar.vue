@@ -6,11 +6,7 @@
       <template v-else>
         <slot name="openIcon" class="side-left-icon" v-if="hasOpenIconSlot" />
         <i class="ri-arrow-left-line side-left-icon" v-else></i>
-        <slot
-          name="closeIcon"
-          class="side-right-icon"
-          v-if="hasCloseIconSlot"
-        />
+        <slot name="closeIcon" class="side-right-icon" v-if="hasCloseIconSlot" />
         <i class="ri-arrow-right-line side-right-icon" v-else></i>
       </template>
     </div>
@@ -22,39 +18,39 @@
 </template>
 <script>
 export default {
-  name: "RightSideBarStyle1",
+  name: 'RightSideBarStyle1',
   data() {
     return {
       rightSideBarMini: false,
-      miniClass: "",
-    };
+      miniClass: ''
+    }
   },
   props: {
-    toggleClass: { type: String, default: "" },
+    toggleClass: { type: String, default: '' }
   },
   computed: {
     hasIconSlot() {
-      return !!this.$slots.icon;
+      return !!this.$slots.icon
     },
     hasOpenIconSlot() {
-      return !!this.$slots.openIcon;
+      return !!this.$slots.openIcon
     },
     hasCloseIconSlot() {
-      return !!this.$slots.closeIcon;
-    },
+      return !!this.$slots.closeIcon
+    }
   },
   methods: {
     toggleMini() {
-      this.rightSideBarMini = !this.rightSideBarMini;
-      this.checkRightSideBar();
+      this.rightSideBarMini = !this.rightSideBarMini
+      this.checkRightSideBar()
     },
     checkRightSideBar() {
       if (this.rightSideBarMini) {
-        this.miniClass = "right-sidebar";
+        this.miniClass = 'right-sidebar'
       } else {
-        this.miniClass = "";
+        this.miniClass = ''
       }
-    },
-  },
-};
+    }
+  }
+}
 </script>

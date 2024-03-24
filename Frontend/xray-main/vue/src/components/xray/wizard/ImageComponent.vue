@@ -18,30 +18,18 @@
         <input type="file" class="form-control" name="pic-2" accept="image/*" />
       </div>
     </div>
-    <a
-      href="#"
-      @click="changeTab(4)"
-      class="btn btn-primary next action-button float-end"
-      value="Submit"
-      >Submit</a
-    >
-    <a
-      href="#"
-      @click="changeTab(2)"
-      class="btn btn-dark previous action-button-previous float-end me-1"
-      value="Previous"
-      >Previous</a
-    >
+    <a href="#" @click="changeTab(4)" class="btn btn-primary next action-button float-end" value="Submit">Submit</a>
+    <a href="#" @click="changeTab(2)" class="btn btn-dark previous action-button-previous float-end me-1" value="Previous">Previous</a>
   </fieldset>
 </template>
 <script>
 export default {
-  name: "ImageComponent",
+  name: 'ImageComponent',
   setup(props, { emit }) {
     const changeTab = (value) => {
-      emit("onClick", value);
-    };
-    return { props, changeTab };
-  },
-};
+      emit('onClick', value)
+    }
+    return { props, changeTab }
+  }
+}
 </script>

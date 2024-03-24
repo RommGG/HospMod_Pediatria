@@ -15,22 +15,22 @@
   </b-container>
 </template>
 <script>
-import { ref } from "vue";
-import iqCard from "../../components/xray/cards/iq-card.vue";
-import { xray } from "../../config/pluginInit";
-import { data } from "../../assets/vector-map";
-import LeaFlet from "../../components/LeaFlet.vue";
+import { ref } from 'vue'
+import iqCard from '../../components/xray/cards/iq-card.vue'
+import { xray } from '../../config/pluginInit'
+import { data } from '../../assets/vector-map'
+import LeaFlet from '../../components/LeaFlet.vue'
 export default {
-  name: "VectorMaps",
+  name: 'VectorMaps',
   components: { iqCard, LeaFlet },
   setup() {},
   data() {
-    const leafFletOptions = ref(data);
+    const leafFletOptions = ref(data)
 
-    return { leafFletOptions };
+    return { leafFletOptions }
   },
   mounted() {
-    xray.index();
-  },
-};
+    xray.index()
+  }
+}
 </script>

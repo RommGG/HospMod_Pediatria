@@ -5,10 +5,7 @@
         <iq-card>
           <template v-slot:headerTitle>
             <h4 class="card-title pt-3"><b>Dropdown Options</b></h4>
-            <p>
-              vue-select accepts arrays of strings or objects to use as options
-              through the options prop
-            </p>
+            <p>vue-select accepts arrays of strings or objects to use as options through the options prop</p>
           </template>
           <template v-slot:body>
             <b-row>
@@ -18,11 +15,7 @@
                     <h4 class="card-title"><b>Basic</b></h4>
                   </template>
                   <template v-slot:headerAction>
-                    <a
-                      class="text-primary float-right"
-                      v-b-toggle.collapse-1
-                      role="button"
-                    >
+                    <a class="text-primary float-right" v-b-toggle.collapse-1 role="button">
                       <i class="ri-code-s-slash-line" />
                     </a>
                   </template>
@@ -49,16 +42,8 @@ data(){
                       </div>
                     </b-collapse>
                     <v-select name="user_id" :options="['Name ', 'name']" />
-                    <p>
-                      When provided an array of objects, vue-select will display
-                      a single value of the object. By default, vue-select will
-                      look for a key named label on the object to use as display
-                      text
-                    </p>
-                    <v-select
-                      name="user_id"
-                      :options="[{ label: 'Name ', value: 'name' }]"
-                    />
+                    <p>When provided an array of objects, vue-select will display a single value of the object. By default, vue-select will look for a key named label on the object to use as display text</p>
+                    <v-select name="user_id" :options="[{ label: 'Name ', value: 'name' }]" />
                   </template>
                 </iq-card>
               </b-col>
@@ -70,11 +55,7 @@ data(){
                     <h4 class="card-title"><b>Option label</b></h4>
                   </template>
                   <template v-slot:headerAction>
-                    <a
-                      class="text-primary float-right"
-                      v-b-toggle.collapse-2
-                      role="button"
-                    >
+                    <a class="text-primary float-right" v-b-toggle.collapse-2 role="button">
                       <i class="ri-code-s-slash-line" />
                     </a>
                   </template>
@@ -83,10 +64,7 @@ data(){
                       <div class="card">
                         <kbd class="bg-dark">
                           <!--                  <a href="javascript:void(0)" v-b-tooltip.hover data-copy-target="#basic-datepicker" title="Copy" class="text-white float-right" data-copy="true">Copy</a>-->
-                          <pre
-                            class="text-white"
-                            id="Option-label-dropdown"
-                          ><code>
+                          <pre class="text-white" id="Option-label-dropdown"><code>
 &#x3C;template&#x3E;
   &#x3C;v-select name=&#x22;user_id&#x22; label=&#x22;countryName&#x22; :options= countries /&#x3E;
 &#x3C;/template&#x3E;
@@ -117,16 +95,8 @@ data(){
                         </kbd>
                       </div>
                     </b-collapse>
-                    <p>
-                      When the options array contains objects, vue-select looks
-                      for the label key to display by default. You can set your
-                      own label to match your source data using the label prop
-                    </p>
-                    <v-select
-                      name="user_id"
-                      label="countryName"
-                      :options="countries"
-                    />
+                    <p>When the options array contains objects, vue-select looks for the label key to display by default. You can set your own label to match your source data using the label prop</p>
+                    <v-select name="user_id" label="countryName" :options="countries" />
                   </template>
                 </iq-card>
               </b-col>
@@ -145,19 +115,10 @@ data(){
                 <iq-card class="shadow-none border">
                   <template v-slot:headerTitle>
                     <h4 class="card-title"><b>Default</b></h4>
-                    <p>
-                      The most common use case for vue-select is to have the
-                      chosen value synced with a parent component. vue-select
-                      takes advantage of the v-model syntax to sync values with
-                      a parent
-                    </p>
+                    <p>The most common use case for vue-select is to have the chosen value synced with a parent component. vue-select takes advantage of the v-model syntax to sync values with a parent</p>
                   </template>
                   <template v-slot:headerAction>
-                    <a
-                      class="text-primary float-right"
-                      v-b-toggle.collapse-3
-                      role="button"
-                    >
+                    <a class="text-primary float-right" v-b-toggle.collapse-3 role="button">
                       <i class="ri-code-s-slash-line" />
                     </a>
                   </template>
@@ -189,11 +150,7 @@ data(){
                         </kbd>
                       </div>
                     </b-collapse>
-                    <v-select
-                      name="user_id"
-                      v-model="selected"
-                      :options="options"
-                    />
+                    <v-select name="user_id" v-model="selected" :options="options" />
                   </template>
                 </iq-card>
               </b-col>
@@ -203,17 +160,10 @@ data(){
                 <iq-card class="shadow-none border">
                   <template v-slot:headerTitle>
                     <h4 class="card-title"><b>Single/Multiple Selection</b></h4>
-                    <p>
-                      By default, vue-select supports choosing a single value.
-                      If you need multiple values, use the multiple prop
-                    </p>
+                    <p>By default, vue-select supports choosing a single value. If you need multiple values, use the multiple prop</p>
                   </template>
                   <template v-slot:headerAction>
-                    <a
-                      class="text-primary float-right"
-                      v-b-toggle.collapse-4
-                      role="button"
-                    >
+                    <a class="text-primary float-right" v-b-toggle.collapse-4 role="button">
                       <i class="ri-code-s-slash-line" />
                     </a>
                   </template>
@@ -222,10 +172,7 @@ data(){
                       <div class="card">
                         <kbd class="bg-dark">
                           <!--                  <a href="javascript:void(0)" v-b-tooltip.hover data-copy-target="#basic-datepicker" title="Copy" class="text-white float-right" data-copy="true">Copy</a>-->
-                          <pre
-                            class="text-white"
-                            id="single-multiple-dropdown"
-                          ><code>
+                          <pre class="text-white" id="single-multiple-dropdown"><code>
 &#x3C;template&#x3E;
   &#x3C;v-select multiple :closeOnSelect=&#x22;false&#x22; v-model=&#x22;selectedselection&#x22; :options=&#x22;optionsselection&#x22;&#x3E;&#x3C;/v-select&#x3E;
 &#x3C;/template&#x3E;
@@ -244,12 +191,7 @@ data(){
                         </kbd>
                       </div>
                     </b-collapse>
-                    <v-select
-                      multiple
-                      :closeOnSelect="false"
-                      v-model="selectedselection"
-                      :options="optionsselection"
-                    ></v-select>
+                    <v-select multiple :closeOnSelect="false" v-model="selectedselection" :options="optionsselection"></v-select>
                   </template>
                 </iq-card>
               </b-col>
@@ -259,18 +201,10 @@ data(){
                 <iq-card class="shadow-none border">
                   <template v-slot:headerTitle>
                     <h4 class="card-title"><b>Tagging</b></h4>
-                    <p>
-                      To allow input that's not present within the options, set
-                      the taggable prop to true. If you want new tags to be
-                      pushed to the options list, set push-tags to true
-                    </p>
+                    <p>To allow input that's not present within the options, set the taggable prop to true. If you want new tags to be pushed to the options list, set push-tags to true</p>
                   </template>
                   <template v-slot:headerAction>
-                    <a
-                      class="text-primary float-right"
-                      v-b-toggle.collapse-5
-                      role="button"
-                    >
+                    <a class="text-primary float-right" v-b-toggle.collapse-5 role="button">
                       <i class="ri-code-s-slash-line" />
                     </a>
                   </template>
@@ -322,46 +256,46 @@ data(){
   </b-container>
 </template>
 <script>
-import { xray } from "../../config/pluginInit";
+import { xray } from '../../config/pluginInit'
 
 export default {
-  name: "SelectDemo",
+  name: 'SelectDemo',
   mounted() {
-    xray.index();
+    xray.index()
   },
   data() {
     return {
       countries: [
         {
-          countryCode: "GE",
-          countryName: "Germany",
+          countryCode: 'GE',
+          countryName: 'Germany'
         },
         {
-          countryCode: "AUS",
-          countryName: "Australia",
+          countryCode: 'AUS',
+          countryName: 'Australia'
         },
         {
-          countryCode: "CA",
-          countryName: "Canada",
-        },
+          countryCode: 'CA',
+          countryName: 'Canada'
+        }
       ],
       options: [
-        { id: 1, label: "foo" },
-        { id: 3, label: "bar" },
-        { id: 2, label: "baz" },
+        { id: 1, label: 'foo' },
+        { id: 3, label: 'bar' },
+        { id: 2, label: 'baz' }
       ],
-      selected: { id: 3, label: "bar" },
-      selectedselection: ["foo", "bar"],
-      optionsselection: ["foo", "bar", "baz"],
+      selected: { id: 3, label: 'bar' },
+      selectedselection: ['foo', 'bar'],
+      optionsselection: ['foo', 'bar', 'baz'],
       taggable: {
         type: Boolean,
-        default: false,
+        default: false
       },
       pushTags: {
         type: Boolean,
-        default: false,
-      },
-    };
-  },
-};
+        default: false
+      }
+    }
+  }
+}
 </script>

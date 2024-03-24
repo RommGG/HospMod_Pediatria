@@ -7,23 +7,12 @@
             <h4 class="card-title">Modal components</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-1
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-1 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
           <template v-slot:body>
-            <p>
-              Below is a <em>static</em> modal example (meaning its
-              <code>position</code> and <code>display</code> have been
-              overridden). Included are the modal header, modal body (required
-              for <code>padding</code>), and modal footer (optional). We ask
-              that you include modal headers with dismiss actions whenever
-              possible, or provide another explicit dismiss action.
-            </p>
+            <p>Below is a <em>static</em> modal example (meaning its <code>position</code> and <code>display</code> have been overridden). Included are the modal header, modal body (required for <code>padding</code>), and modal footer (optional). We ask that you include modal headers with dismiss actions whenever possible, or provide another explicit dismiss action.</p>
             <b-collapse id="collapse-1" class="mb-2">
               <div class="card">
                 <kbd class="bg-dark">
@@ -37,18 +26,8 @@
                 </kbd>
               </div>
             </b-collapse>
-            <b-button @click="modal = true" variant="primary"
-              >Launch demo modal</b-button
-            >
-            <b-modal
-              id="modal-1"
-              v-model="modal"
-              title="Modal title"
-              ok-title="Save Changes"
-              cancel-title="Close"
-            >
-              ...
-            </b-modal>
+            <b-button @click="modal = true" variant="primary">Launch demo modal</b-button>
+            <b-modal id="modal-1" v-model="modal" title="Modal title" ok-title="Save Changes" cancel-title="Close"> ... </b-modal>
           </template>
         </iq-card>
         <iq-card>
@@ -56,20 +35,12 @@
             <h4 class="card-title">Modal Scrolling</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-2
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-2 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
           <template v-slot:body>
-            <p>
-              When modals become too long for the user’s viewport or device,
-              they scroll independent of the page itself. Try the demo below to
-              see what we mean.
-            </p>
+            <p>When modals become too long for the user’s viewport or device, they scroll independent of the page itself. Try the demo below to see what we mean.</p>
             <b-collapse id="collapse-2" class="mb-2">
               <div class="card">
                 <kbd class="bg-dark">
@@ -100,107 +71,26 @@
                 </kbd>
               </div>
             </b-collapse>
-            <b-button @click="modalScrolling = true" variant="primary"
-              >Launch demo modal</b-button
-            >
-            <b-modal
-              id="modal-2"
-              scrollable
-              v-model="modalScrolling"
-              title="Modal title"
-              ok-title="Save Changes"
-              cancel-title="Close"
-            >
-              <p>
-                Cras mattis consectetur purus sit amet fermentum. Cras justo
-                odio, dapibus ac facilisis in, egestas eget quam. Morbi leo
-                risus, porta ac consectetur ac, vestibulum at eros.
-              </p>
-              <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur
-                et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus
-                dolor auctor.
-              </p>
-              <p>
-                Aenean lacinia bibendum nulla sed consectetur. Praesent commodo
-                cursus magna, vel scelerisque nisl consectetur et. Donec sed
-                odio dui. Donec ullamcorper nulla non metus auctor fringilla.
-              </p>
-              <p>
-                Cras mattis consectetur purus sit amet fermentum. Cras justo
-                odio, dapibus ac facilisis in, egestas eget quam. Morbi leo
-                risus, porta ac consectetur ac, vestibulum at eros.
-              </p>
-              <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur
-                et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus
-                dolor auctor.
-              </p>
-              <p>
-                Aenean lacinia bibendum nulla sed consectetur. Praesent commodo
-                cursus magna, vel scelerisque nisl consectetur et. Donec sed
-                odio dui. Donec ullamcorper nulla non metus auctor fringilla.
-              </p>
-              <p>
-                Cras mattis consectetur purus sit amet fermentum. Cras justo
-                odio, dapibus ac facilisis in, egestas eget quam. Morbi leo
-                risus, porta ac consectetur ac, vestibulum at eros.
-              </p>
-              <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur
-                et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus
-                dolor auctor.
-              </p>
-              <p>
-                Aenean lacinia bibendum nulla sed consectetur. Praesent commodo
-                cursus magna, vel scelerisque nisl consectetur et. Donec sed
-                odio dui. Donec ullamcorper nulla non metus auctor fringilla.
-              </p>
-              <p>
-                Cras mattis consectetur purus sit amet fermentum. Cras justo
-                odio, dapibus ac facilisis in, egestas eget quam. Morbi leo
-                risus, porta ac consectetur ac, vestibulum at eros.
-              </p>
-              <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur
-                et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus
-                dolor auctor.
-              </p>
-              <p>
-                Aenean lacinia bibendum nulla sed consectetur. Praesent commodo
-                cursus magna, vel scelerisque nisl consectetur et. Donec sed
-                odio dui. Donec ullamcorper nulla non metus auctor fringilla.
-              </p>
-              <p>
-                Cras mattis consectetur purus sit amet fermentum. Cras justo
-                odio, dapibus ac facilisis in, egestas eget quam. Morbi leo
-                risus, porta ac consectetur ac, vestibulum at eros.
-              </p>
-              <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur
-                et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus
-                dolor auctor.
-              </p>
-              <p>
-                Aenean lacinia bibendum nulla sed consectetur. Praesent commodo
-                cursus magna, vel scelerisque nisl consectetur et. Donec sed
-                odio dui. Donec ullamcorper nulla non metus auctor fringilla.
-              </p>
-              <p>
-                Cras mattis consectetur purus sit amet fermentum. Cras justo
-                odio, dapibus ac facilisis in, egestas eget quam. Morbi leo
-                risus, porta ac consectetur ac, vestibulum at eros.
-              </p>
-              <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur
-                et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus
-                dolor auctor.
-              </p>
-              <p>
-                Aenean lacinia bibendum nulla sed consectetur. Praesent commodo
-                cursus magna, vel scelerisque nisl consectetur et. Donec sed
-                odio dui. Donec ullamcorper nulla non metus auctor fringilla.
-              </p>
+            <b-button @click="modalScrolling = true" variant="primary">Launch demo modal</b-button>
+            <b-modal id="modal-2" scrollable v-model="modalScrolling" title="Modal title" ok-title="Save Changes" cancel-title="Close">
+              <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+              <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+              <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+              <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+              <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+              <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+              <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+              <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+              <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+              <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+              <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+              <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
             </b-modal>
           </template>
         </iq-card>
@@ -209,20 +99,12 @@
             <h4 class="card-title">Optional sizes</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-3
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-3 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
           <template v-slot:body>
-            <p>
-              Modals have three optional sizes, available via modifier classes
-              to be placed on a .modal-dialog. These sizes kick in at certain
-              breakpoints to avoid horizontal scrollbars on narrower viewports.
-            </p>
+            <p>Modals have three optional sizes, available via modifier classes to be placed on a .modal-dialog. These sizes kick in at certain breakpoints to avoid horizontal scrollbars on narrower viewports.</p>
             <b-collapse id="collapse-3" class="mb-2">
               <div class="card">
                 <kbd class="bg-dark">
@@ -247,46 +129,16 @@
                 </kbd>
               </div>
             </b-collapse>
-            <b-button
-              @click="modalExtraLarge = true"
-              variant="primary"
-              class="me-1"
-              >Extra large modal</b-button
-            >
-            <b-button @click="modalLarge = true" variant="primary" class="me-1"
-              >Large modal</b-button
-            >
-            <b-button @click="modalSmall = true" variant="primary" class="me-1"
-              >Small modal</b-button
-            >
-            <b-modal
-              id="modal-3"
-              size="xl"
-              v-model="modalExtraLarge"
-              title="Modal title"
-              ok-title="Save Changes"
-              cancel-title="Close"
-            >
+            <b-button @click="modalExtraLarge = true" variant="primary" class="me-1">Extra large modal</b-button>
+            <b-button @click="modalLarge = true" variant="primary" class="me-1">Large modal</b-button>
+            <b-button @click="modalSmall = true" variant="primary" class="me-1">Small modal</b-button>
+            <b-modal id="modal-3" size="xl" v-model="modalExtraLarge" title="Modal title" ok-title="Save Changes" cancel-title="Close">
               <p>Modal body text goes here.</p>
             </b-modal>
-            <b-modal
-              id="modal-4"
-              size="lg"
-              v-model="modalLarge"
-              title="Modal title"
-              ok-title="Save Changes"
-              cancel-title="Close"
-            >
+            <b-modal id="modal-4" size="lg" v-model="modalLarge" title="Modal title" ok-title="Save Changes" cancel-title="Close">
               <p>Modal body text goes here.</p>
             </b-modal>
-            <b-modal
-              id="modal-5"
-              size="sm"
-              v-model="modalSmall"
-              title="Modal title"
-              ok-title="Save Changes"
-              cancel-title="Close"
-            >
+            <b-modal id="modal-5" size="sm" v-model="modalSmall" title="Modal title" ok-title="Save Changes" cancel-title="Close">
               <p>Modal body text goes here.</p>
             </b-modal>
           </template>
@@ -298,20 +150,12 @@
             <h4 class="card-title">Scrolling long content</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-4
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-4 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
           <template v-slot:body>
-            <p>
-              When modals become too long for the user’s viewport or device,
-              they scroll independent of the page itself. Try the demo below to
-              see what we mean.
-            </p>
+            <p>When modals become too long for the user’s viewport or device, they scroll independent of the page itself. Try the demo below to see what we mean.</p>
             <b-collapse id="collapse-4" class="mb-2">
               <div class="card">
                 <kbd class="bg-dark">
@@ -342,107 +186,26 @@
                 </kbd>
               </div>
             </b-collapse>
-            <b-button @click="modalScrollLong = true" variant="primary"
-              >Launch demo modal</b-button
-            >
-            <b-modal
-              id="modal-6"
-              title="Modal title"
-              scrollable
-              v-model="modalScrollLong"
-              ok-title="Save Changes"
-              cancel-title="Close"
-            >
-              <p>
-                Cras mattis consectetur purus sit amet fermentum. Cras justo
-                odio, dapibus ac facilisis in, egestas eget quam. Morbi leo
-                risus, porta ac consectetur ac, vestibulum at eros.
-              </p>
-              <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur
-                et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus
-                dolor auctor.
-              </p>
-              <p>
-                Aenean lacinia bibendum nulla sed consectetur. Praesent commodo
-                cursus magna, vel scelerisque nisl consectetur et. Donec sed
-                odio dui. Donec ullamcorper nulla non metus auctor fringilla.
-              </p>
-              <p>
-                Cras mattis consectetur purus sit amet fermentum. Cras justo
-                odio, dapibus ac facilisis in, egestas eget quam. Morbi leo
-                risus, porta ac consectetur ac, vestibulum at eros.
-              </p>
-              <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur
-                et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus
-                dolor auctor.
-              </p>
-              <p>
-                Aenean lacinia bibendum nulla sed consectetur. Praesent commodo
-                cursus magna, vel scelerisque nisl consectetur et. Donec sed
-                odio dui. Donec ullamcorper nulla non metus auctor fringilla.
-              </p>
-              <p>
-                Cras mattis consectetur purus sit amet fermentum. Cras justo
-                odio, dapibus ac facilisis in, egestas eget quam. Morbi leo
-                risus, porta ac consectetur ac, vestibulum at eros.
-              </p>
-              <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur
-                et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus
-                dolor auctor.
-              </p>
-              <p>
-                Aenean lacinia bibendum nulla sed consectetur. Praesent commodo
-                cursus magna, vel scelerisque nisl consectetur et. Donec sed
-                odio dui. Donec ullamcorper nulla non metus auctor fringilla.
-              </p>
-              <p>
-                Cras mattis consectetur purus sit amet fermentum. Cras justo
-                odio, dapibus ac facilisis in, egestas eget quam. Morbi leo
-                risus, porta ac consectetur ac, vestibulum at eros.
-              </p>
-              <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur
-                et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus
-                dolor auctor.
-              </p>
-              <p>
-                Aenean lacinia bibendum nulla sed consectetur. Praesent commodo
-                cursus magna, vel scelerisque nisl consectetur et. Donec sed
-                odio dui. Donec ullamcorper nulla non metus auctor fringilla.
-              </p>
-              <p>
-                Cras mattis consectetur purus sit amet fermentum. Cras justo
-                odio, dapibus ac facilisis in, egestas eget quam. Morbi leo
-                risus, porta ac consectetur ac, vestibulum at eros.
-              </p>
-              <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur
-                et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus
-                dolor auctor.
-              </p>
-              <p>
-                Aenean lacinia bibendum nulla sed consectetur. Praesent commodo
-                cursus magna, vel scelerisque nisl consectetur et. Donec sed
-                odio dui. Donec ullamcorper nulla non metus auctor fringilla.
-              </p>
-              <p>
-                Cras mattis consectetur purus sit amet fermentum. Cras justo
-                odio, dapibus ac facilisis in, egestas eget quam. Morbi leo
-                risus, porta ac consectetur ac, vestibulum at eros.
-              </p>
-              <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur
-                et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus
-                dolor auctor.
-              </p>
-              <p>
-                Aenean lacinia bibendum nulla sed consectetur. Praesent commodo
-                cursus magna, vel scelerisque nisl consectetur et. Donec sed
-                odio dui. Donec ullamcorper nulla non metus auctor fringilla.
-              </p>
+            <b-button @click="modalScrollLong = true" variant="primary">Launch demo modal</b-button>
+            <b-modal id="modal-6" title="Modal title" scrollable v-model="modalScrollLong" ok-title="Save Changes" cancel-title="Close">
+              <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+              <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+              <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+              <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+              <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+              <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+              <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+              <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+              <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+              <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+              <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+              <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
             </b-modal>
           </template>
         </iq-card>
@@ -451,20 +214,14 @@
             <h4 class="card-title">Vertically centered</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-5
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-5 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
           <template v-slot:body>
             <p>
               Add
-              <code class="highlighter-rouge">.modal-dialog-centered</code> to
-              <code class="highlighter-rouge">.modal-dialog</code> to vertically
-              center the modal.
+              <code class="highlighter-rouge">.modal-dialog-centered</code> to <code class="highlighter-rouge">.modal-dialog</code> to vertically center the modal.
             </p>
             <b-collapse id="collapse-5" class="mb-2">
               <div class="card">
@@ -487,61 +244,15 @@
                 </kbd>
               </div>
             </b-collapse>
-            <b-button
-              @click="modalVertical = true"
-              variant="primary"
-              class="me-1"
-              >Launch demo modal</b-button
-            >
-            <b-button
-              @click="modalVerticalScroll = true"
-              variant="primary"
-              class="me-1"
-              >Vertically centered scrollable modal</b-button
-            >
-            <b-modal
-              id="modal-7"
-              v-model="modalVertical"
-              centered
-              title="Modal title"
-              ok-title="Save Changes"
-              cancel-title="Close"
-            >
-              ...
-            </b-modal>
-            <b-modal
-              id="modal-8"
-              v-model="modalVerticalScroll"
-              centered
-              title="Modal title"
-              ok-title="Save Changes"
-              cancel-title="Close"
-            >
-              <p>
-                Cras mattis consectetur purus sit amet fermentum. Cras justo
-                odio, dapibus ac facilisis in, egestas eget quam. Morbi leo
-                risus, porta ac consectetur ac, vestibulum at eros.
-              </p>
-              <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur
-                et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus
-                dolor auctor.
-              </p>
-              <p>
-                Aenean lacinia bibendum nulla sed consectetur. Praesent commodo
-                cursus magna, vel scelerisque nisl consectetur et. Donec sed
-                odio dui. Donec ullamcorper nulla non metus auctor fringilla.
-              </p>
-              <p>
-                Cras mattis consectetur purus sit amet fermentum. Cras justo
-                odio, dapibus ac facilisis in, egestas eget quam. Morbi leo
-                risus, porta ac consectetur ac, vestibulum at eros.
-              </p>
-              <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur
-                et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus
-                dolor auctor.
-              </p>
+            <b-button @click="modalVertical = true" variant="primary" class="me-1">Launch demo modal</b-button>
+            <b-button @click="modalVerticalScroll = true" variant="primary" class="me-1">Vertically centered scrollable modal</b-button>
+            <b-modal id="modal-7" v-model="modalVertical" centered title="Modal title" ok-title="Save Changes" cancel-title="Close"> ... </b-modal>
+            <b-modal id="modal-8" v-model="modalVerticalScroll" centered title="Modal title" ok-title="Save Changes" cancel-title="Close">
+              <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+              <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+              <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
             </b-modal>
           </template>
         </iq-card>
@@ -550,20 +261,14 @@
             <h4 class="card-title">Using the grid</h4>
           </template>
           <template v-slot:headerAction>
-            <a
-              class="text-primary float-right"
-              v-b-toggle.collapse-6
-              role="button"
-            >
+            <a class="text-primary float-right" v-b-toggle.collapse-6 role="button">
               <i class="ri-code-s-slash-line" />
             </a>
           </template>
           <template v-slot:body>
             <p>
               Utilize the Bootstrap grid system within a modal by nesting
-              <code>.container-fluid</code> within the <code>.modal-body</code>.
-              Then, use the normal grid system classes as you would anywhere
-              else.
+              <code>.container-fluid</code> within the <code>.modal-body</code>. Then, use the normal grid system classes as you would anywhere else.
             </p>
             <b-collapse id="collapse-6" class="mb-2">
               <div class="card">
@@ -605,17 +310,8 @@
                 </kbd>
               </div>
             </b-collapse>
-            <b-button @click="modalGride = true" variant="primary"
-              >Launch demo modal</b-button
-            >
-            <b-modal
-              id="modal-9"
-              v-model="modalGride"
-              centered
-              title="Modal title"
-              ok-title="Save Changes"
-              cancel-title="Close"
-            >
+            <b-button @click="modalGride = true" variant="primary">Launch demo modal</b-button>
+            <b-modal id="modal-9" v-model="modalGride" centered title="Modal title" ok-title="Save Changes" cancel-title="Close">
               <div class="iq-example-row">
                 <b-container fluid>
                   <b-row class="mb-3">
@@ -648,10 +344,10 @@
   </b-container>
 </template>
 <script>
-import { xray } from "../../config/pluginInit";
-import iqCard from "../../components/xray/cards/iq-card";
+import { xray } from '../../config/pluginInit'
+import iqCard from '../../components/xray/cards/iq-card'
 export default {
-  name: "UiModal",
+  name: 'UiModal',
   components: { iqCard },
   data() {
     return {
@@ -663,11 +359,11 @@ export default {
       modalScrollLong: false,
       modalVertical: false,
       modalVerticalScroll: false,
-      modalGride: false,
-    };
+      modalGride: false
+    }
   },
   mounted() {
-    xray.index();
-  },
-};
+    xray.index()
+  }
+}
 </script>

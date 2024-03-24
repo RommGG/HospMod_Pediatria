@@ -10,13 +10,13 @@
   </b-container>
 </template>
 <script>
-import { xray } from "../../config/pluginInit";
-import iqCard from "../../components/xray/cards/iq-card";
+import { xray } from '../../config/pluginInit'
+import iqCard from '../../components/xray/cards/iq-card'
 export default {
-  name: "BlankPage",
+  name: 'BlankPage',
   components: { iqCard },
   mounted() {
-    xray.index();
-  },
-};
+    xray.index()
+  }
+}
 </script>

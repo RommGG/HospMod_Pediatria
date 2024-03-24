@@ -87,37 +87,20 @@
   </b-container>
 </template>
 <script>
-import { xray } from "../../config/pluginInit";
-import iqCard from "../../components/xray/cards/iq-card";
+import { xray } from '../../config/pluginInit'
+import iqCard from '../../components/xray/cards/iq-card'
 
 // Chart
-import {
-  LineChart,
-  BarChart,
-  DoughnutChart,
-  ScatterChart,
-  BubbleChart,
-  PieChart,
-  RadarChart,
-} from "vue-chart-3";
-import { Chart, registerables } from "chart.js";
-Chart.register(...registerables);
+import { LineChart, BarChart, DoughnutChart, ScatterChart, BubbleChart, PieChart, RadarChart } from 'vue-chart-3'
+import { Chart, registerables } from 'chart.js'
+Chart.register(...registerables)
 export default {
-  name: "ChartJs",
-  components: {
-    iqCard,
-    LineChart,
-    BarChart,
-    DoughnutChart,
-    ScatterChart,
-    BubbleChart,
-    PieChart,
-    RadarChart,
-  },
+  name: 'ChartJs',
+  components: { iqCard, LineChart, BarChart, DoughnutChart, ScatterChart, BubbleChart, PieChart, RadarChart },
   mounted() {
-    xray.index();
-    const ctx = document.getElementById("areaChart");
-    new Chart(ctx, this.AreaChartData);
+    xray.index()
+    const ctx = document.getElementById('areaChart')
+    new Chart(ctx, this.AreaChartData)
   },
   data() {
     // return {
@@ -180,139 +163,109 @@ export default {
     // ],
     // };
     const LineChartData = {
-      labels: [
-        "August",
-        "September",
-        "October",
-        "November",
-        "December",
-        "January",
-        "February",
-      ],
+      labels: ['August', 'September', 'October', 'November', 'December', 'January', 'February'],
       datasets: [
         {
-          label: "Line Chart",
+          label: 'Line Chart',
           data: [65, 59, 80, 81, 55, 55],
 
-          backgroundColor: "rgba(8, 155, 171, 1)",
-          borderColor: "rgba(8, 155, 171, 1)",
+          backgroundColor: 'rgba(8, 155, 171, 1)',
+          borderColor: 'rgba(8, 155, 171, 1)',
           tension: 0.1,
-          borderSkipped: false,
-        },
+          borderSkipped: false
+        }
       ],
       options: {
         responsive: true,
         plugins: {
           legends: {
-            display: false,
-          },
-        },
-      },
-    };
+            display: false
+          }
+        }
+      }
+    }
 
     const BarChartData = {
-      labels: [
-        "August",
-        "September",
-        "October",
-        "November",
-        "December",
-        "January",
-        "February",
-      ],
+      labels: ['August', 'September', 'October', 'November', 'December', 'January', 'February'],
       datasets: [
         {
-          label: "Fully Rounded",
+          label: 'Fully Rounded',
           data: [65, 59, 80, 81, 55, 55],
 
-          backgroundColor: "rgba(8, 155, 171, 1)",
-          borderColor: "rgba(8, 155, 171, 1)",
+          backgroundColor: 'rgba(8, 155, 171, 1)',
+          borderColor: 'rgba(8, 155, 171, 1)',
           tension: 0.1,
-          borderSkipped: false,
-        },
+          borderSkipped: false
+        }
       ],
       options: {
         responsive: true,
         plugins: {
           legends: {
-            display: false,
-          },
-        },
-      },
-    };
+            display: false
+          }
+        }
+      }
+    }
 
     const AreaChartData = {
-      type: "line",
+      type: 'line',
       data: {
-        labels: ["January", "February", "March", "April", "May"],
+        labels: ['January', 'February', 'March', 'April', 'May'],
         datasets: [
           {
-            label: "Area Chart",
+            label: 'Area Chart',
             data: [10, 20, 15, 30, 25],
             fill: true,
-            borderColor: "rgba(8, 155, 171, 1)",
-            backgroundColor: "rgba(8, 155, 171, 0.2)",
+            borderColor: 'rgba(8, 155, 171, 1)',
+            backgroundColor: 'rgba(8, 155, 171, 0.2)',
             tension: 0.5,
-            borderSkipped: false,
-          },
-        ],
+            borderSkipped: false
+          }
+        ]
       },
       options: {
         responsive: true,
         maintainAspectRatio: false,
         plugins: {
           legend: {
-            display: false,
-          },
-        },
-      },
-    };
+            display: false
+          }
+        }
+      }
+    }
 
     const DoughnutChartData = {
-      type: "doughnut",
-      labels: ["January", "February", "March", "April", "May"],
+      type: 'doughnut',
+      labels: ['January', 'February', 'March', 'April', 'May'],
       datasets: [
         {
-          label: "Donut Chart",
+          label: 'Donut Chart',
           data: [10, 20, 15, 30, 25],
-          backgroundColor: [
-            "rgba(8, 155, 171, 1)",
-            "rgba(252, 159, 91, 1)",
-            "rgba(242, 99, 97, 1)",
-            "rgba(87, 222, 83, 1)",
-            "rgba(97, 226, 252, 1)",
-          ],
+          backgroundColor: ['rgba(8, 155, 171, 1)', 'rgba(252, 159, 91, 1)', 'rgba(242, 99, 97, 1)', 'rgba(87, 222, 83, 1)', 'rgba(97, 226, 252, 1)'],
           hoverOffset: 4,
-          borderSkipped: false,
-        },
+          borderSkipped: false
+        }
       ],
       options: {
         responsive: true,
         plugins: {
           legend: {
-            position: "top",
+            position: 'top'
           },
           title: {
             display: true,
-            text: "Chart.js Doughnut Chart",
-          },
-        },
-      },
-    };
+            text: 'Chart.js Doughnut Chart'
+          }
+        }
+      }
+    }
 
     const BubbleChartData = {
-      labels: [
-        "August",
-        "September",
-        "October",
-        "November",
-        "December",
-        "January",
-        "February",
-      ],
+      labels: ['August', 'September', 'October', 'November', 'December', 'January', 'February'],
       datasets: [
         {
-          label: "Product One",
+          label: 'Product One',
           data: [
             { x: 20, y: 29, r: 10 },
             { x: 21, y: 25, r: 10 },
@@ -323,12 +276,12 @@ export default {
             { x: 27, y: 25, r: 10 },
             { x: 28, y: 22, r: 10 },
             { x: 29, y: 23, r: 10 },
-            { x: 30, y: 20, r: 10 },
+            { x: 30, y: 20, r: 10 }
           ],
-          backgroundColor: "rgba(242, 99, 97, 1)",
+          backgroundColor: 'rgba(242, 99, 97, 1)'
         },
         {
-          label: "Product Two",
+          label: 'Product Two',
           data: [
             { x: 20, y: 22, r: 10 },
             { x: 22, y: 26, r: 10 },
@@ -339,12 +292,12 @@ export default {
             { x: 27, y: 28, r: 10 },
             { x: 28, y: 20, r: 10 },
             { x: 29, y: 27, r: 10 },
-            { x: 30, y: 29, r: 10 },
+            { x: 30, y: 29, r: 10 }
           ],
-          backgroundColor: "rgba(8, 155, 171, 1)",
+          backgroundColor: 'rgba(8, 155, 171, 1)'
         },
         {
-          label: "Product Three",
+          label: 'Product Three',
           data: [
             { x: 20, y: 26, r: 10 },
             { x: 22, y: 28, r: 10 },
@@ -355,65 +308,51 @@ export default {
             { x: 27, y: 30, r: 10 },
             { x: 28, y: 28, r: 10 },
             { x: 29, y: 25, r: 10 },
-            { x: 30, y: 22, r: 10 },
+            { x: 30, y: 22, r: 10 }
           ],
-          backgroundColor: "rgba(97, 226, 252, 1)",
-        },
+          backgroundColor: 'rgba(97, 226, 252, 1)'
+        }
       ],
       options: {
         responsive: true,
         plugins: {
           legends: {
-            display: false,
-          },
-        },
-      },
-    };
+            display: false
+          }
+        }
+      }
+    }
     const PieChartData = {
-      type: "pie",
-      labels: ["January", "February", "March", "April", "May"],
+      type: 'pie',
+      labels: ['January', 'February', 'March', 'April', 'May'],
       datasets: [
         {
-          label: "Pie Chart",
+          label: 'Pie Chart',
           data: [10, 20, 15, 30, 25],
-          backgroundColor: [
-            "rgba(8, 155, 171, 1)",
-            "rgba(252, 159, 91, 1)",
-            "rgba(242, 99, 97, 1)",
-            "rgba(87, 222, 83, 1)",
-            "rgba(97, 226, 252, 1)",
-          ],
+          backgroundColor: ['rgba(8, 155, 171, 1)', 'rgba(252, 159, 91, 1)', 'rgba(242, 99, 97, 1)', 'rgba(87, 222, 83, 1)', 'rgba(97, 226, 252, 1)'],
           hoverOffset: 4,
-          borderSkipped: false,
-        },
+          borderSkipped: false
+        }
       ],
       options: {
         responsive: true,
         plugins: {
           legend: {
-            position: "top",
+            position: 'top'
           },
           title: {
             display: true,
-            text: "Chart.js Doughnut Chart",
-          },
-        },
-      },
-    };
+            text: 'Chart.js Doughnut Chart'
+          }
+        }
+      }
+    }
 
     const ScatterChartData = {
-      labels: [
-        "August",
-        "September",
-        "October",
-        "November",
-        "December",
-        "January",
-        "February",
-      ],
+      labels: ['August', 'September', 'October', 'November', 'December', 'January', 'February'],
       datasets: [
         {
-          label: "Product 1",
+          label: 'Product 1',
           data: [
             { x: 10, y: 0.0 },
             { x: 12, y: 0.1 },
@@ -426,12 +365,12 @@ export default {
             { x: 19, y: 0.1 },
             { x: 20, y: 0.5 },
             { x: 21, y: 0.4 },
-            { x: 22, y: 0.2 },
+            { x: 22, y: 0.2 }
           ],
-          backgroundColor: "rgba(242, 99, 97, 1)",
+          backgroundColor: 'rgba(242, 99, 97, 1)'
         },
         {
-          label: "Product 2",
+          label: 'Product 2',
           data: [
             { x: 10, y: 0.5 },
             { x: 12, y: 0.4 },
@@ -444,12 +383,12 @@ export default {
             { x: 19, y: 0.3 },
             { x: 20, y: 0.4 },
             { x: 21, y: 0.5 },
-            { x: 22, y: 0.0 },
+            { x: 22, y: 0.0 }
           ],
-          backgroundColor: "rgba(8, 155, 171, 1)",
+          backgroundColor: 'rgba(8, 155, 171, 1)'
         },
         {
-          label: "Product 3",
+          label: 'Product 3',
           data: [
             { x: 10, y: 0.25 },
             { x: 12, y: 0.3 },
@@ -462,80 +401,63 @@ export default {
             { x: 19, y: 0.3 },
             { x: 20, y: 0.4 },
             { x: 21, y: 0.5 },
-            { x: 22, y: 0.0 },
+            { x: 22, y: 0.0 }
           ],
-          backgroundColor: "rgba(97, 226, 252, 1)",
-        },
+          backgroundColor: 'rgba(97, 226, 252, 1)'
+        }
       ],
       options: {
         responsive: true,
         plugins: {
           legends: {
-            display: false,
-          },
-        },
-      },
-    };
+            display: false
+          }
+        }
+      }
+    }
     const RadarChartData = {
-      type: "radar",
-      labels: [
-        "Eating",
-        "Drinking",
-        "Sleeping",
-        "Designing",
-        "Coding",
-        "Cycling",
-        "Running",
-      ],
+      type: 'radar',
+      labels: ['Eating', 'Drinking', 'Sleeping', 'Designing', 'Coding', 'Cycling', 'Running'],
       datasets: [
         {
-          label: "Day 1",
+          label: 'Day 1',
           data: [65, 59, 90, 81, 56, 55, 40],
           fill: true,
-          backgroundColor: "rgba(255, 99, 132, 0.2)",
-          borderColor: "rgb(255, 99, 132)",
-          pointBackgroundColor: "rgb(255, 99, 132)",
-          pointBorderColor: "#fff",
-          pointHoverBackgroundColor: "#fff",
-          pointHoverBorderColor: "rgb(255, 99, 132)",
+          backgroundColor: 'rgba(255, 99, 132, 0.2)',
+          borderColor: 'rgb(255, 99, 132)',
+          pointBackgroundColor: 'rgb(255, 99, 132)',
+          pointBorderColor: '#fff',
+          pointHoverBackgroundColor: '#fff',
+          pointHoverBorderColor: 'rgb(255, 99, 132)'
         },
         {
-          label: "Day 2",
+          label: 'Day 2',
           data: [28, 48, 40, 19, 96, 27, 100],
           fill: true,
-          backgroundColor: "rgba(54, 162, 235, 0.2)",
-          borderColor: "rgb(54, 162, 235)",
-          pointBackgroundColor: "rgb(54, 162, 235)",
-          pointBorderColor: "#fff",
-          pointHoverBackgroundColor: "#fff",
-          pointHoverBorderColor: "rgb(54, 162, 235)",
-        },
+          backgroundColor: 'rgba(54, 162, 235, 0.2)',
+          borderColor: 'rgb(54, 162, 235)',
+          pointBackgroundColor: 'rgb(54, 162, 235)',
+          pointBorderColor: '#fff',
+          pointHoverBackgroundColor: '#fff',
+          pointHoverBorderColor: 'rgb(54, 162, 235)'
+        }
       ],
       options: {
         responsive: true,
         plugins: {
           legend: {
-            position: "top",
+            position: 'top'
           },
           title: {
             display: true,
-            text: "Chart.js Doughnut Chart",
-          },
-        },
-      },
-    };
+            text: 'Chart.js Doughnut Chart'
+          }
+        }
+      }
+    }
 
-    return {
-      LineChartData,
-      BarChartData,
-      AreaChartData,
-      DoughnutChartData,
-      BubbleChartData,
-      ScatterChartData,
-      PieChartData,
-      RadarChartData,
-    };
-  },
-};
+    return { LineChartData, BarChartData, AreaChartData, DoughnutChartData, BubbleChartData, ScatterChartData, PieChartData, RadarChartData }
+  }
+}
 </script>
 <style scoped></style>

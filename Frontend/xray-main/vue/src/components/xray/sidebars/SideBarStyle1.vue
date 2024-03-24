@@ -16,11 +16,7 @@
     </div>
     <div id="sidebar-scrollbar">
       <nav class="iq-sidebar-menu" :class="horizontal ? 'd-xl-none' : ''">
-        <ListStyle1
-          :items="items"
-          :horizontal="horizontal"
-          :sidebarGroupTitle="sidebarGroupTitle"
-        />
+        <ListStyle1 :items="items" :horizontal="horizontal" :sidebarGroupTitle="sidebarGroupTitle" />
       </nav>
       <div class="p-3"></div>
     </div>
@@ -29,36 +25,36 @@
 </template>
 
 <script>
-import { computed } from "vue";
-import { useStore } from "../../../store/pinia";
-import ListStyle1 from "../menus/ListStyle1.vue";
+import { computed } from 'vue'
+import { useStore } from '../../../store/pinia'
+import ListStyle1 from '../menus/ListStyle1.vue'
 
 export default {
-  name: "SideBarStyle1",
+  name: 'SideBarStyle1',
   props: {
-    homeURL: { type: Object, default: () => ({ name: "dashboard.home-1" }) },
+    homeURL: { type: Object, default: () => ({ name: 'dashboard.home-1' }) },
     items: { type: Array },
-    logo: { type: String, default: require("../../../assets/images/logo.png") },
+    logo: { type: String, default: require('../../../assets/images/logo.png') },
     horizontal: { type: Boolean },
     toggleButton: { type: Boolean, default: true },
-    sidebarGroupTitle: { type: Boolean, default: true },
+    sidebarGroupTitle: { type: Boolean, default: true }
   },
   components: {
     // List,
-    ListStyle1,
+    ListStyle1
   },
   methods: {
     miniSidebar() {
-      this.$emit("toggle");
-    },
+      this.$emit('toggle')
+    }
   },
   setup() {
-    const customizer = useStore();
-    const appName = computed(() => customizer.appName);
-    return { appName };
+    const customizer = useStore()
+    const appName = computed(() => customizer.appName)
+    return { appName }
   },
   data() {
-    return {};
-  },
-};
+    return {}
+  }
+}
 </script>

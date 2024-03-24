@@ -1,14 +1,6 @@
 <template>
   <li :class="liClass">
-    <a
-      :class="'nav-link ' + className"
-      :id="id"
-      :data-toggle="dataToggle"
-      :href="url"
-      :role="role"
-      :aria-controls="ariaControls"
-      :aria-selected="ariaSelected"
-    >
+    <a :class="'nav-link ' + className" :id="id" :data-toggle="dataToggle" :href="url" :role="role" :aria-controls="ariaControls" :aria-selected="ariaSelected">
       <slot name="title" v-if="hasTitleSlot" />
       <template v-else>{{ title }}</template>
     </a>
@@ -16,38 +8,38 @@
 </template>
 <script>
 export default {
-  name: "tab-nav-items",
+  name: 'tab-nav-items',
   props: {
-    id: { type: String, default: "myTab" },
+    id: { type: String, default: 'myTab' },
     active: { type: Boolean, default: false },
-    role: { type: String, default: "tab" },
-    ariaControls: { type: String, default: "tabpanel" },
+    role: { type: String, default: 'tab' },
+    ariaControls: { type: String, default: 'tabpanel' },
     ariaSelected: { type: Boolean, default: false },
-    dataToggle: { type: String, default: "tab" },
-    href: { type: String, default: "" },
-    title: { type: String, default: "" },
-    liClass: { type: String, default: "nav-item" },
+    dataToggle: { type: String, default: 'tab' },
+    href: { type: String, default: '' },
+    title: { type: String, default: '' },
+    liClass: { type: String, default: 'nav-item' }
   },
   mounted() {
     if (this.active) {
-      this.className = "show active";
+      this.className = 'show active'
     }
   },
   computed: {
     hasTitleSlot() {
-      return !!this.$slots.title;
+      return !!this.$slots.title
     },
     url() {
-      if (this.href === "") {
-        return "#" + this.ariaControls;
+      if (this.href === '') {
+        return '#' + this.ariaControls
       }
-      return this.href;
-    },
+      return this.href
+    }
   },
   data() {
     return {
-      className: "",
-    };
-  },
-};
+      className: ''
+    }
+  }
+}
 </script>

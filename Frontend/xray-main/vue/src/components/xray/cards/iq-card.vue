@@ -1,10 +1,7 @@
 <template>
   <div :class="'iq-card ' + className">
     <slot name="cardImage" />
-    <div
-      v-if="hasHeaderTitleSlot || hasHeaderActionSlot"
-      :class="'iq-card-header d-flex justify-content-between ' + headerClass"
-    >
+    <div v-if="hasHeaderTitleSlot || hasHeaderActionSlot" :class="'iq-card-header d-flex justify-content-between ' + headerClass">
       <div class="iq-header-title">
         <slot name="headerTitle" />
       </div>
@@ -23,27 +20,27 @@
 </template>
 <script>
 export default {
-  name: "iq-card",
+  name: 'iq-card',
   props: {
-    className: { type: String, default: "" },
-    bodyClass: { type: String, default: "" },
-    headerClass: { type: String, default: "" },
-    footerClass: { type: String, default: "" },
+    className: { type: String, default: '' },
+    bodyClass: { type: String, default: '' },
+    headerClass: { type: String, default: '' },
+    footerClass: { type: String, default: '' }
   },
   mounted() {},
   computed: {
     hasHeaderTitleSlot() {
-      return !!this.$slots.headerTitle;
+      return !!this.$slots.headerTitle
     },
     hasHeaderActionSlot() {
-      return !!this.$slots.headerAction;
+      return !!this.$slots.headerAction
     },
     hasBodySlot() {
-      return !!this.$slots.body;
+      return !!this.$slots.body
     },
     hasFooterSlot() {
-      return !!this.$slots.footer;
-    },
-  },
-};
+      return !!this.$slots.footer
+    }
+  }
+}
 </script>
