@@ -195,15 +195,7 @@ export default {
   },
   data() {
     return {
-      doctor: {
-        profilecopia: require('../personas/1.jpg'),
-        profilecopia2: require('../personas/2.jpg'),
-        profilecopia3: require('../personas/3.jpg'),
-        profilecopia4: require('../personas/4.jpg'),
-        profilecopia5: require('../personas/5.jpg'),
-        profilecopia6: require('../personas/6.jpg'),
-        perfilInfanteUrl: require('../User/Profile.vue'),
-      },
+     
       chart: null,
       xVal: 0,
       options: {
