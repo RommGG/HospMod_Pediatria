@@ -1,0 +1,66 @@
+db.createCollection("pacientes", {
+   validator: {
+      $jsonSchema: {
+         bsonType: "object",
+         required: ["id", "fecha_nacimiento", "edad_anos", "peso", "longitud", "perimetro_craneal", "temperatura", "frecuencia_respiratoria", "frecuencia_cardiaca", "presion_arteria_sistolica", "presion_arteria_diastolica", "vacunas_administradas", "examenes_medicos_realizados", "observaciones"],
+         properties: {
+            id: {
+               bsonType: "int",
+               description: "debe ser un número entero y es requerido"
+            },
+            fecha_nacimiento: {
+               bsonType: "date",
+               description: "debe ser una fecha y es requerida"
+            },
+            edad_anos: {
+               bsonType: "int",
+               description: "debe ser un número entero y es requerido"
+            },
+            peso: {
+               bsonType: "decimal",
+               description: "debe ser un decimal(5,2) y es requerido"
+            },
+            longitud: {
+               bsonType: "decimal",
+               description: "debe ser un decimal(5,2) y es requerido"
+            },
+            perimetro_craneal: {
+               bsonType: "decimal",
+               description: "debe ser un decimal(5,2) y es requerido"
+            },
+            temperatura: {
+               bsonType: "decimal",
+               description: "debe ser un decimal(4,2) y es requerido"
+            },
+            frecuencia_respiratoria: {
+               bsonType: "int",
+               description: "debe ser un número entero y es requerido"
+            },
+            frecuencia_cardiaca: {
+               bsonType: "int",
+               description: "debe ser un número entero y es requerido"
+            },
+            presion_arteria_sistolica: {
+               bsonType: "int",
+               description: "debe ser un número entero y es requerido"
+            },
+            presion_arteria_diastolica: {
+               bsonType: "int",
+               description: "debe ser un número entero y es requerido"
+            },
+            vacunas_administradas: {
+               bsonType: "string",
+               description: "debe ser una cadena de texto y es requerido"
+            },
+            examenes_medicos_realizados: {
+               bsonType: "string",
+               description: "debe ser una cadena de texto y es requerido"
+            },
+            observaciones: {
+               bsonType: "string",
+               description: "debe ser una cadena de texto y es requerido"
+            }
+         }
+      }
+   }
+})
