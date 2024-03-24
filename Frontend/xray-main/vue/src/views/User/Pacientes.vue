@@ -9,73 +9,74 @@
           <template v-slot:body>
             <b-row>
               <div class="table-ad mb-3 me-2">
-                <b-button
-                  variant=" float-end outline-link"
-                  class="me-1">Filtrar</b-button>
+
+                <div class="row">
+
+<div class="col-sm-12">
+  <b-alert :show="true" variant="success">
+    <div class="iq-alert-text">
+      <h5 class="alert-heading" style="text-align: center;">Alerta</h5>
+      <p style="text-align: center;">Se han actualizado con exito los datos.</p>
+
+    </div>
+  </b-alert>
+</div>
+</div>
+
+
+                
+
+
+
+                <b-dropdown size="lg" variant="float-end outline-link" toggle-class="text-decoration-none" no-caret>
+                  <template v-slot:button-content>
+                    <i>Filtrar</i>
+                  </template>
+                  <b-dropdown-item href="#"><i class="me-2"></i>A - Z</b-dropdown-item>
+                  <b-dropdown-item href="#"><i class="me-2"></i>Z - A</b-dropdown-item>
+                  <b-dropdown-item href="#"><i class="me-2"></i>Edad (ascendente)</b-dropdown-item>
+                  <b-dropdown-item href="#"><i class="me-2"></i>Edad (descendiente)</b-dropdown-item>
+                  
+                </b-dropdown>           
+
+                <b-button variant=" float-end outline-link" class="me-1">Refrescar</b-button>
 
               </div>
               <b-col md="12" class="table-responsive w-100">
                 <b-table striped bordered hover :items="rows" :fields="columns">
                   <template v-slot:cell(NombrePaciente)="data">
                     <span v-if="!data.item.editable">{{ data.item.NombrePaciente }}</span>
-                    <input
-                      type="text"
-                      v-model="data.item.NombrePaciente"
-                      v-else
-                      class="form-control text-center"
-                    />
+                    <input type="text" v-model="data.item.NombrePaciente" v-else class="form-control text-center" />
                   </template>
                   <template v-slot:cell(edad)="data">
                     <span v-if="!data.item.editable">{{ data.item.edad }}</span>
-                    <input
-                      type="text"
-                      v-model="data.item.edad"
-                      v-else
-                      class="form-control text-center"
-                    />
+                    <input type="text" v-model="data.item.edad" v-else class="form-control text-center" />
                   </template>
                   <template v-slot:cell(NombrePadre)="data">
                     <span v-if="!data.item.editable">{{
-                      data.item.NombrePadre
-                    }}</span>
-                    <input
-                      type="text"
-                      v-model="data.item.NombrePadre"
-                      v-else
-                      class="form-control text-center"
-                    />
+                  data.item.NombrePadre
+                }}</span>
+                    <input type="text" v-model="data.item.NombrePadre" v-else class="form-control text-center" />
                   </template>
                   <template v-slot:cell(NombreMadre)="data">
                     <span v-if="!data.item.editable">{{
-                      data.item.NombreMadre
-                    }}</span>
-                    <input
-                      type="text"
-                      v-model="data.item.NombreMadre"
-                      v-else
-                      class="form-control text-center"
-                    />
+                  data.item.NombreMadre
+                }}</span>
+                    <input type="text" v-model="data.item.NombreMadre" v-else class="form-control text-center" />
                   </template>
                   <template v-slot:cell(FechaNac)="data">
                     <span v-if="!data.item.editable">{{ data.item.FechaNac }}</span>
-                    <input
-                      type="text"
-                      v-model="data.item.FechaNac"
-                      v-else
-                      class="form-control text-center"
-                    />
+                    <input type="text" v-model="data.item.FechaNac" v-else class="form-control text-center" />
                   </template>
 
 
                   <template v-slot:cell(segui)>
                     <td>
-                      <a href="./Seguimiento" class="indigo-text" style="align-items: center;"
-                        
-                      >Ver Seguimiento</a>
+                      <a href="./Seguimiento" class="indigo-text" style="align-items: center;">Ver Seguimiento</a>
                     </td>
                   </template>
-                  
-                 
+
+
                 </b-table>
               </b-col>
             </b-row>
@@ -131,76 +132,76 @@ export default {
       rows: [
         {
           id: 1,
-          NombrePaciente:  " \u00A0 ",
-          edad:  " \u00A0 ",
-          NombrePadre:  " \u00A0 ",
-          NombreMadre:  " \u00A0  ",
-          FechaNac:  " \u00A0 ",
+          NombrePaciente: " \u00A0 ",
+          edad: " \u00A0 ",
+          NombrePadre: " \u00A0 ",
+          NombreMadre: " \u00A0  ",
+          FechaNac: " \u00A0 ",
 
 
         },
         {
           id: 1,
-          NombrePaciente:  " \u00A0 ",
-          edad:  " \u00A0 ",
-          NombrePadre:  " \u00A0 ",
-          NombreMadre:  " \u00A0  ",
-          FechaNac:  " \u00A0 ",
+          NombrePaciente: " \u00A0 ",
+          edad: " \u00A0 ",
+          NombrePadre: " \u00A0 ",
+          NombreMadre: " \u00A0  ",
+          FechaNac: " \u00A0 ",
 
         },
         {
           id: 1,
-          NombrePaciente:  " \u00A0 ",
-          edad:  " \u00A0 ",
-          NombrePadre:  " \u00A0 ",
-          NombreMadre:  " \u00A0  ",
-          FechaNac:  " \u00A0 ",
+          NombrePaciente: " \u00A0 ",
+          edad: " \u00A0 ",
+          NombrePadre: " \u00A0 ",
+          NombreMadre: " \u00A0  ",
+          FechaNac: " \u00A0 ",
 
         },
         {
           id: 1,
-          NombrePaciente:  " \u00A0 ",
-          edad:  " \u00A0 ",
-          NombrePadre:  " \u00A0 ",
-          NombreMadre:  " \u00A0  ",
-          FechaNac:  " \u00A0 ",
+          NombrePaciente: " \u00A0 ",
+          edad: " \u00A0 ",
+          NombrePadre: " \u00A0 ",
+          NombreMadre: " \u00A0  ",
+          FechaNac: " \u00A0 ",
 
         },
         {
           id: 1,
-          NombrePaciente:  " \u00A0 ",
-          edad:  " \u00A0 ",
-          NombrePadre:  " \u00A0 ",
-          NombreMadre:  " \u00A0  ",
-          FechaNac:  " \u00A0 ",
+          NombrePaciente: " \u00A0 ",
+          edad: " \u00A0 ",
+          NombrePadre: " \u00A0 ",
+          NombreMadre: " \u00A0  ",
+          FechaNac: " \u00A0 ",
 
 
         },
         {
           id: 1,
-          NombrePaciente:  " \u00A0 ",
-          edad:  " \u00A0 ",
-          NombrePadre:  " \u00A0 ",
-          NombreMadre:  " \u00A0  ",
-          FechaNac:  " \u00A0 ",
+          NombrePaciente: " \u00A0 ",
+          edad: " \u00A0 ",
+          NombrePadre: " \u00A0 ",
+          NombreMadre: " \u00A0  ",
+          FechaNac: " \u00A0 ",
 
         },
         {
           id: 1,
-          NombrePaciente:  " \u00A0 ",
-          edad:  " \u00A0 ",
-          NombrePadre:  " \u00A0 ",
-          NombreMadre:  " \u00A0  ",
-          FechaNac:  " \u00A0 ",
+          NombrePaciente: " \u00A0 ",
+          edad: " \u00A0 ",
+          NombrePadre: " \u00A0 ",
+          NombreMadre: " \u00A0  ",
+          FechaNac: " \u00A0 ",
 
         },
         {
           id: 1,
-          NombrePaciente:  " \u00A0 ",
-          edad:  " \u00A0 ",
-          NombrePadre:  " \u00A0 ",
-          NombreMadre:  " \u00A0  ",
-          FechaNac:  " \u00A0 ",
+          NombrePaciente: " \u00A0 ",
+          edad: " \u00A0 ",
+          NombrePadre: " \u00A0 ",
+          NombreMadre: " \u00A0  ",
+          FechaNac: " \u00A0 ",
 
         },
       ],
