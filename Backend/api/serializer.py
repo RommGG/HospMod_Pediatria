@@ -10,7 +10,7 @@ class BebeSerializer(serializers.ModelSerializer):
 class BebeCrearSerializer(serializers.ModelSerializer):
     class Meta:
         model = nacimientosBebes
-        exclude = ['id']  # Excluimos el campo 'id' ya que es autoincremental
+        exclude = ['id']  # Excluimos el campo 'id' ya que es esa
 
 # Serializador para ver/obtener información de seguimiento pediátrico
 class SeguimientoPediatricoSerializer(serializers.ModelSerializer):
@@ -22,6 +22,6 @@ class SeguimientoPediatricoSerializer(serializers.ModelSerializer):
 class SeguimientoPediatricoCrearSerializer(serializers.ModelSerializer):
     class Meta:
         model = SeguimientoPediatrico
-        exclude = ['id_paciente'] 
+        exclude = ['id_paciente'] #se excluye el id porque no puede ser corregido por los usuarios que manipulen los registros medicos
   
   
