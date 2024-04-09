@@ -1,6 +1,7 @@
 from django.db import models
 
-# Create your models here.
+#modicando el model
+
 class nacimientosBebes(models.Model):
     fecha_nacimiento = models.DateField(null=True)
     hora_nacimiento = models.TimeField(null=True)
