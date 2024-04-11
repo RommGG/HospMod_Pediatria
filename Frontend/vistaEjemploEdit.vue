@@ -70,3 +70,74 @@
     </div>
   </template>
   
+
+  
+<script>
+/* eslint-disable */
+export default {
+  data() {
+    return {
+      bebe: {
+        fecha_nacimiento: '',
+        hora_nacimiento: '',
+        lugar_nacimiento: '',
+        peso: '',
+        longitud: '',
+        nombre_padre: '',
+        nombre_madre: '',
+        telefono_contacto: '',
+        email_contacto: '',
+        observaciones: '',
+        tipo_nacimiento: '',
+        frecuencia_cardiaca: '',
+        temperatura: '',
+        presion_arterial_sistolica: '',
+        presion_arterial_diastolica: ''
+      },
+      message: ''
+    };
+  },
+  mounted() {
+    this.obtenerDatosBebe();
+  },
+  methods: {
+    obtenerDatosBebe() {
+      const id = this.$route.params.id;
+      fetch(`http://localhost:8000/hospital/api/v1nacimientos/${id}/`)
+        .then(response => {
+          if (!response.ok) {
+            throw new Error('No se pudieron obtener los datos del bebé.');
+          }
+          return response.json();
+        })
+        .then(data => {
+          this.bebe = data;
+        })
+        .catch(error => {
+          this.message = "Error al obtener los datos del bebé: " + error.message;
+        });
+    },
+    submitForm() {
+      this.message = "Guardando cambios...";
+      const id = this.$route.params.id;
+      
+      fetch(`http://localhost:8000/hospital/api/v1nacimientos/${id}/`, {
+        method: 'PUT',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(this.bebe),
+      })
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('No se pudieron guardar los cambios.');
+        }
+        this.message = "¡Bebé editado exitosamente!";
+      })
+      .catch(error => {
+        this.message = "Error al guardar los cambios: " + error.message;
+      });
+    }
+  }
+}
+</script>
