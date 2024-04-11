@@ -51,3 +51,84 @@
       </div>
     </div>
   </template>
+
+  <script>
+  export default {
+    data() {
+      return {
+        bebes: [], // inicia la lista de bebés vacía
+        paginatedBebes: [], // Lista de bebés
+        message: '',
+        paginaActual: 1,
+        itemsPorPagina: 10, // Página actual
+      };
+    },
+    computed: {
+      totalPages() {
+        return Math.ceil(this.totalBebes.length / this.itemsPorPagina);
+      },
+      totalBebes() {
+        return this.bebes;
+      },
+    },
+    mounted() {
+      // Cuando el componente se carga, cargar la lista de bebés desde la API
+      this.obtenerBebes();
+    },
+    methods: {
+      obtenerBebes() {
+        fetch('http://localhost:8000/hospital/api/v1nacimientos/') //URL del endpoint para obtener a los bebes
+          .then(response => {
+            if (!response.ok) {
+              throw new Error('Hubo un problema al obtener la lista de bebés.');
+            }
+            return response.json();
+          })
+          .then(data => {
+            // Asignar la lista de bebés obtenida desde la API a la variable bebes
+            this.bebes = data;
+            // Llamar a la función para mostrar los datos
+            this.mostrarDatosPaginados();
+          })
+          .catch(error => {
+            this.message = "Error: " + error.message;
+          });
+      },
+      eliminarBebe(id) {
+        fetch(`http://localhost:8000/hospital/api/v1nacimientos/${id}/`, { // URL del endpoint para eliminar a un bebe de la lista
+          method: 'DELETE'
+        })
+          .then(response => {
+            if (!response.ok) {
+              throw new Error('Hubo un problema al eliminar el bebé.');
+            }
+            this.message = "¡Bebé eliminado exitosamente!";
+            // Eliminar el bebé de la lista después de eliminarlo en el backend
+            this.bebes = this.bebes.filter(bebe => bebe.id !== id);
+            // Actualizar los datos paginados después de eliminar un bebé
+            this.mostrarDatosPaginados();
+          })
+          .catch(error => {
+            this.message = "Error: " + error.message;
+          });
+  
+      },
+      mostrarDatosPaginados() {
+        const inicio = (this.paginaActual - 1) * this.itemsPorPagina;
+        const fin = this.paginaActual * this.itemsPorPagina;
+        this.paginatedBebes = this.bebes.slice(inicio, fin);
+      },
+      paginar(direccion) {
+        if (direccion === 'anterior') {
+          this.paginaActual--;
+        } else {
+          this.paginaActual++;
+        }
+        // Llamar a la función para mostrar los datos de la página actual
+        this.mostrarDatosPaginados();
+      }
+    }
+  }
+  </script>
+
+
