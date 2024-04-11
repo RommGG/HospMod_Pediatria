@@ -68,3 +68,95 @@
   
     </div>
   </template>
+
+  <script>
+/* eslint-disable */
+
+/*Esta parte del codigo es para conectarse a la api*/
+export default {
+  data() {
+    return {
+      sexo:'',
+      fechaNacimiento: '',
+      horaNacimiento: '',
+      lugarNacimiento: '',
+      peso: null,
+      longitud: null,
+      nombrePadre: '',
+      nombreMadre: '',
+      telefonoContacto: '',
+      emailContacto: '',
+      observaciones: '',
+      tipoNacimiento: 'normal',
+      frecuenciaCardiaca: null,
+      temperatura: null,
+      presionArterialSistolica: null,
+      presionArterialDiastolica: null,
+      message: ''
+    }
+  },
+  methods: {
+    submitForm() {
+      let data = {
+        sexo: this.sexo,
+        fecha_nacimiento: this.fechaNacimiento,
+        hora_nacimiento: this.horaNacimiento,
+        lugar_nacimiento: this.lugarNacimiento,
+        peso: this.peso,
+        longitud: this.longitud,
+        nombre_padre: this.nombrePadre,
+        nombre_madre: this.nombreMadre,
+        telefono_contacto: this.telefonoContacto,
+        email_contacto: this.emailContacto,
+        observaciones: this.observaciones,
+        tipo_nacimiento: this.tipoNacimiento,
+        frecuencia_cardiaca: this.frecuenciaCardiaca,
+        temperatura: this.temperatura,
+        presion_arterial_sistolica: this.presionArterialSistolica,
+        presion_arterial_diastolica: this.presionArterialDiastolica
+      };
+
+      fetch('http://127.0.0.1:8000/hospital/api/v1nacimientos/', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      })
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Hubo un problema al registrar el bebé.');
+        }
+        return response.json();
+      })
+      .then(data => {
+        this.message = "¡Bebé registrado exitosamente!";
+        // Limpiar los campos del formulario después del registro exitoso
+        this.resetForm();
+      })
+      .catch(error => {
+        this.message = "Error: " + error.message;
+      });
+    },
+    resetForm() {
+      // Reinicia todos los campos del formulario después del registro exitoso
+      this.sexo = '';
+      this.fechaNacimiento = '';
+      this.horaNacimiento = '';
+      this.lugarNacimiento = '';
+      this.peso = null;
+      this.longitud = null;
+      this.nombrePadre = '';
+      this.nombreMadre = '';
+      this.telefonoContacto = '';
+      this.emailContacto = '';
+      this.observaciones = '';
+      this.tipoNacimiento = '';
+      this.frecuenciaCardiaca = null;
+      this.temperatura = null;
+      this.presionArterialSistolica = null;
+      this.presionArterialDiastolica = null;
+    }
+  }
+}
+</script>
