@@ -1,0 +1,163 @@
+[
+    {
+      
+      "fecha_nacimiento": "2015-08-20",
+      "edad_anos": 6,
+      "peso": 20.3,
+      "longitud": 110.2,
+      "perimetro_craneal": 45.6,
+      "temperatura": 37.0,
+      "frecuencia_respiratoria": 25,
+      "frecuencia_cardiaca": 100,
+      "presion_arteria_sistolica": 100,
+      "presion_arteria_diastolica": 60,
+      "vacunas_administradas": "Vacuna E",
+      "examenes_medicos_realizados": "Examen de audición",
+      "observaciones": "El paciente tiene alergia a los lácteos."
+    },
+    {
+      
+      "fecha_nacimiento": "2012-03-10",
+      "edad_anos": 9,
+      "peso": 28.6,
+      "longitud": 125.8,
+      "perimetro_craneal": 48.3,
+      "temperatura": 36.5,
+      "frecuencia_respiratoria": 20,
+      "frecuencia_cardiaca": 80,
+      "presion_arteria_sistolica": 110,
+      "presion_arteria_diastolica": 70,
+      "vacunas_administradas": "Vacuna F, Vacuna G",
+      "examenes_medicos_realizados": "Análisis de sangre, Radiografía de abdomen",
+      "observaciones": "El paciente ha estado experimentando dolores de cabeza frecuentes."
+    },
+    {
+      
+      "fecha_nacimiento": "2016-12-05",
+      "edad_anos": 5,
+      "peso": 18.9,
+      "longitud": 105.4,
+      "perimetro_craneal": 43.2,
+      "temperatura": 37.2,
+      "frecuencia_respiratoria": 24,
+      "frecuencia_cardiaca": 95,
+      "presion_arteria_sistolica": 95,
+      "presion_arteria_diastolica": 55,
+      "vacunas_administradas": "Vacuna H",
+      "examenes_medicos_realizados": "Ecografía de abdomen",
+      "observaciones": "El paciente ha estado perdiendo peso recientemente."
+    },
+    {
+      
+      "fecha_nacimiento": "2011-09-30",
+      "edad_anos": 10,
+      "peso": 32.1,
+      "longitud": 120.5,
+      "perimetro_craneal": 50.1,
+      "temperatura": 36.9,
+      "frecuencia_respiratoria": 21,
+      "frecuencia_cardiaca": 85,
+      "presion_arteria_sistolica": 115,
+      "presion_arteria_diastolica": 75,
+      "vacunas_administradas": "Vacuna I",
+      "examenes_medicos_realizados": "Electrocardiograma",
+      "observaciones": "El paciente ha estado mostrando síntomas de fatiga."
+    },
+    {
+      
+      "fecha_nacimiento": "2014-07-18",
+      "edad_anos": 7,
+      "peso": 22.5,
+      "longitud": 115.3,
+      "perimetro_craneal": 46.8,
+      "temperatura": 37.1,
+      "frecuencia_respiratoria": 23,
+      "frecuencia_cardiaca": 90,
+      "presion_arteria_sistolica": 105,
+      "presion_arteria_diastolica": 65,
+      "vacunas_administradas": "Vacuna J",
+      "examenes_medicos_realizados": "Análisis de orina",
+      "observaciones": "El paciente ha estado experimentando problemas para dormir."
+    },
+    {
+      
+      "fecha_nacimiento": "2013-05-25",
+      "edad_anos": 8,
+      "peso": 26.3,
+      "longitud": 118.7,
+      "perimetro_craneal": 49.2,
+      "temperatura": 36.8,
+      "frecuencia_respiratoria": 22,
+      "frecuencia_cardiaca": 88,
+      "presion_arteria_sistolica": 112,
+      "presion_arteria_diastolica": 72,
+      "vacunas_administradas": "Vacuna K",
+      "examenes_medicos_realizados": "Radiografía de pierna",
+      "observaciones": "El paciente ha estado quejándose de dolor abdominal."
+    },
+    {
+      
+      "fecha_nacimiento": "2017-11-08",
+      "edad_anos": 4,
+      "peso": 17.8,
+      "longitud": 103.6,
+      "perimetro_craneal": 42.5,
+      "temperatura": 37.0,
+      "frecuencia_respiratoria": 26,
+      "frecuencia_cardiaca": 98,
+      "presion_arteria_sistolica": 98,
+      "presion_arteria_diastolica": 58,
+      "vacunas_administradas": "Vacuna L",
+      "examenes_medicos_realizados": "Examen de vista",
+      "observaciones": "El paciente ha estado experimentando irritabilidad."
+    },
+    {
+      
+      "fecha_nacimiento": "2018-04-12",
+      "edad_anos": 3,
+      "peso": 15.4,
+      "longitud": 95.2,
+      "perimetro_craneal": 40.1,
+      "temperatura": 37.2,
+      "frecuencia_respiratoria": 28,
+      "frecuencia_cardiaca": 105,
+      "presion_arteria_sistolica": 96,
+      "presion_arteria_diastolica": 58,
+      "vacunas_administradas": "Vacuna M",
+      "examenes_medicos_realizados": "Ecografía de cabeza",
+      "observaciones": "El paciente ha estado mostrando signos de letargo."
+    },
+    {
+      
+      "fecha_nacimiento": "2010-10-03",
+      "edad_anos": 11,
+      "peso": 30.7,
+      "longitud": 122.9,
+      "perimetro_craneal": 51.7,
+      "temperatura": 36.7,
+      "frecuencia_respiratoria": 19,
+      "frecuencia_cardiaca": 82,
+      "presion_arteria_sistolica": 108,
+      "presion_arteria_diastolica": 68,
+      "vacunas_administradas": "Vacuna N",
+      "examenes_medicos_realizados": "Tomografía computarizada de abdomen",
+      "observaciones": "El paciente ha estado quejándose de dolor de garganta."
+    },
+    {
+      
+      "fecha_nacimiento": "2019-09-15",
+      "edad_anos": 2,
+      "peso": 13.8,
+      "longitud": 90.5,
+      "perimetro_craneal": 39.0,
+      "temperatura": 37.3,
+      "frecuencia_respiratoria": 29,
+      "frecuencia_cardiaca": 110,
+      "presion_arteria_sistolica": 94,
+      "presion_arteria_diastolica": 56,
+      "vacunas_administradas": "Vacuna O",
+      "examenes_medicos_realizados": "Resonancia magnética de cabeza",
+      "observaciones": "El paciente ha estado inquieto y llorando frecuentemente."
+    }
+  ]
+  
