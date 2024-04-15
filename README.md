@@ -19,7 +19,7 @@ El objetivo general de este proyecto es modernizar y mejorar la eficiencia de lo
 | Nombre Completo         | Matrícula | Función a Cargo            |
 |-------------------------|-----------|----------------------------|
 | Eli Aidan Melo Calva    | 210538    | Administrador de Base de Datos |
-| Yair Tolentino Pérez    | 210540    | Desarrollador Back-End     |
+| Marvin Yair Tolentino Pérez    | 210540    | Desarrollador Back-End     |
 | Romualdo Pérez Romero   | 210714    | Desarrollador Front-End                  |
 
 ### Logo
