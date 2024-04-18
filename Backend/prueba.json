@@ -1,0 +1,527 @@
+[
+  {
+    "covid": true,
+    "sexo": "Femenino",
+    "apellidop": "García",
+    "apellidom": "Pérez",
+    "nombres": "Ana",
+    "fecha_nacimiento": "2005-03-20",
+    "fecha_ultima_cita": "2024-03-25",
+    "edad_anos": 19,
+    "peso": 55.8,
+    "longitud": 163.5,
+    "perimetro_craneal": 54.2,
+    "temperatura": 37.2,
+    "frecuencia_respiratoria": 16,
+    "frecuencia_cardiaca": 72,
+    "presion_arteria_sistolica": 118,
+    "presion_arteria_diastolica": 70,
+    "citas": ["2022-03-25", "2021-03-25", "2024-03-25", "2023-03-25"],
+    "vacunas_administradas": [
+      "Vacuna contra la influenza",
+      "Vacuna contra la hepatitis B",
+      "Vacuna contra la varicela"
+    ],
+    "examenes_medicos_realizados": [
+      "Radiografía de tórax",
+      "Análisis de orina",
+      "Colonoscopia"
+    ],
+    "observaciones": "La paciente tiene antecedentes de asma."
+  },
+  {
+    "sexo": "Masculino",
+    "apellidop": "Rodríguez",
+    "apellidom": "Gómez",
+    "nombres": "Javier",
+    "fecha_nacimiento": "2012-11-02",
+    "fecha_ultima_cita": "2024-04-05",
+    "edad_anos": 11,
+    "peso": 38.9,
+    "longitud": 147.8,
+    "perimetro_craneal": 52.6,
+    "temperatura": 37.0,
+    "frecuencia_respiratoria": 20,
+    "frecuencia_cardiaca": 80,
+    "presion_arteria_sistolica": 110,
+    "presion_arteria_diastolica": 65,
+    "citas": ["2022-04-05", "2021-04-05", "2024-04-05", "2023-04-05"],
+    "vacunas_administradas": [
+      "Vacuna contra el sarampión",
+      "Vacuna contra la rubeola",
+      "Vacuna contra la varicela"
+    ],
+    "examenes_medicos_realizados": [
+      "Radiografía de muñeca",
+      "Electrocardiograma",
+      "Tomografía computarizada de cabeza"
+    ],
+    "observaciones": "El paciente tiene alergia al polen."
+  },
+  {
+    "sexo": "Femenino",
+    "apellidop": "López",
+    "apellidom": "Martínez",
+    "nombres": "María",
+    "fecha_nacimiento": "2009-07-12",
+    "fecha_ultima_cita": "2024-04-08",
+    "edad_anos": 14,
+    "peso": 46.2,
+    "longitud": 154.6,
+    "perimetro_craneal": 55.1,
+    "temperatura": 37.1,
+    "frecuencia_respiratoria": 19,
+    "frecuencia_cardiaca": 76,
+    "presion_arteria_sistolica": 120,
+    "presion_arteria_diastolica": 72,
+    "citas": ["2022-04-08", "2021-04-08", "2024-04-08", "2023-04-08"],
+    "vacunas_administradas": [
+      "Vacuna contra la hepatitis B",
+      "Vacuna contra la meningitis",
+      "Vacuna contra la fiebre amarilla"
+    ],
+    "examenes_medicos_realizados": [
+      "Radiografía de tobillo",
+      "Espirometría",
+      "Resonancia magnética cerebral"
+    ],
+    "observaciones": "La paciente tiene historial de alergia a los frutos secos."
+  },
+  {
+    "sexo": "Femenino",
+    "apellidop": "Martínez",
+    "apellidom": "Hernández",
+    "nombres": "Laura",
+    "fecha_nacimiento": "2006-05-18",
+    "fecha_ultima_cita": "2024-04-06",
+    "edad_anos": 17,
+    "peso": 59.5,
+    "longitud": 168.2,
+    "perimetro_craneal": 57.0,
+    "temperatura": 36.9,
+    "frecuencia_respiratoria": 18,
+    "frecuencia_cardiaca": 74,
+    "presion_arteria_sistolica": 120,
+    "presion_arteria_diastolica": 68,
+    "citas": ["2022-04-06", "2021-04-06", "2024-04-06", "2023-04-06"],
+    "vacunas_administradas": [
+      "Vacuna contra el papiloma humano",
+      "Vacuna contra la varicela",
+      "Vacuna contra la hepatitis B"
+    ],
+    "examenes_medicos_realizados": [
+      "Radiografía de columna vertebral",
+      "Ecografía abdominal",
+      "Análisis de orina"
+    ],
+    "observaciones": "La paciente tiene alergia al polen."
+  },
+  {
+    "sexo": "Masculino",
+    "apellidop": "González",
+    "apellidom": "Martínez",
+    "nombres": "José",
+    "fecha_nacimiento": "2010-09-23",
+    "fecha_ultima_cita": "2024-04-12",
+    "edad_anos": 13,
+    "peso": 42.7,
+    "longitud": 155.6,
+    "perimetro_craneal": 53.5,
+    "temperatura": 37.2,
+    "frecuencia_respiratoria": 20,
+    "frecuencia_cardiaca": 82,
+    "presion_arteria_sistolica": 112,
+    "presion_arteria_diastolica": 65,
+    "citas": ["2022-04-12", "2021-04-12", "2024-04-12", "2023-04-12"],
+    "vacunas_administradas": [
+      "Vacuna contra la hepatitis A",
+      "Vacuna contra la influenza",
+      "Vacuna contra el sarampión"
+    ],
+    "examenes_medicos_realizados": [
+      "Radiografía de muñeca",
+      "Electroencefalograma",
+      "Tomografía computarizada de abdomen"
+    ],
+    "observaciones": "El paciente tiene alergia al polvo."
+  },
+  {
+    "sexo": "Femenino",
+    "apellidop": "Pérez",
+    "apellidom": "González",
+    "nombres": "Paula",
+    "fecha_nacimiento": "2004-12-10",
+    "fecha_ultima_cita": "2024-03-28",
+    "edad_anos": 19,
+    "peso": 57.3,
+    "longitud": 162.8,
+    "perimetro_craneal": 54.8,
+    "temperatura": 37.0,
+    "frecuencia_respiratoria": 17,
+    "frecuencia_cardiaca": 70,
+    "presion_arteria_sistolica": 118,
+    "presion_arteria_diastolica": 68,
+    "citas": ["2022-03-28", "2021-03-28", "2024-03-28", "2023-03-28"],
+    "vacunas_administradas": [
+      "Vacuna contra el tétanos",
+      "Vacuna contra la hepatitis B",
+      "Vacuna contra la influenza"
+    ],
+    "examenes_medicos_realizados": [
+      "Radiografía de tórax",
+      "Análisis de sangre",
+      "Ecocardiograma"
+    ],
+    "observaciones": "La paciente sufre de alergia al polen."
+  },
+  {
+    "sexo": "Masculino",
+    "apellidop": "Sánchez",
+    "apellidom": "Pérez",
+    "nombres": "Miguel",
+    "fecha_nacimiento": "2008-06-28",
+    "fecha_ultima_cita": "2024-04-07",
+    "edad_anos": 15,
+    "peso": 65.0,
+    "longitud": 172.5,
+    "perimetro_craneal": 57.5,
+    "temperatura": 36.8,
+    "frecuencia_respiratoria": 18,
+    "frecuencia_cardiaca": 76,
+    "presion_arteria_sistolica": 120,
+    "presion_arteria_diastolica": 70,
+    "citas": ["2022-04-07", "2021-04-07", "2024-04-07", "2023-04-07"],
+    "vacunas_administradas": [
+      "Vacuna contra la varicela",
+      "Vacuna contra el sarampión",
+      "Vacuna contra la influenza"
+    ],
+    "examenes_medicos_realizados": [
+      "Radiografía de columna vertebral",
+      "Espirometría",
+      "Análisis de orina"
+    ],
+    "observaciones": "El paciente tiene alergia al polvo."
+  },
+  {
+    "sexo": "Femenino",
+    "apellidop": "Torres",
+    "apellidom": "Sánchez",
+    "nombres": "Sofía",
+    "fecha_nacimiento": "2007-10-05",
+    "fecha_ultima_cita": "2024-03-31",
+    "edad_anos": 16,
+    "peso": 60.7,
+    "longitud": 167.3,
+    "perimetro_craneal": 56.9,
+    "temperatura": 36.9,
+    "frecuencia_respiratoria": 18,
+    "frecuencia_cardiaca": 74,
+    "presion_arteria_sistolica": 120,
+    "presion_arteria_diastolica": 70,
+    "citas": ["2022-03-31", "2021-03-31", "2024-03-31", "2023-03-31"],
+    "vacunas_administradas": [
+      "Vacuna contra la influenza",
+      "Vacuna contra la hepatitis A",
+      "Vacuna contra el tétanos"
+    ],
+    "examenes_medicos_realizados": [
+      "Radiografía de tórax",
+      "Ecografía abdominal",
+      "Colonoscopia"
+    ],
+    "observaciones": "La paciente presenta alergia estacional."
+  },
+  
+  
+  
+  {
+  "sexo": "Femenino",
+  "apellidop": "Hernández",
+  "apellidom": "Gómez",
+  "nombres": "Luisa",
+  "fecha_nacimiento": "2005-11-12",
+  "fecha_ultima_cita": "2024-04-10",
+  "edad_anos": 18,
+  "peso": 54.2,
+  "longitud": 165.4,
+  "perimetro_craneal": 55.5,
+  "temperatura": 37.0,
+  "frecuencia_respiratoria": 17,
+  "frecuencia_cardiaca": 72,
+  "presion_arteria_sistolica": 118,
+  "presion_arteria_diastolica": 68,
+  "citas": ["2022-04-10", "2021-04-10", "2024-04-10", "2023-04-10"],
+  "vacunas_administradas": [
+  "Vacuna contra la influenza",
+  "Vacuna contra el tétanos",
+  "Vacuna contra la hepatitis A"
+  ],
+  "examenes_medicos_realizados": [
+  "Radiografía de columna vertebral",
+  "Análisis de sangre",
+  "Ecografía abdominal"
+  ],
+  "observaciones": "La paciente tiene antecedentes de alergia al polen."
+  },
+  {
+  "sexo": "Masculino",
+  "apellidop": "García",
+  "apellidom": "Pérez",
+  "nombres": "Juan",
+  "fecha_nacimiento": "2009-07-20",
+  "fecha_ultima_cita": "2024-04-08",
+  "edad_anos": 14,
+  "peso": 48.6,
+  "longitud": 157.9,
+  "perimetro_craneal": 54.8,
+  "temperatura": 37.1,
+  "frecuencia_respiratoria": 19,
+  "frecuencia_cardiaca": 76,
+  "presion_arteria_sistolica": 120,
+  "presion_arteria_diastolica": 72,
+  "citas": ["2022-04-08", "2021-04-08", "2024-04-08", "2023-04-08"],
+  "vacunas_administradas": [
+  "Vacuna contra la hepatitis B",
+  "Vacuna contra la meningitis",
+  "Vacuna contra la fiebre amarilla"
+  ],
+  "examenes_medicos_realizados": [
+  "Radiografía de tobillo",
+  "Espirometría",
+  "Resonancia magnética cerebral"
+  ],
+  "observaciones": "El paciente tiene historial de alergia a los frutos secos."
+  },
+  {
+  "sexo": "Femenino",
+  "apellidop": "Martínez",
+  "apellidom": "Hernández",
+  "nombres": "Elena",
+  "fecha_nacimiento": "2006-09-25",
+  "fecha_ultima_cita": "2024-04-09",
+  "edad_anos": 17,
+  "peso": 52.8,
+  "longitud": 160.5,
+  "perimetro_craneal": 55.2,
+  "temperatura": 36.9,
+  "frecuencia_respiratoria": 18,
+  "frecuencia_cardiaca": 74,
+  "presion_arteria_sistolica": 120,
+  "presion_arteria_diastolica": 68,
+  "citas": ["2022-04-09", "2021-04-09", "2024-04-09", "2023-04-09"],
+  "vacunas_administradas": [
+  "Vacuna contra la influenza",
+  "Vacuna contra la hepatitis A",
+  "Vacuna contra el tétanos"
+  ],
+  "examenes_medicos_realizados": [
+  "Radiografía de cadera",
+  "Análisis de sangre",
+  "Colonoscopia"
+  ],
+  "observaciones": "La paciente presenta intolerancia a la lactosa."
+  },
+  {
+  "sexo": "Femenino",
+  "apellidop": "Gómez",
+  "apellidom": "Martínez",
+  "nombres": "Ana",
+  "fecha_nacimiento": "2008-03-15",
+  "fecha_ultima_cita": "2024-04-11",
+  "edad_anos": 15,
+  "peso": 50.4,
+  "longitud": 159.8,
+  "perimetro_craneal": 54.5,
+  "temperatura": 37.0,
+  "frecuencia_respiratoria": 18,
+  "frecuencia_cardiaca": 76,
+  "presion_arteria_sistolica": 120,
+  "presion_arteria_diastolica": 70,
+  "citas": ["2022-04-11", "2021-04-11", "2024-04-11", "2023-04-11"],
+  "vacunas_administradas": [
+  "Vacuna contra la hepatitis A",
+  "Vacuna contra el sarampión",
+  "Vacuna contra la varicela"
+  ],
+  "examenes_medicos_realizados": [
+  "Radiografía de muñeca",
+  "Electroencefalograma",
+  "Tomografía computarizada de abdomen"
+  ],
+  "observaciones": "La paciente tiene alergia al polvo."
+  },
+  {
+  "sexo": "Femenino",
+  "apellidop": "Pérez",
+  "apellidom": "González",
+  "nombres": "Sara",
+  "fecha_nacimiento": "2007-05-20",
+  "fecha_ultima_cita": "2024-03-27",
+  "edad_anos": 16,
+  "peso": 53.7,
+  "longitud": 161.2,
+  "perimetro_craneal": 54.9,
+  "temperatura": 37.1,
+  "frecuencia_respiratoria": 17,
+  "frecuencia_cardiaca": 70,
+  "presion_arteria_sistolica": 118,
+  "presion_arteria_diastolica": 68,
+  "citas": ["2022-03-27", "2021-03-27", "2024-03-27", "2023-03-27"],
+  "vacunas_administradas": [
+  "Vacuna contra el tétanos",
+  "Vacuna contra la hepatitis B",
+  "Vacuna contra la influenza"
+  ],
+  "examenes_medicos_realizados": [
+  "Radiografía de tórax",
+  "Análisis de sangre",
+  "Ecocardiograma"
+  ],
+  "observaciones": "La paciente sufre de alergia al polen."
+  },
+  {
+  "sexo": "Masculino",
+  "apellidop": "López",
+  "apellidom": "Sánchez",
+  "nombres": "Daniel",
+  "fecha_nacimiento": "2007-08-18",
+  "fecha_ultima_cita": "2024-03-30",
+  "edad_anos": 16,
+  "peso": 56.5,
+  "longitud": 166.7,
+  "perimetro_craneal": 56.0,
+  "temperatura": 36.9,
+  "frecuencia_respiratoria": 18,
+  "frecuencia_cardiaca": 74,
+  "presion_arteria_sistolica": 120,
+  "presion_arteria_diastolica": 70,
+  "citas": ["2022-03-30", "2021-03-30", "2024-03-30", "2023-03-30"],
+  "vacunas_administradas": [
+  "Vacuna contra la varicela",
+  "Vacuna contra el sarampión",
+  "Vacuna contra la influenza"
+  ],
+  "examenes_medicos_realizados": [
+  "Radiografía de columna vertebral",
+  "Espirometría",
+  "Análisis de orina"
+  ],
+  "observaciones": "El paciente tiene alergia al polvo."
+  },
+  {
+  "sexo": "Femenino",
+  "apellidop": "Martínez",
+  "apellidom": "Torres",
+  "nombres": "Marta",
+  "fecha_nacimiento": "2007-11-03",
+  "fecha_ultima_cita": "2024-03-29",
+  "edad_anos": 16,
+  "peso": 55.8,
+  "longitud": 163.0,
+  "perimetro_craneal": 55.2,
+  "temperatura": 36.9,
+  "frecuencia_respiratoria": 18,
+  "frecuencia_cardiaca": 74,
+  "presion_arteria_sistolica": 120,
+  "presion_arteria_diastolica": 68,
+  "citas": ["2022-03-29", "2021-03-29", "2024-03-29", "2023-03-29"],
+  "vacunas_administradas": [
+  "Vacuna contra la influenza",
+  "Vacuna contra la hepatitis A",
+  "Vacuna contra el tétanos"
+  ],
+  "examenes_medicos_realizados": [
+  "Radiografía de tórax",
+  "Ecografía abdominal",
+  "Colonoscopia"
+  ],
+  "observaciones": "La paciente presenta alergia estacional."
+  },
+  {
+  "sexo": "Femenino",
+  "apellidop": "González",
+  "apellidom": "Martínez",
+  "nombres": "Laura",
+  "fecha_nacimiento": "2007-12-15",
+  "fecha_ultima_cita": "2024-04-12",
+  "edad_anos": 16,
+  "peso": 54.5,
+  "longitud": 164.2,
+  "perimetro_craneal": 55.3,
+  "temperatura": 36.9,
+  "frecuencia_respiratoria": 18,
+  "frecuencia_cardiaca": 74,
+  "presion_arteria_sistolica": 120,
+  "presion_arteria_diastolica": 68,
+  "citas": ["2022-04-12", "2021-04-12", "2024-04-12", "2023-04-12"],
+  "vacunas_administradas": [
+  "Vacuna contra la hepatitis A",
+  "Vacuna contra la influenza",
+  "Vacuna contra el sarampión"
+  ],
+  "examenes_medicos_realizados": [
+  "Radiografía de muñeca",
+  "Electroencefalograma",
+  "Tomografía computarizada de abdomen"
+  ],
+  "observaciones": "La paciente tiene alergia al polvo."
+  },
+  {
+  "sexo": "Masculino",
+  "apellidop": "Sánchez",
+  "apellidom": "González",
+  "nombres": "Pedro",
+  "fecha_nacimiento": "2006-08-28",
+  "fecha_ultima_cita": "2024-03-31",
+  "edad_anos": 17,
+  "peso": 58.2,
+  "longitud": 168.5,
+  "perimetro_craneal": 56.5,
+  "temperatura": 36.9,
+  "frecuencia_respiratoria": 18,
+  "frecuencia_cardiaca": 74,
+  "presion_arteria_sistolica": 120,
+  "presion_arteria_diastolica": 70,
+  "citas": ["2022-03-31", "2021-03-31", "2024-03-31", "2023-03-31"],
+  "vacunas_administradas": [
+  "Vacuna contra la varicela",
+  "Vacuna contra el sarampión",
+  "Vacuna contra la hepatitis B"
+  ],
+  "examenes_medicos_realizados": [
+  "Radiografía de columna vertebral",
+  "Ecografía abdominal",
+  "Análisis de orina"
+  ],
+  "observaciones": "El paciente tiene alergia al polvo."
+  },
+  {
+  "sexo": "Femenino",
+  "apellidop": "Pérez",
+  "apellidom": "Sánchez",
+  "nombres": "Carolina",
+  "fecha_nacimiento": "2006-07-12",
+  "fecha_ultima_cita": "2024-03-28",
+  "edad_anos": 17,
+  "peso": 56.9,
+  "longitud": 166.0,
+  "perimetro_craneal": 55.8,
+  "temperatura": 36.9,
+  "frecuencia_respiratoria": 18,
+  "frecuencia_cardiaca": 74,
+  "presion_arteria_sistolica": 120,
+  "presion_arteria_diastolica": 68,
+  "citas": ["2022-03-28", "2021-03-28", "2024-03-28", "2023-03-28"],
+  "vacunas_administradas": [
+  "Vacuna contra el tétanos",
+  "Vacuna contra la hepatitis B",
+  "Vacuna contra la influenza"
+  ],
+  "examenes_medicos_realizados": [
+  "Radiografía de tórax",
+  "Análisis de sangre",
+  "Ecocardiograma"
+  ],
+  "observaciones": "La paciente sufre de alergia al polen."
+  }]
