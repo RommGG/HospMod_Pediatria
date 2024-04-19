@@ -81,6 +81,12 @@ import Profile from "../views/User/Profile";
 import Pacientes  from "../views/User/Pacientes";
 import Seguimiento  from "../views/User/Seguimiento";
 import Registro  from "../views/User/Registro";
+import Editar from "../views/User/editarPaciente"
+import EditView from '../views/User/editarPaciente.vue'
+
+import seg from '../views/User/Seguimiento.vue'
+
+
 
 
 import ProfileEdit from "../views/User/ProfileEdit";
@@ -117,6 +123,7 @@ const childRoutes = (prop, mode) => [
     meta: { dark: mode, auth: true, name: "Covid-19 Dashboard" },
     component: Dashboard5,
   },
+  
 ];
 const coreChildRoute = (prop, mode) => [
   {
@@ -552,6 +559,22 @@ const userChildRoute = (prop, mode = false) => [
     component: Registro,
   },
   {
+    path: 'Editar',
+    name: prop + ".editarPaciente",
+    meta: { dark: mode, auth: true, name: "editarPaciente" },
+    component: Editar,
+  },
+  {
+    path: '/editar/:id',
+    name:'editars',
+    component: EditView
+  },
+  {
+    path: '/seguimiento/:id',
+    name:'seguim',
+    component: seg
+  },
+  {
     path: "profile-edit",
     name: prop + ".edit",
     meta: { dark: mode, auth: true, name: "Edit Profile" },
@@ -593,6 +616,11 @@ const pluginsChildRoute = (prop, mode = false) => [
   },
 ];
 const routes = [
+  {
+    // path: '/editar/:id',
+    // name:'editar',
+    // component: EditView
+  },
   {
     path: "/",
     name: "dashboard",
