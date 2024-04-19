@@ -1,6 +1,6 @@
 # PrivilegeCare 
 
-##Introducción
+Introducción
 
 En un mundo donde la tecnología ha revolucionado casi todos los aspectos de la vida, los hospitales no son una excepción. La digitalización en el campo de la salud no solo ha mejorado la eficiencia administrativa y clínica, sino que también ha elevado la calidad de la atención al paciente. En este contexto, surge la necesidad de desarrollar propuestas innovadoras que aprovechen al máximo las herramientas tecnológicas disponibles. En este documento, presentaremos una propuesta integral para la creación de un sitio web y una base de datos destinados a mejorar la eficiencia y la calidad de los servicios de un hospital llamado Centro Médico PrivilegeCare.
 Centro Médico PrivilegeCare se destaca como un líder en el ámbito de la atención médica privada, con un enfoque centrado en el bienestar integral de sus pacientes. Con el propósito de brindar una experiencia óptima tanto para los pacientes como para el personal médico y administrativo, se propone el desarrollo de un sitio web moderno e intuitivo que sirva como un portal de acceso integral a los servicios del hospital.
