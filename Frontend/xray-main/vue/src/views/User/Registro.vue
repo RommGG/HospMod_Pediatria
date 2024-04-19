@@ -1,80 +1,42 @@
 <template>
   <b-container fluid>
-
-    <form @submit.prevent="submitForm" v-validate>
+    <form @submit.prevent="submitForm">
       <b-row>
         <b-col lg="12">
           <iq-card>
             <template v-slot:headerTitle>
               <h4 class="card-title">Registrar un Nacimiento</h4>
             </template>
+
             <template v-slot:body>
               <div class="new-user-info">
                 <b-row>
-                  <b-form-group class="col-md-6" label="Nombre Completo Padre:" label-for="nombrePadre">
-                    <input type="text" placeholder="Nombre del padre" class="form-control mb-2" id="nombrePadre"
-                      v-model="nombrePadre">
-                      <span v-if="errors.has('nombrePadre')" class="invalid-feedback">{{ errors.first('nombrePadre') }}</span>
 
+                  <b-form-group class="col-md-4" label="Sexo:" label-for="sexo">
+
+                    <b-form-select v-model="sexo" id="sexo" required>
+                      <option :value="null" disabled selected>Seleccionar</option>
+                      <option value="Masculino">Masculino</option>
+                      <option value="Femenino">Femenino</option>
+                    </b-form-select>
                   </b-form-group>
 
-
-                  <b-form-group class="col-md-6" label="Nombre Completo Madre:" label-for="nombreMadre">
-                    <input type="text" id="nombreMadre" placeholder="Nombre de la madre" class="form-control mb-2"
-                      v-model="nombreMadre">
-
+                  <b-form-group class="col-md-4" label="Fecha de Nacimiento:" label-for="fechaNacimiento">
+                    <input type="date" id="fechaNacimiento" v-model="fechaNacimiento" class="form-control mb-2">
                   </b-form-group>
 
-
-
-                  <b-form-group class="col-md-6" label="Fecha de Nacimiento:" label-for="fechaNacimiento">
-                    <input type="date" id="fechaNacimiento" placeholder="Fecha de nacimiento" class="form-control mb-2"
-                      v-model="fechaNacimiento">
-
-                  </b-form-group>
-
-
-
-
-                  <b-form-group class="col-md-6" label="Hora de Nacimiento:" label-for="horaNacimiento">
-                    <input type="time" id="horaNacimiento" placeholder="Hora de nacimiento" class="form-control mb-2"
-                      v-model="horaNacimiento">
+                  <b-form-group class="col-md-4" label="Hora de Nacimiento:" label-for="horaNacimiento">
+                    <input type="time" id="horaNacimiento" v-model="horaNacimiento" class="form-control mb-2">
                   </b-form-group>
 
                   <b-form-group class="col-md-4" label="Lugar de nacimiento:" label-for="lugarNacimiento">
-                    <b-form-select v-model="lugarNacimiento" id="lugarNacimiento">
-                      <b-form-select-option :value="null" disabled selected>Seleccionar</b-form-select-option>
-                      <b-form-select-option value="opcion1">Xicotepec</b-form-select-option>
-                      <b-form-select-option value="opcion2">Huachinango</b-form-select-option>
-                      <b-form-select-option value="opcion3">Villa Avila Camacho</b-form-select-option>
-                      <b-form-select-option value="opcion3">Necaxa</b-form-select-option>
-
+                    <b-form-select id="lugarNacimiento" v-model="lugarNacimiento">
+                      <option :value="null" disabled selected>Seleccionar</option>
+                      <option value="Xicotepec">Xicotepec</option>
+                      <option value="Huachinango">Huachinango</option>
+                      <option value="Villa Avila Camacho">Villa Avila Camacho</option>
+                      <option value="Necaxa">Necaxa</option>
                     </b-form-select>
-                  </b-form-group>
-
-                  <b-form-group class="col-md-4" label="Sexo:" label-for="sexo">
-                    <b-form-select v-model="sexo" id="sexo">
-                      <b-form-select-option :value="null" disabled selected>Seleccionar</b-form-select-option>
-                      <b-form-select-option value="opcion1">Masculino</b-form-select-option>
-                      <b-form-select-option value="opcion2">Femenino</b-form-select-option>
-
-
-                    </b-form-select>
-                  </b-form-group>
-
-
-
-
-
-
-                  <b-form-group class="col-md-4" label="Tipo de nacimiento:" label-for="tipoNacimiento">
-                    <b-form-select v-model="tipoNacimiento" id="tipoNacimiento">
-                      <b-form-select-option :value="null" disabled selected>Seleccionar</b-form-select-option>
-                      <b-form-select-option value="opcion1">Normal</b-form-select-option>
-                      <b-form-select-option value="opcion2">Cesarea</b-form-select-option>
-
-
-                    </b-form-select> 
                   </b-form-group>
 
 
@@ -82,129 +44,79 @@
                     <input type="number" id="peso" v-model="peso" step="0.01" placeholder="Peso"
                       class="form-control mb-2">
                   </b-form-group>
-
                   <b-form-group class="col-md-4" label="Longitud:" label-for="longitud">
-                    <input type="number" id="longitud" v-model="longitud" step="0.01" placeholder="Longitud"
-                      class="form-control mb-2">
+                    <input type="number" id="longitud" v-model="longitud" step="0.01" class="form-control mb-2">
                   </b-form-group>
 
-
-
-                  <b-form-group class="col-md-4" label="Temperatura:" label-for="temperatura">
-                    <input type="number" id="temperatura" placeholder="Temperatura" class="form-control mb-2"
-                      v-model="temperatura" step="0.01">
-
+                  <b-form-group class="col-md-6" label="Nombre Completo Padre:" label-for="nombrePadre">
+                    <input type="text" id="nombrePadre" v-model="nombrePadre" class="form-control mb-2">
                   </b-form-group>
 
-                  <!-- <b-form-group class="col-md-4" label="Temperatura:" label-for="mobno">
-                    <Field class="form-control mb-2"  type="text" placeholder="Temperatura (°C)"
-                      name="MobileNo" :rules="isRequire" :class="{ 'is-invalid': errors.MobileNo }"></Field>
-                  </b-form-group> -->
-
-
-
-                  <b-form-group class="col-md-4" label="Frecuencia Cardiaca:" label-for="frecuenciaCardiaca">
-                    <input type="number" id="frecuenciaCardiaca" placeholder="Frecuencia cardiaca"
-                      class="form-control mb-2" v-model="frecuenciaCardiaca">
-                  </b-form-group>
-
-
-
-                  <b-form-group class="col-md-4" label="Presión Arterial Sistólica:"
-                    label-for="presionArterialSistolica">
-                    <input type="number" id="presionArterialSistolica" v-model="presionArterialSistolica"
-                      placeholder="Presión arteral sistólica" class="form-control mb-2">
-                  </b-form-group>
-
-
-
-                  <b-form-group class="col-md-4" label="Presión Arterial Distólica:"
-                    label-for="presionArterialDiastolica">
-                    <input type="number" id="presionArterialDiastolica" v-model="presionArterialDiastolica"
-                      placeholder="Presión arteral distólica" class="form-control mb-2">
-
+                  <b-form-group class="col-md-6" label="Nombre Completo Madre:" label-for="nombreMadre">
+                    <input type="text" id="nombreMadre" v-model="nombreMadre" class="form-control mb-2">
                   </b-form-group>
 
 
 
                   <b-form-group class="col-md-6" label="Numero Telefonico:" label-for="telefonoContacto">
-                    <input type="text" id="telefonoContacto" v-model="telefonoContacto"
-                      placeholder="Telefonó de contacto" class="form-control mb-2">
-
+                    <input type="text" id="telefonoContacto" v-model="telefonoContacto" class="form-control mb-2">
                   </b-form-group>
-
-
-
 
                   <b-form-group class="col-md-6" label="Email de Contacto:" label-for="emailContacto">
-                    <input type="email" id="emailContacto" v-model="emailContacto" placeholder="Email de contacto"
+                    <input type="email" id="emailContacto" v-model="emailContacto" class="form-control mb-2">
+                  </b-form-group>
+
+                  <b-form-group class="col-md-6" label="Observaciones:" label-for="observaciones">
+                    <textarea id="observaciones" v-model="observaciones" class="form-control mb-2"></textarea>
+                  </b-form-group>
+
+
+                  <b-form-group class="col-md-6" label="Tipo de nacimiento:" label-for="tipoNacimiento">
+                    <b-form-select id="tipoNacimiento" v-model="tipoNacimiento">
+                      <option value="normal">normal</option>
+                      <option value="cesarea">cesarea</option>
+                    </b-form-select>
+                  </b-form-group>
+
+
+                  <b-form-group class="col-md-3" label="Frecuencia Cardiaca:" label-for="frecuenciaCardiaca">
+                    <input type="number" id="frecuenciaCardiaca" v-model="frecuenciaCardiaca" class="form-control mb-2">
+                  </b-form-group>
+
+                  <b-form-group class="col-md-3" label="Temperatura:" label-for="temperatura">
+                    <input type="number" id="temperatura" v-model="temperatura" step="0.01" class="form-control mb-2">
+                  </b-form-group>
+
+
+
+                  <b-form-group class="col-md-3" label="Presión Arterial Sistólica:"
+                    label-for="presionArterialSistolica">
+                    <input type="number" id="presionArterialSistolica" v-model="presionArterialSistolica"
                       class="form-control mb-2">
+
                   </b-form-group>
 
 
+                  <b-form-group class="col-md-3" label="Presión Arterial Distólica:"
+                    label-for="presionArterialDiastolica">
+                    <input type="number" id="presionArterialDiastolica" v-model="presionArterialDiastolica"
+                      class="form-control mb-2">
 
-
-                  <b-form-group class="col-md-12" label="Observaciones:" label-for="observaciones">
-                    <textarea id="observaciones" v-model="observaciones" laceholder="Observaciones"
-                      class="form-control mb-2"></textarea>
                   </b-form-group>
-
-
-
-
-                  
-
-
-
-
-
-                  <b-button variant="primary mt-2" type="submit">Crear Nuevo Registro</b-button>
-
-
-
+                  <b-button variant="primary mt-2" type="submit">Registrar Bebé</b-button>
                 </b-row>
-                <hr />
-
               </div>
             </template>
           </iq-card>
         </b-col>
 
-
-
-        <!-- <b-col md="12">
-          <iq-card>
-            <template v-slot:headerTitle>
-              <h4 class="card-title">Ultimos registros</h4>
-            </template>
-            <template v-slot:body>
-              <div class="table-responsive">
-                <table class="table table-striped table-bordered">
-                  <thead>
-                    <tr>
-                      <th v-for="data in columns" :key="data">
-                        {{ data.label }}
-                      </th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr v-for="items in rows" :key="items">
-                      <td>{{ items.Nombre }}</td>
-                      <td>{{ items.tConsulta }}</td>
-                      <td>{{ items.Observaciones }}</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </template>
-          </iq-card>
-        </b-col> -->
-
-
       </b-row>
-
-
     </form>
+
+
+
+
+
   </b-container>
 </template>
 
@@ -235,7 +147,7 @@ export default {
       telefonoContacto: '',
       emailContacto: '',
       observaciones: '',
-      tipoNacimiento: 'normal',
+      tipoNacimiento: '',
       frecuenciaCardiaca: null,
       temperatura: null,
       presionArterialSistolica: null,

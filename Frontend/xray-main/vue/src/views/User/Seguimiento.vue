@@ -1,249 +1,220 @@
 <template>
   <b-container fluid>
-    <b-row>
-      <b-col md="8">
-        <iq-card body-class="iq-card-body">
-          <template v-slot:headerTitle>
-            <div class="iq-card-header d-flex justify-content-between">
-              <div class="iq-header-title">
-                <h4 class="card-title">Informacion Personal</h4>
-              </div>
-            </div>
-            <div class="iq-card-body">
-              <div class="about-info m-0 p-2">
-                <div class="row">
-                  <div class="col-4">Nombre del Paciente:</div>
-                  <div class="col-8"></div>
-                  <div class="col-4">Nombre del Padre:</div>
-                  <div class="col-8"></div>
-                  <div class="col-4">Tipo de Nacimiento:</div>
-                  <div class="col-8"></div>
-                  <div class="col-4">Edad:</div>
-                  <div class="col-8"></div>
-                  <div class="col-4">Telefono de Contacto:</div>
-                  <div class="col-8"></div>
-                  <div class="col-4">Email de Contacto:</div>
-                  <div class="col-8"></div>
-                  <br>
-                </div>
-              </div>
-            </div>
+      <form @submit.prevent="submitForm">
+          <b-row>
+              <b-col lg="12">
+                  <iq-card>
+                      <template v-slot:headerTitle>
+                          <h4 class="card-title">Seguimiento del paciente</h4>
+                      </template>
 
-          </template>
-        </iq-card>
+                      <template v-slot:body>
+                          <div class="new-user-info">
+                              <b-row>
 
-      </b-col>
+                                  <input type="number" id="id" v-model="bebe.id" style="display: none;">
 
+                                  <b-form-group class="col-md-4" label="Sexo:" label-for="sexo">
 
-      <b-col md="4">
-        <iq-card>
-          <template v-slot:headerTitle>
-            <h4 class="card-title">Citas</h4>
-          </template>
-          <template v-slot:body>
-            <ul class="m-0 p-0 today-schedule">
-              <li class="d-flex">
-                <div class="schedule-icon">
-                  <i class="ri-checkbox-blank-circle-fill text-primary" />
-                </div>
-                <div class="schedule-text">
-                  <span>Ultima Cita</span> <span>Viernes 12 de Febrero de 2024 a las 11:30 am.</span>
-                </div>
-              </li>
-              <li class="d-flex">
-                <div class="schedule-icon">
-                  <i class="ri-checkbox-blank-circle-fill text-success" />
-                </div>
-                <div class="schedule-text">
-                  <span>Proxima Cita</span> <span>Viernes 12 de Abril de 2024 a las 11:30 am.</span>
-                </div>
-              </li>
-            </ul>
-          </template>
-        </iq-card>
-      </b-col>
-
-      <b-col md="12">
-        <iq-card>
-          <template v-slot:headerTitle>
-            <h4>Ultimas Consultas</h4>
-          </template>
-          <template v-slot:body>
-            <div class="table-responsive">
-              <table class="table table-striped table-bordered">
-                <thead>
-                  <tr>
-                    <th v-for="data in columns" :key="data">
-                      {{ data.label }}
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr v-for="items in rows" :key="items">
-                    <td>{{ items.Nombre }}</td>
-                    <td>{{ items.fConsulta }}</td>
-                    <td>{{ items.tConsulta }}</td>
-                    <td>{{ items.Observaciones }}</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </template>
-        </iq-card>
-      </b-col>
+                                    <input type="text" id="sexo" v-model="bebe.sexo" class="form-control mb-2" required readonly>
+                                      
+                                  </b-form-group>
 
 
 
-    </b-row>
+
+                                  <b-form-group class="col-md-4" label="Fecha de Nacimiento:"
+                                      label-for="fechaNacimiento">
+                                      <input type="date" id="fechaNacimiento" v-model="bebe.fecha_nacimiento"
+                                          class="form-control mb-2" required readonly>
+                                  </b-form-group>
+
+                                  <b-form-group class="col-md-4" label="Hora de nacimiento:"
+                                      label-for="horaNacimiento">
+                                      <input type="time" id="horaNacimiento" v-model="bebe.hora_nacimiento"
+                                          class="form-control mb-2" required readonly>
+                                  </b-form-group>
+
+
+                                  <b-form-group class="col-md-4" label="Lugar de nacimiento:"
+                                      label-for="lugarNacimiento">
+                                      <input type="text" id="lugarNacimiento" v-model="bebe.lugar_nacimiento" class="form-control mb-2" required readonly>
+                                          
+                                  </b-form-group>
+
+                                  <b-form-group class="col-md-4" label="Peso:" label-for="peso">
+                                      <input type="number" id="peso" step="0.01" v-model="bebe.peso"
+                                          class="form-control mb-2" required readonly>
+                                  </b-form-group>
+
+                                  <b-form-group class="col-md-4" label="Longitud:" label-for="longitud">
+                                      <input type="number" id="longitud" step="0.01" v-model="bebe.longitud"
+                                          class="form-control mb-2" required readonly>
+                                  </b-form-group>
+
+
+                                  <b-form-group class="col-md-6" label="Nombre del padre:" label-for="nPadre">
+                                      <input type="text" id="nPadre" v-model="bebe.nombre_padre"
+                                          class="form-control mb-2" required readonly>
+                                  </b-form-group>
+
+
+                                  <b-form-group class="col-md-6" label="Nombre de la madre:" label-for="nMadre">
+                                      <input type="text" id="nMadre" v-model="bebe.nombre_madre"
+                                          class="form-control mb-2" required readonly>
+                                  </b-form-group>
+
+
+                                  <b-form-group class="col-md-6" label="Teléfono de contacto:"
+                                      label-for="telefonoContacto">
+                                      <input type="text" id="telefonoContacto" v-model="bebe.telefono_contacto"
+                                          class="form-control mb-2" required readonly>
+                                  </b-form-group>
+
+                                  <b-form-group class="col-md-6" label="Email de contacto:" label-for="emailC">
+                                      <input type="email" id="emailC" v-model="bebe.email_contacto"
+                                          class="form-control mb-2" required readonly>
+                                  </b-form-group>
+
+
+                                  <b-form-group class="col-md-6" label="Observaciones:" label-for="observaciones">
+                                      <textarea id="observaciones" v-model="bebe.observaciones"
+                                          class="form-control mb-2" readonly></textarea>
+                                  </b-form-group>
+
+
+                                  <b-form-group class="col-md-6" label="Tipo de nacimiento:"
+                                      label-for="tipoNacimiento">
+                                      <input type="text" id="tipoNacimiento" v-model="bebe.tipo_nacimiento"
+                                          class="form-control mb-2" readonly>
+                                  </b-form-group>
+
+                                  <b-form-group class="col-md-3" label="Frecuencia cardíaca:"
+                                      label-for="frecuenciaCardiaca">
+                                      <input type="number" id="frecuenciaCardiaca" class="form-control mb-2" 
+                                          v-model="bebe.frecuencia_cardiaca" readonly>
+                                  </b-form-group>
+
+
+                                  <b-form-group class="col-md-3" label="Temperatura:" label-for="temperatura">
+                                      <input type="number" id="temperatura" step="0.01" class="form-control mb-2"
+                                          v-model="bebe.temperatura" readonly>
+                                  </b-form-group>
+
+
+
+                                  <b-form-group class="col-md-3" label="Presión Arterial Sistólica:"
+                                      label-for="presionArterialSistolica">
+                                      <input type="number" id="presionArterialSistolica" class="form-control mb-2"
+                                          v-model="bebe.presion_arterial_sistolica" readonly>
+                                  </b-form-group>
+
+
+                                  <b-form-group class="col-md-3" label="Presión Arterial Diastólica:"
+                                      label-for="presionArterialDiastolica">
+
+                                      <input type="number" id="presionArterialDiastolica"
+                                          v-model="bebe.presion_arterial_diastolica" class="form-control mb-2" readonly>
+                                  </b-form-group>
+                                  <!-- Agrega los demás campos de la tabla aquí -->
+
+                              </b-row>
+                          </div>
+                      </template>
+
+                  </iq-card>
+              </b-col>
+          </b-row>
+      </form>
+
   </b-container>
+
 </template>
+
+
+
+
+
+
+
+
 <script>
-import iqCard from "../../components/xray/cards/iq-card";
+/*eslint-disable*/
 import { xray } from "../../config/pluginInit";
-// import HighCharts from "highcharts";
-// import More from "highcharts/highcharts-more";
-// More(HighCharts);
+import iqCard from "../../components/xray/cards/iq-card";
 
-// Echart
-import { use } from "echarts/core";
-import { CanvasRenderer } from "echarts/renderers";
-import { PieChart } from "echarts/charts";
-import {
-  TitleComponent,
-  TooltipComponent,
-  LegendComponent,
-} from "echarts/components";
+import { Form } from "vee-validate";
 
-
-// import ECharts from 'vue-echarts'
-//mport * as echarts from "echarts";
 
 export default {
-  name: "HighCharts",
-  components: { iqCard },
-  mounted() {
-    xray.index();
-  },
-  setup() {
-    use([
-      CanvasRenderer,
-      PieChart,
-      TitleComponent,
-      TooltipComponent,
-      LegendComponent,
-    ]);
+  name: "AddUser",
+  components: { iqCard, Form },
 
 
-
-
-
-
-
-    return {
-
-
-
-
-      columns: [
-        { label: "Nombre", field: "Nombre", headerClass: "text-left" },
-        { label: "Fecha de Consulta", field: "fConsulta ", headerClass: "text-left" },
-        { label: "Tipo de Consulta", field: "tConsulta", headerClass: "text-left" },
-        { label: "Observaciones", field: "Observaciones", headerClass: "text-left" },
-
-      ],
-      rows: [
-        {
-          id: 1,
-          Nombre: " \u00A0",
-          fConsulta: " \u00A0",
-          tConsulta: " \u00A0 ",
-          Observaciones: " \u00A0 ",
-
-        },
-        {
-          id: 2,
-          Nombre: " \u00A0",
-          fConsulta: " \u00A0",
-          tConsulta: " \u00A0 ",
-          Observaciones: " \u00A0 ",
-
-        },
-        {
-          Nombre: " \u00A0",
-          fConsulta: " \u00A0",
-          tConsulta: " \u00A0 ",
-          Observaciones: " \u00A0 ",
-
-        },
-        {
-          id: 4,
-          Nombre: " \u00A0 ",
-          tConsulta: " \u00A0 ",
-          Observaciones: " \u00A0 ",
-
-        },
-        {
-          id: 5,
-          Nombre: " \u00A0",
-          fConsulta: " \u00A0",
-          tConsulta: " \u00A0 ",
-          Observaciones: " \u00A0 ",
-        },
-      ],
-
-    };
-  },
   data() {
-    return {
-     
-      chart: null,
-      xVal: 0,
-      options: {
-        exportEnabled: true,
-        title: {
-          text: "live random data",
-        },
-        data: [
-          {
-            type: "line",
-            dataPoints: [],
+      return {
+          bebe: {
+              fecha_nacimiento: '',
+              hora_nacimiento: '',
+              lugar_nacimiento: '',
+              peso: '',
+              longitud: '',
+              nombre_padre: '',
+              nombre_madre: '',
+              telefono_contacto: '',
+              email_contacto: '',
+              observaciones: '',
+              tipo_nacimiento: '',
+              frecuencia_cardiaca: '',
+              temperatura: '',
+              presion_arterial_sistolica: '',
+              presion_arterial_diastolica: ''
           },
-        ],
-      },
-      styleOptions: {
-        width: "100%",
-        height: "345px",
-        fontSize: "18px",
-      },
-    };
+          message: ''
+      };
+  },
+  mounted() {
+      this.obtenerDatosBebe();
   },
   methods: {
-    updateChart(count) {
-      count = count || 1;
-      var yVal = 100;
-      for (var j = 0; j < count; j++) {
-        yVal = yVal + Math.round(5 + Math.random() * (-5 - 5));
-        this?.options.data[0].dataPoints.push({
-          x: this.xVal++,
-          y: yVal,
-        });
+      obtenerDatosBebe() {
+          const id = this.$route.params.id;
+          fetch(`http://localhost:8000/hospital/api/nacimientos/${id}/`)
+              .then(response => {
+                  if (!response.ok) {
+                      throw new Error('No se pudieron obtener los datos del bebé.');
+                  }
+                  return response.json();
+              })
+              .then(data => {
+                  this.bebe = data;
+              })
+              .catch(error => {
+                  this.message = "Error al obtener los datos del bebé: " + error.message;
+              });
+      },
+      submitForm() {
+          this.message = "Guardando cambios...";
+          const id = this.$route.params.id;
+
+          fetch(`http://localhost:8000/hospital/api/nacimientos/${id}/`, {
+              method: 'PUT',
+              headers: {
+                  'Content-Type': 'application/json',
+              },
+              body: JSON.stringify(this.bebe),
+          })
+              .then(response => {
+                  if (!response.ok) {
+                      throw new Error('No se pudieron guardar los cambios.');
+                  }
+                  this.message = "¡Bebé editado exitosamente!";
+              })
+              .catch(error => {
+                  this.message = "Error al guardar los cambios: " + error.message;
+              });
       }
-      if (!!this.options.data[0].dataPoints.length > 10) {
-        this.options.data[0].dataPoints.shift();
-      }
-      this.chart.render();
-      setTimeout(this.updateChart, 1000);
-    },
-    chartInstance(chart) {
-      this.chart = chart;
-      this.updateChart(100);
-    },
-  },
+  }
 };
+
 </script>
-<style scoped>
-.chart {
-  height: 245px;
-  width: 100%;
-}
-</style>
