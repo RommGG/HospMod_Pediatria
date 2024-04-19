@@ -35,18 +35,7 @@
         "is_icon_class": true,
         "icon": "ri-user-add-fill"
       },
-      {
-        "title": "Seguimiento",
-        "name": "Seguimiento",
-        "is_active": false,
-        
-        "link": {
-          "name" : "user.seguimiento"
-        },
-        "class_name": "",
-        "is_icon_class": true,
-        "icon": "ri-server-fill"
-      },
+      
       {
         "title": "Pacientes",
         "name": "Pacientes",
@@ -58,6 +47,8 @@
         "is_icon_class": true,
         "icon": "ri-user-3-fill"
       }
+      
+
       
 
       
